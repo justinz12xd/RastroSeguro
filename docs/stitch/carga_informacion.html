@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>RastroSeguro - Carga de Información</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .drop-zone-active {
+            border-color: #adc6ff;
+            background: rgba(173, 198, 255, 0.05);
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "secondary-fixed": "#d8e2ff",
+                      "surface-container-low": "#1b1b1d",
+                      "on-tertiary-fixed-variant": "#574425",
+                      "surface-container-high": "#2a2a2b",
+                      "on-error-container": "#ffdad6",
+                      "surface-dim": "#131315",
+                      "inverse-primary": "#565e74",
+                      "surface-variant": "#353436",
+                      "on-surface": "#e4e2e4",
+                      "on-tertiary-fixed": "#271901",
+                      "on-secondary-fixed-variant": "#004395",
+                      "background": "#131315",
+                      "on-primary-fixed-variant": "#3f465c",
+                      "tertiary-fixed-dim": "#dec29a",
+                      "error": "#ffb4ab",
+                      "primary": "#bec6e0",
+                      "inverse-surface": "#e4e2e4",
+                      "on-primary": "#283044",
+                      "tertiary-fixed": "#fcdeb5",
+                      "secondary-container": "#0566d9",
+                      "on-secondary-container": "#e6ecff",
+                      "secondary": "#adc6ff",
+                      "primary-fixed": "#dae2fd",
+                      "on-secondary": "#002e6a",
+                      "tertiary-container": "#231500",
+                      "primary-container": "#0f172a",
+                      "tertiary": "#dec29a",
+                      "on-secondary-container": "#e6ecff",
+                      "secondary-fixed-dim": "#adc6ff",
+                      "surface-tint": "#bec6e0",
+                      "surface": "#131315",
+                      "surface-container": "#1f1f21",
+                      "on-background": "#e4e2e4",
+                      "surface-bright": "#39393b",
+                      "on-primary-fixed": "#131b2e",
+                      "primary-fixed-dim": "#bec6e0",
+                      "on-tertiary-container": "#957d5a",
+                      "on-secondary-fixed": "#001a42",
+                      "surface-container-highest": "#353436",
+                      "on-error": "#690005",
+                      "outline": "#909097",
+                      "on-tertiary": "#3e2d11",
+                      "inverse-on-surface": "#303032",
+                      "surface-container-lowest": "#0e0e10",
+                      "on-surface-variant": "#c6c6cd",
+                      "outline-variant": "#45464d",
+                      "error-container": "#93000a"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "xl": "80px",
+                      "container-max": "1440px",
+                      "lg": "48px",
+                      "sm": "12px",
+                      "xs": "4px",
+                      "md": "24px",
+                      "gutter": "24px",
+                      "base": "8px"
+              },
+              "fontFamily": {
+                      "display-score": ["Montserrat"],
+                      "headline-lg": ["Montserrat"],
+                      "headline-lg-mobile": ["Montserrat"],
+                      "body-lg": ["Inter"],
+                      "headline-md": ["Montserrat"],
+                      "body-md": ["Inter"],
+                      "label-sm": ["Inter"]
+              },
+              "fontSize": {
+                      "display-score": ["72px", {"lineHeight": "80px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                      "headline-lg-mobile": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                      "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                      "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                      "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                      "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}]
+              }
+            },
+          },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background font-body-md overflow-hidden">
+<!-- TopAppBar -->
+<header class="bg-background dark:bg-background fixed top-0 w-full border-b border-outline-variant dark:border-outline-variant shadow-sm z-50">
+<div class="flex justify-between items-center px-gutter py-sm max-w-container-max mx-auto h-16">
+<div class="flex items-center gap-base">
+<span class="font-headline-md text-headline-md font-bold text-primary dark:text-primary">RastroSeguro</span>
+</div>
+<nav class="hidden md:flex items-center gap-lg">
+<a class="text-primary font-bold border-b-2 border-primary pb-1 font-headline-md text-headline-md transition-colors" href="#">Evaluador Preliminar de Riesgo</a>
+</nav>
+<div class="flex items-center gap-md">
+<span class="material-symbols-outlined text-primary cursor-pointer hover:text-primary transition-colors">notifications</span>
+<span class="material-symbols-outlined text-primary cursor-pointer hover:text-primary transition-colors">settings</span>
+<div class="w-8 h-8 rounded-full bg-surface-container-high border border-outline-variant overflow-hidden">
+<img alt="Investigator Profile" data-alt="A professional investigator profile portrait in a high-tech corporate setting. The lighting is moody and cinematic with deep navy and slate tones. The individual wears a modern dark suit, conveying authority and analytical expertise. The background is a blurred office with subtle glowing screens and data visualizations." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZxRYSg195fQbO8DeN4ZqWNrRRMZR2Jd_2UGmAdet7iNs_WOlQtif6B3N21FPbDIMSD1f3FWxjUN5bS1B8_cZyKExe5WNwrCketTgkD6miFwxSRfJe0h7L3o5-k0KpoXTEPnTpA4-rUOzXXm2WNWsE4HnhMPhlhs5FjJcZHmbjgxjLr08vNzsrwpObxH83IOy9GXh_BoYT-nADwlGEnV85nYwJaVuYB-5cFHHC668lxzEwjLDfARG3aqvOC-A5f-XUyG_gFAy4"/>
+</div>
+</div>
+</div>
+</header>
+<!-- SideNavBar -->
+<aside class="bg-surface-container dark:bg-surface-container fixed left-0 top-0 h-full w-64 border-r border-outline-variant shadow-md flex flex-col p-md gap-base pt-20">
+<div class="flex items-center gap-sm mb-lg">
+<div class="p-base bg-primary-container rounded-lg">
+<span class="material-symbols-outlined text-primary" data-icon="security" style="font-variation-settings: 'FILL' 1;">security</span>
+</div>
+<div>
+<h2 class="font-headline-md text-body-md font-bold text-primary">RastroSeguro</h2>
+<p class="text-xs text-on-surface-variant">Expert Intelligence</p>
+</div>
+</div>
+<nav class="flex-1 flex flex-col gap-xs">
+<a class="bg-secondary-container text-on-secondary-container rounded-lg font-bold flex items-center gap-sm px-md py-base transition-all scale-98 active:scale-95" href="#">
+<span class="material-symbols-outlined" data-icon="upload_file">upload_file</span>
+<span>Carga</span>
+</a>
+<a class="text-on-surface-variant hover:bg-surface-variant rounded-lg flex items-center gap-sm px-md py-base transition-all scale-98 active:scale-95" href="#">
+<span class="material-symbols-outlined" data-icon="analytics">analytics</span>
+<span>Resumen</span>
+</a>
+<a class="text-on-surface-variant hover:bg-surface-variant rounded-lg flex items-center gap-sm px-md py-base transition-all scale-98 active:scale-95" href="#">
+<span class="material-symbols-outlined" data-icon="psychology">psychology</span>
+<span>Análisis IA</span>
+</a>
+</nav>
+<div class="mt-auto pt-md border-t border-outline-variant">
+<div class="bg-tertiary-container/30 p-sm rounded-xl mb-md">
+<p class="text-[10px] text-on-tertiary-container leading-tight italic">
+                    La IA alerta y explica. No acusa ni rechaza reclamos.
+                </p>
+</div>
+<a class="text-on-surface-variant hover:bg-surface-variant rounded-lg flex items-center gap-sm px-md py-base transition-all mb-xs" href="#">
+<span class="material-symbols-outlined" data-icon="help">help</span>
+<span>Ayuda</span>
+</a>
+<a class="text-on-surface-variant hover:bg-surface-variant rounded-lg flex items-center gap-sm px-md py-base transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="logout">logout</span>
+<span>Cerrar Sesión</span>
+</a>
+</div>
+</aside>
+<!-- Main Content (Slide 1: Carga) -->
+<main class="ml-64 pt-16 pb-20 h-screen flex">
+<!-- Progress Track -->
+<div class="fixed top-16 left-64 right-0 h-1 bg-surface-container-highest z-40">
+<div class="h-full bg-secondary w-1/3 relative">
+<div class="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-3 bg-secondary rounded-full shadow-[0_0_12px_rgba(173,198,255,0.8)]"></div>
+</div>
+</div>
+<div class="w-full h-full flex flex-col md:flex-row">
+<!-- Left Panel: Info -->
+<section class="flex-1 p-lg flex flex-col justify-center max-w-2xl">
+<div class="mb-base">
+<span class="text-secondary font-bold font-label-sm text-label-sm uppercase tracking-widest">Módulo de Ingreso</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface mb-md">Paso 1: Carga de información del siniestro</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-xl leading-relaxed">
+                    Para iniciar el proceso de detección, requerimos el set de datos crudos del incidente. Nuestro motor de IA procesará variables demográficas, históricas y de comportamiento para generar un scoring de riesgo en tiempo real.
+                </p>
+<div class="space-y-md">
+<div class="flex items-start gap-md p-md glass-card rounded-xl">
+<div class="bg-primary-container p-sm rounded-lg">
+<span class="material-symbols-outlined text-primary" data-icon="verified_user">verified_user</span>
+</div>
+<div>
+<h4 class="font-bold text-on-surface">Validación de Estructura</h4>
+<p class="text-sm text-on-surface-variant">Se valida estructura y se prepara para scoring de forma automática.</p>
+</div>
+</div>
+<div class="hidden flex items-start gap-md p-md bg-secondary-container/20 border border-secondary/30 rounded-xl animate-pulse" id="status-received">
+<div class="bg-secondary p-sm rounded-lg">
+<span class="material-symbols-outlined text-on-secondary" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<div>
+<h4 class="font-bold text-secondary">Información recibida</h4>
+<p class="text-sm text-secondary-fixed">Información recibida para análisis preliminar. Procesando variables...</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Right Panel: Uploader -->
+<section class="flex-1 bg-surface-container-low p-lg flex flex-col justify-center items-center">
+<div class="w-full max-w-md space-y-lg">
+<div class="flex flex-col gap-sm">
+<label class="font-label-sm text-label-sm text-outline uppercase">Seleccionar Caso de Prueba</label>
+<div class="relative">
+<select class="w-full bg-slate-950 border border-outline-variant text-on-surface rounded-lg px-md py-base appearance-none focus:ring-2 focus:ring-secondary outline-none">
+<option>Caso demo: Colisión Frontal Multiple</option>
+<option>Caso demo: Robo de Vehículo Estacionado</option>
+<option>Caso demo: Incendio bajo sospecha</option>
+</select>
+<span class="material-symbols-outlined absolute right-md top-1/2 -translate-y-1/2 pointer-events-none text-outline">expand_more</span>
+</div>
+</div>
+<div class="group border-2 border-dashed border-outline-variant rounded-2xl p-xl flex flex-col items-center justify-center gap-md transition-all hover:border-secondary hover:bg-secondary/5 cursor-pointer h-80 relative overflow-hidden" id="drop-zone">
+<div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="bg-surface-container-high p-lg rounded-full mb-base">
+<span class="material-symbols-outlined text-4xl text-primary transition-transform group-hover:scale-110" data-icon="cloud_upload">cloud_upload</span>
+</div>
+<div class="text-center">
+<p class="font-headline-md text-body-md font-bold text-on-surface mb-xs">Subir archivo CSV</p>
+<p class="text-sm text-on-surface-variant">Arrastra y suelta o haz clic para buscar</p>
+</div>
+<button class="mt-md bg-secondary text-on-secondary font-bold px-lg py-base rounded-full shadow-lg hover:brightness-110 transition-all active:scale-95">
+                            Explorar Archivos
+                        </button>
+</div>
+<p class="text-xs text-on-surface-variant text-center px-md italic">
+                        Formatos soportados: .csv, .xlsx. El procesamiento demora aproximadamente 4 segundos por cada 1,000 registros.
+                    </p>
+</div>
+</section>
+</div>
+</main>
+<!-- BottomNavBar -->
+<footer class="bg-surface-dim/80 dark:bg-surface-dim/80 fixed bottom-0 w-full z-50 backdrop-blur-md border-t border-outline-variant shadow-lg">
+<div class="flex justify-between items-center px-lg py-md max-w-container-max mx-auto">
+<div class="flex items-center gap-xs text-on-surface-variant px-md py-base hover:brightness-110 transition-all cursor-not-allowed opacity-50">
+<span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+<span class="font-label-sm text-label-sm">Anterior</span>
+</div>
+<div class="flex items-center gap-md">
+<div class="h-2 w-32 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-secondary w-1/3"></div>
+</div>
+<span class="text-xs text-on-surface-variant font-mono">STEP 01 / 03</span>
+</div>
+<div class="flex items-center gap-xs bg-secondary-container text-on-secondary-container px-md py-base rounded-full hover:brightness-110 transition-all active:scale-95 duration-200 cursor-pointer shadow-lg shadow-secondary-container/20" id="btn-next">
+<span class="font-label-sm text-label-sm">Siguiente</span>
+<span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+</footer>
+<!-- AI Assistant Bubble -->
+<button class="fixed bottom-24 right-8 w-14 h-14 bg-primary text-on-primary rounded-full shadow-xl flex items-center justify-center hover:scale-110 transition-transform z-50 group">
+<span class="material-symbols-outlined" data-icon="smart_toy" style="font-variation-settings: 'FILL' 1;">smart_toy</span>
+<div class="absolute right-16 bg-surface-container-highest text-on-surface text-xs py-2 px-4 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
+            ¿Necesitas ayuda con la carga?
+        </div>
+</button>
+<script>
+        const dropZone = document.getElementById('drop-zone');
+        const statusReceived = document.getElementById('status-received');
+        const btnNext = document.getElementById('btn-next');
+
+        dropZone.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            dropZone.classList.add('drop-zone-active');
+        });
+
+        dropZone.addEventListener('dragleave', () => {
+            dropZone.classList.remove('drop-zone-active');
+        });
+
+        dropZone.addEventListener('drop', (e) => {
+            e.preventDefault();
+            dropZone.classList.remove('drop-zone-active');
+            handleFileSuccess();
+        });
+
+        dropZone.addEventListener('click', () => {
+            handleFileSuccess();
+        });
+
+        function handleFileSuccess() {
+            // Simulate processing
+            dropZone.innerHTML = `
+                <div class="flex flex-col items-center animate-pulse">
+                    <span class="material-symbols-outlined text-4xl text-secondary mb-md" data-icon="sync">sync</span>
+                    <p class="font-bold text-secondary">Procesando estructura...</p>
+                </div>
+            `;
+            
+            setTimeout(() => {
+                dropZone.innerHTML = `
+                    <div class="flex flex-col items-center">
+                        <span class="material-symbols-outlined text-4xl text-emerald-400 mb-md" data-icon="task" style="font-variation-settings: 'FILL' 1;">task</span>
+                        <p class="font-bold text-on-surface">siniestro_2023_v4.csv</p>
+                        <p class="text-sm text-emerald-400">Listo para análisis</p>
+                    </div>
+                `;
+                statusReceived.classList.remove('hidden');
+                btnNext.classList.add('ring-4', 'ring-secondary/50');
+            }, 1500);
+        }
+
+        btnNext.addEventListener('click', () => {
+            if (!statusReceived.classList.contains('hidden')) {
+                alert('Navegando al Resumen de Análisis...');
+            } else {
+                alert('Por favor, cargue un archivo primero.');
+            }
+        });
+    </script>
+</body></html>

@@ -1,0 +1,59 @@
+---
+title: "Exploración de siniestros — RastroSeguro"
+author: "Equipo hackIAthon 2026"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    toc: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
+library(readr)
+library(dplyr)
+library(ggplot2)
+
+root <- if (dir.exists("data")) "." else ".."
+scored <- read_csv(file.path(root, "data/processed/siniestros_scored.csv"), show_col_types = FALSE)
+```
+
+## Distribución del semáforo
+
+```{r}
+scored %>%
+  count(nivel_riesgo, name = "casos") %>%
+  ggplot(aes(x = nivel_riesgo, y = casos, fill = nivel_riesgo)) +
+  geom_col() +
+  theme_minimal() +
+  labs(title = "Casos por nivel de riesgo", x = NULL, y = "Casos")
+```
+
+## Concentración de alertas rojas por proveedor
+
+```{r}
+top_prov <- scored %>%
+  filter(nivel_riesgo == "Rojo") %>%
+  count(id_proveedor, sort = TRUE) %>%
+  mutate(pct_acum = cumsum(n) / sum(n) * 100) %>%
+  head(15)
+
+ggplot(top_prov, aes(x = reorder(id_proveedor, n), y = n)) +
+  geom_col(fill = "#b91c1c") +
+  coord_flip() +
+  theme_minimal() +
+  labs(title = "Top proveedores en casos rojos", x = "Proveedor", y = "Casos rojos")
+```
+
+## Riesgo por ramo
+
+```{r}
+scored %>%
+  group_by(ramo) %>%
+  summarise(
+    casos = n(),
+    score_promedio = round(mean(score_final, na.rm = TRUE), 2),
+    rojos = sum(nivel_riesgo == "Rojo", na.rm = TRUE),
+    .groups = "drop"
+  ) %>%
+  knitr::kable()
+```

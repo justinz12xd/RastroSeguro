@@ -1,0 +1,2150 @@
+{
+  "questions": [
+    {
+      "question": "¿Cuáles son los 10 siniestros con mayor riesgo de posible fraude?",
+      "expected_output": [
+        {
+          "id_siniestro": "SIN-006355",
+          "id_poliza": "POL-06067",
+          "id_asegurado": "ASEG-011526",
+          "ramo": "vehiculos",
+          "cobertura": "robo",
+          "ciudad": "Guayaquil",
+          "id_proveedor": "PROV-172003735500",
+          "beneficiario": "PROV-RUC-1720037355001",
+          "monto_reclamado": 17643.18,
+          "monto_estimado": 14879.64,
+          "monto_pagado": 13617.9,
+          "suma_asegurada": 17855.57,
+          "score_reglas": 95.0,
+          "score_modelo": 99.98,
+          "score_anomalia": 80.0,
+          "score_nlp": 100,
+          "score_grafo": 100.0,
+          "score_categorico": 56.67,
+          "score_final": 87.92,
+          "nivel_riesgo": "Rojo",
+          "alertas_activadas": "[{\"code\": \"RB-002\", \"name\": \"Siniestro cerca del fin de póliza\", \"points\": 4.0, \"severity\": \"media\", \"message\": \"El siniestro ocurrió a 30 días del fin de vigencia.\", \"evidence\": {\"dias_desde_fin_poliza\": 30}, \"category\": \"vigencia\"}, {\"code\": \"RB-003\", \"name\": \"Reporte tardío\", \"points\": 5.0, \"severity\": \"media\", \"message\": \"El siniestro fue reportado 12 días después de la ocurrencia.\", \"evidence\": {\"dias_entre_ocurrencia_reporte\": 12}, \"category\": \"tiempo_reporte\"}, {\"code\": \"RB-004\", \"name\": \"Monto cercano a suma asegurada\", \"points\": 7.0, \"severity\": \"alta\", \"message\": \"El monto reclamado representa el 99% de la suma asegurada.\", \"evidence\": {\"monto_reclamado\": 17643.18, \"suma_asegurada\": 17855.57, \"ratio\": 0.9881}, \"category\": \"monto\"}, {\"code\": \"RB-006\", \"name\": \"Documentos incompletos\", \"points\": 4.0, \"severity\": \"media\", \"message\": \"El expediente documental está incompleto.\", \"evidence\": {\"documentos_completos\": \"No\"}, \"category\": \"documentos\"}, {\"code\": \"RB-008\", \"name\": \"Alta frecuencia de reclamos del asegurado\", \"points\": 8.0, \"severity\": \"alta\", \"message\": \"El asegurado registra 3 siniestros previos.\", \"evidence\": {\"historial_siniestros_asegurado\": 3}, \"category\": \"frecuencia\"}, {\"code\": \"RB-010\", \"name\": \"Proveedor recurrente\", \"points\": 3.0, \"severity\": \"alta\", \"message\": \"El caso está asociado a un proveedor recurrente en casos observados.\", \"evidence\": {\"proveedor_recurrente\": true, \"proveedor_recurrencia_count\": null}, \"category\": \"recurrencia\"}, {\"code\": \"RB-011\", \"name\": \"Beneficiario recurrente\", \"points\": 3.0, \"severity\": \"alta\", \"message\": \"El caso está asociado a un beneficiario recurrente en casos observados.\", \"evidence\": {\"beneficiario_recurrente\": true, \"beneficiario_recurrencia_count\": null}, \"category\": \"recurrencia\"}, {\"code\": \"RF-01\", \"name\": \"Cobertura pérdida total por robo\", \"points\": 12.0, \"severity\": \"critica\", \"message\": \"Robo con monto reclamado cercano a la suma asegurada (posible pérdida total).\", \"evidence\": {\"cobertura\": \"robo\", \"ratio_monto_suma\": 0.9881}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-01\"}, {\"code\": \"RF-02\", \"name\": \"Evidencia de falsificación o adulteración documental\", \"points\": 10.0, \"severity\": \"critica\", \"message\": \"Se registran inconsistencias documentales que sugieren posible falsificación.\", \"evidence\": {\"documentos_inconsistentes\": true}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-02\"}, {\"code\": \"RF-03\", \"name\": \"Coincidencia con lista restrictiva SERCOP\", \"points\": 10.0, \"severity\": \"critica\", \"message\": \"El proveedor o beneficiario coincide con la lista restrictiva SERCOP.\", \"evidence\": {\"supplier_ruc\": 1720037355001, \"lista_restrictiva_sercop\": true}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-03\"}, {\"code\": \"RF-06\", \"name\": \"Demora atípica en denuncia de robo (>4 días)\", \"points\": 8.0, \"severity\": \"alta\", \"message\": \"Denuncia de robo reportada 12 días después del evento.\", \"evidence\": {\"dias_entre_ocurrencia_reporte\": 12, \"cobertura\": \"robo\"}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-06\"}, {\"code\": \"RV-002\", \"name\": \"Vehículo con múltiples siniestros\", \"points\": 6.0, \"severity\": \"alta\", \"message\": \"El vehículo registra 3 siniestros previos.\", \"evidence\": {\"historial_siniestros_vehiculo\": 3}, \"category\": \"vehiculos\"}, {\"code\": \"RV-006\", \"name\": \"Conductor recurrente\", \"points\": 4.0, \"severity\": \"alta\", \"message\": \"El conductor aparece asociado a múltiples siniestros.\", \"evidence\": {\"conductor_recurrente\": true}, \"category\": \"vehiculos\"}, {\"code\": \"RV-007\", \"name\": \"Zona de alta siniestralidad\", \"points\": 3.0, \"severity\": \"baja\", \"message\": \"El evento ocurrió en una zona con alta concentración de siniestros.\", \"evidence\": {\"zona_alta_siniestralidad\": true}, \"category\": \"vehiculos\"}, {\"code\": \"RV-009\", \"name\": \"Demora en denuncia de robo (>48h)\", \"points\": 8.0, \"severity\": \"alta\", \"message\": \"La denuncia de robo se realizó 288 horas (12 días) después del evento.\", \"evidence\": {\"dias_entre_ocurrencia_reporte\": 12, \"horas_demora\": 288, \"cobertura\": \"robo\"}, \"category\": \"vehiculos\"}]",
+          "explicacion": "El siniestro SIN-006355 fue clasificado como Rojo porque acumula señales de riesgo: Robo con monto reclamado cercano a la suma asegurada (posible pérdida total).; Se registran inconsistencias documentales que sugieren posible falsificación.; El proveedor o beneficiario coincide con la lista restrictiva SERCOP.; El asegurado registra 3 siniestros previos.. El resultado es una priorización para revisión humana, no una acusación de fraude.",
+          "accion_sugerida": "Escalar a revisión antifraude especializada antes de continuar el flujo.",
+          "descripcion": "Reporte de robo tardío con inconsistencias en factura y denuncia en Guayaquil.",
+          "fecha_ocurrencia": "2019-07-15",
+          "fecha_reporte": "2019-07-27",
+          "dias_desde_inicio_poliza": 166,
+          "dias_desde_fin_poliza": 30,
+          "dias_entre_ocurrencia_reporte": 12,
+          "documentos_completos": "No",
+          "documentos_inconsistentes": true
+        },
+        {
+          "id_siniestro": "SIN-009667",
+          "id_poliza": "POL-05751",
+          "id_asegurado": "ASEG-008933",
+          "ramo": "vehiculos",
+          "cobertura": "robo",
+          "ciudad": "Guayaquil",
+          "id_proveedor": "PROV-179257379300",
+          "beneficiario": "PROV-RUC-1792573793001",
+          "monto_reclamado": 22102.26,
+          "monto_estimado": 20672.59,
+          "monto_pagado": 7402.71,
+          "suma_asegurada": 24807.11,
+          "score_reglas": 88.0,
+          "score_modelo": 98.24,
+          "score_anomalia": 80.0,
+          "score_nlp": 100,
+          "score_grafo": 100.0,
+          "score_categorico": 90.0,
+          "score_final": 87.61,
+          "nivel_riesgo": "Rojo",
+          "alertas_activadas": "[{\"code\": \"RB-003\", \"name\": \"Reporte tardío\", \"points\": 5.0, \"severity\": \"media\", \"message\": \"El siniestro fue reportado 8 días después de la ocurrencia.\", \"evidence\": {\"dias_entre_ocurrencia_reporte\": 8}, \"category\": \"tiempo_reporte\"}, {\"code\": \"RB-005\", \"name\": \"Monto elevado frente a suma asegurada\", \"points\": 4.0, \"severity\": \"media\", \"message\": \"El monto reclamado representa el 89% de la suma asegurada.\", \"evidence\": {\"monto_reclamado\": 22102.26, \"suma_asegurada\": 24807.11, \"ratio\": 0.891}, \"category\": \"monto\"}, {\"code\": \"RB-006\", \"name\": \"Documentos incompletos\", \"points\": 4.0, \"severity\": \"media\", \"message\": \"El expediente documental está incompleto.\", \"evidence\": {\"documentos_completos\": \"No\"}, \"category\": \"documentos\"}, {\"code\": \"RB-008\", \"name\": \"Alta frecuencia de reclamos del asegurado\", \"points\": 8.0, \"severity\": \"alta\", \"message\": \"El asegurado registra 3 siniestros previos.\", \"evidence\": {\"historial_siniestros_asegurado\": 3}, \"category\": \"frecuencia\"}, {\"code\": \"RB-010\", \"name\": \"Proveedor recurrente\", \"points\": 3.0, \"severity\": \"alta\", \"message\": \"El caso está asociado a un proveedor recurrente en casos observados.\", \"evidence\": {\"proveedor_recurrente\": true, \"proveedor_recurrencia_count\": null}, \"category\": \"recurrencia\"}, {\"code\": \"RB-011\", \"name\": \"Beneficiario recurrente\", \"points\": 3.0, \"severity\": \"alta\", \"message\": \"El caso está asociado a un beneficiario recurrente en casos observados.\", \"evidence\": {\"beneficiario_recurrente\": true, \"beneficiario_recurrencia_count\": null}, \"category\": \"recurrencia\"}, {\"code\": \"RF-01\", \"name\": \"Cobertura pérdida total por robo\", \"points\": 12.0, \"severity\": \"critica\", \"message\": \"Robo con monto reclamado cercano a la suma asegurada (posible pérdida total).\", \"evidence\": {\"cobertura\": \"robo\", \"ratio_monto_suma\": 0.891}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-01\"}, {\"code\": \"RF-02\", \"name\": \"Evidencia de falsificación o adulteración documental\", \"points\": 10.0, \"severity\": \"critica\", \"message\": \"Se registran inconsistencias documentales que sugieren posible falsificación.\", \"evidence\": {\"documentos_inconsistentes\": true}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-02\"}, {\"code\": \"RF-03\", \"name\": \"Coincidencia con lista restrictiva SERCOP\", \"points\": 10.0, \"severity\": \"critica\", \"message\": \"El proveedor o beneficiario coincide con la lista restrictiva SERCOP.\", \"evidence\": {\"supplier_ruc\": 1792573793001, \"lista_restrictiva_sercop\": true}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-03\"}, {\"code\": \"RF-06\", \"name\": \"Demora atípica en denuncia de robo (>4 días)\", \"points\": 8.0, \"severity\": \"alta\", \"message\": \"Denuncia de robo reportada 8 días después del evento.\", \"evidence\": {\"dias_entre_ocurrencia_reporte\": 8, \"cobertura\": \"robo\"}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-06\"}, {\"code\": \"RV-002\", \"name\": \"Vehículo con múltiples siniestros\", \"points\": 6.0, \"severity\": \"alta\", \"message\": \"El vehículo registra 3 siniestros previos.\", \"evidence\": {\"historial_siniestros_vehiculo\": 3}, \"category\": \"vehiculos\"}, {\"code\": \"RV-006\", \"name\": \"Conductor recurrente\", \"points\": 4.0, \"severity\": \"alta\", \"message\": \"El conductor aparece asociado a múltiples siniestros.\", \"evidence\": {\"conductor_recurrente\": true}, \"category\": \"vehiculos\"}, {\"code\": \"RV-007\", \"name\": \"Zona de alta siniestralidad\", \"points\": 3.0, \"severity\": \"baja\", \"message\": \"El evento ocurrió en una zona con alta concentración de siniestros.\", \"evidence\": {\"zona_alta_siniestralidad\": true}, \"category\": \"vehiculos\"}, {\"code\": \"RV-009\", \"name\": \"Demora en denuncia de robo (>48h)\", \"points\": 8.0, \"severity\": \"alta\", \"message\": \"La denuncia de robo se realizó 192 horas (8 días) después del evento.\", \"evidence\": {\"dias_entre_ocurrencia_reporte\": 8, \"horas_demora\": 192, \"cobertura\": \"robo\"}, \"category\": \"vehiculos\"}]",
+          "explicacion": "El siniestro SIN-009667 fue clasificado como Rojo porque acumula señales de riesgo: Robo con monto reclamado cercano a la suma asegurada (posible pérdida total).; Se registran inconsistencias documentales que sugieren posible falsificación.; El proveedor o beneficiario coincide con la lista restrictiva SERCOP.; El asegurado registra 3 siniestros previos.. El resultado es una priorización para revisión humana, no una acusación de fraude.",
+          "accion_sugerida": "Escalar a revisión antifraude especializada antes de continuar el flujo.",
+          "descripcion": "Vehículo impactado por tercero no identificado sin evidencia de cámaras en Guayaquil.",
+          "fecha_ocurrencia": "2024-08-03",
+          "fecha_reporte": "2024-08-11",
+          "dias_desde_inicio_poliza": 145,
+          "dias_desde_fin_poliza": -21,
+          "dias_entre_ocurrencia_reporte": 8,
+          "documentos_completos": "No",
+          "documentos_inconsistentes": true
+        },
+        {
+          "id_siniestro": "SIN-008677",
+          "id_poliza": "POL-04565",
+          "id_asegurado": "ASEG-003418",
+          "ramo": "vehiculos",
+          "cobertura": "robo",
+          "ciudad": "Guayaquil",
+          "id_proveedor": "PROV-110382122700",
+          "beneficiario": "PROV-RUC-1103821227001",
+          "monto_reclamado": 19672.36,
+          "monto_estimado": 14764.54,
+          "monto_pagado": 8772.45,
+          "suma_asegurada": 17717.45,
+          "score_reglas": 81.0,
+          "score_modelo": 99.14,
+          "score_anomalia": 80.0,
+          "score_nlp": 100,
+          "score_grafo": 100.0,
+          "score_categorico": 90.0,
+          "score_final": 86.96,
+          "nivel_riesgo": "Rojo",
+          "alertas_activadas": "[{\"code\": \"RB-003\", \"name\": \"Reporte tardío\", \"points\": 3.0, \"severity\": \"baja\", \"message\": \"El siniestro fue reportado 4 días después de la ocurrencia.\", \"evidence\": {\"dias_entre_ocurrencia_reporte\": 4}, \"category\": \"tiempo_reporte\"}, {\"code\": \"RB-004\", \"name\": \"Monto cercano a suma asegurada\", \"points\": 7.0, \"severity\": \"alta\", \"message\": \"El monto reclamado representa el 111% de la suma asegurada.\", \"evidence\": {\"monto_reclamado\": 19672.36, \"suma_asegurada\": 17717.45, \"ratio\": 1.1103}, \"category\": \"monto\"}, {\"code\": \"RB-006\", \"name\": \"Documentos incompletos\", \"points\": 4.0, \"severity\": \"media\", \"message\": \"El expediente documental está incompleto.\", \"evidence\": {\"documentos_completos\": \"No\"}, \"category\": \"documentos\"}, {\"code\": \"RB-008\", \"name\": \"Alta frecuencia de reclamos del asegurado\", \"points\": 8.0, \"severity\": \"alta\", \"message\": \"El asegurado registra 4 siniestros previos.\", \"evidence\": {\"historial_siniestros_asegurado\": 4}, \"category\": \"frecuencia\"}, {\"code\": \"RB-010\", \"name\": \"Proveedor recurrente\", \"points\": 3.0, \"severity\": \"alta\", \"message\": \"El caso está asociado a un proveedor recurrente en casos observados.\", \"evidence\": {\"proveedor_recurrente\": true, \"proveedor_recurrencia_count\": null}, \"category\": \"recurrencia\"}, {\"code\": \"RB-011\", \"name\": \"Beneficiario recurrente\", \"points\": 3.0, \"severity\": \"alta\", \"message\": \"El caso está asociado a un beneficiario recurrente en casos observados.\", \"evidence\": {\"beneficiario_recurrente\": true, \"beneficiario_recurrencia_count\": null}, \"category\": \"recurrencia\"}, {\"code\": \"RF-01\", \"name\": \"Cobertura pérdida total por robo\", \"points\": 12.0, \"severity\": \"critica\", \"message\": \"Robo con monto reclamado cercano a la suma asegurada (posible pérdida total).\", \"evidence\": {\"cobertura\": \"robo\", \"ratio_monto_suma\": 1.1103}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-01\"}, {\"code\": \"RF-02\", \"name\": \"Evidencia de falsificación o adulteración documental\", \"points\": 10.0, \"severity\": \"critica\", \"message\": \"Se registran inconsistencias documentales que sugieren posible falsificación.\", \"evidence\": {\"documentos_inconsistentes\": true}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-02\"}, {\"code\": \"RF-03\", \"name\": \"Coincidencia con lista restrictiva SERCOP\", \"points\": 10.0, \"severity\": \"critica\", \"message\": \"El proveedor o beneficiario coincide con la lista restrictiva SERCOP.\", \"evidence\": {\"supplier_ruc\": 1103821227001, \"lista_restrictiva_sercop\": true}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-03\"}, {\"code\": \"RV-002\", \"name\": \"Vehículo con múltiples siniestros\", \"points\": 6.0, \"severity\": \"alta\", \"message\": \"El vehículo registra 4 siniestros previos.\", \"evidence\": {\"historial_siniestros_vehiculo\": 4}, \"category\": \"vehiculos\"}, {\"code\": \"RV-006\", \"name\": \"Conductor recurrente\", \"points\": 4.0, \"severity\": \"alta\", \"message\": \"El conductor aparece asociado a múltiples siniestros.\", \"evidence\": {\"conductor_recurrente\": true}, \"category\": \"vehiculos\"}, {\"code\": \"RV-007\", \"name\": \"Zona de alta siniestralidad\", \"points\": 3.0, \"severity\": \"baja\", \"message\": \"El evento ocurrió en una zona con alta concentración de siniestros.\", \"evidence\": {\"zona_alta_siniestralidad\": true}, \"category\": \"vehiculos\"}, {\"code\": \"RV-009\", \"name\": \"Demora en denuncia de robo (>48h)\", \"points\": 8.0, \"severity\": \"alta\", \"message\": \"La denuncia de robo se realizó 96 horas (4 días) después del evento.\", \"evidence\": {\"dias_entre_ocurrencia_reporte\": 4, \"horas_demora\": 96, \"cobertura\": \"robo\"}, \"category\": \"vehiculos\"}]",
+          "explicacion": "El siniestro SIN-008677 fue clasificado como Rojo porque acumula señales de riesgo: Robo con monto reclamado cercano a la suma asegurada (posible pérdida total).; Se registran inconsistencias documentales que sugieren posible falsificación.; El proveedor o beneficiario coincide con la lista restrictiva SERCOP.; El asegurado registra 4 siniestros previos.. El resultado es una priorización para revisión humana, no una acusación de fraude.",
+          "accion_sugerida": "Escalar a revisión antifraude especializada antes de continuar el flujo.",
+          "descripcion": "Vehículo impactado por tercero no identificado sin evidencia de cámaras en Guayaquil.",
+          "fecha_ocurrencia": "2020-05-01",
+          "fecha_reporte": "2020-05-05",
+          "dias_desde_inicio_poliza": 346,
+          "dias_desde_fin_poliza": -15,
+          "dias_entre_ocurrencia_reporte": 4,
+          "documentos_completos": "No",
+          "documentos_inconsistentes": true
+        },
+        {
+          "id_siniestro": "SIN-008905",
+          "id_poliza": "POL-04850",
+          "id_asegurado": "ASEG-008304",
+          "ramo": "vehiculos",
+          "cobertura": "robo",
+          "ciudad": "Guayaquil",
+          "id_proveedor": "PROV-179198629600",
+          "beneficiario": "PROV-RUC-1791986296001",
+          "monto_reclamado": 19210.85,
+          "monto_estimado": 16106.57,
+          "monto_pagado": 11732.9,
+          "suma_asegurada": 19327.88,
+          "score_reglas": 89.0,
+          "score_modelo": 90.87,
+          "score_anomalia": 80.0,
+          "score_nlp": 100,
+          "score_grafo": 100.0,
+          "score_categorico": 56.67,
+          "score_final": 86.49,
+          "nivel_riesgo": "Rojo",
+          "alertas_activadas": "[{\"code\": \"RB-001\", \"name\": \"Siniestro cerca del inicio de póliza\", \"points\": 8.0, \"severity\": \"alta\", \"message\": \"El siniestro ocurrió 4 días después del inicio de la póliza.\", \"evidence\": {\"dias_desde_inicio_poliza\": 4}, \"category\": \"vigencia\"}, {\"code\": \"RB-003\", \"name\": \"Reporte tardío\", \"points\": 3.0, \"severity\": \"baja\", \"message\": \"El siniestro fue reportado 6 días después de la ocurrencia.\", \"evidence\": {\"dias_entre_ocurrencia_reporte\": 6}, \"category\": \"tiempo_reporte\"}, {\"code\": \"RB-004\", \"name\": \"Monto cercano a suma asegurada\", \"points\": 7.0, \"severity\": \"alta\", \"message\": \"El monto reclamado representa el 99% de la suma asegurada.\", \"evidence\": {\"monto_reclamado\": 19210.85, \"suma_asegurada\": 19327.88, \"ratio\": 0.9939}, \"category\": \"monto\"}, {\"code\": \"RB-006\", \"name\": \"Documentos incompletos\", \"points\": 4.0, \"severity\": \"media\", \"message\": \"El expediente documental está incompleto.\", \"evidence\": {\"documentos_completos\": \"No\"}, \"category\": \"documentos\"}, {\"code\": \"RB-010\", \"name\": \"Proveedor recurrente\", \"points\": 3.0, \"severity\": \"alta\", \"message\": \"El caso está asociado a un proveedor recurrente en casos observados.\", \"evidence\": {\"proveedor_recurrente\": true, \"proveedor_recurrencia_count\": null}, \"category\": \"recurrencia\"}, {\"code\": \"RB-011\", \"name\": \"Beneficiario recurrente\", \"points\": 3.0, \"severity\": \"alta\", \"message\": \"El caso está asociado a un beneficiario recurrente en casos observados.\", \"evidence\": {\"beneficiario_recurrente\": true, \"beneficiario_recurrencia_count\": null}, \"category\": \"recurrencia\"}, {\"code\": \"RF-01\", \"name\": \"Cobertura pérdida total por robo\", \"points\": 12.0, \"severity\": \"critica\", \"message\": \"Robo con monto reclamado cercano a la suma asegurada (posible pérdida total).\", \"evidence\": {\"cobertura\": \"robo\", \"ratio_monto_suma\": 0.9939}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-01\"}, {\"code\": \"RF-02\", \"name\": \"Evidencia de falsificación o adulteración documental\", \"points\": 10.0, \"severity\": \"critica\", \"message\": \"Se registran inconsistencias documentales que sugieren posible falsificación.\", \"evidence\": {\"documentos_inconsistentes\": true}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-02\"}, {\"code\": \"RF-03\", \"name\": \"Coincidencia con lista restrictiva SERCOP\", \"points\": 10.0, \"severity\": \"critica\", \"message\": \"El proveedor o beneficiario coincide con la lista restrictiva SERCOP.\", \"evidence\": {\"supplier_ruc\": 1791986296001, \"lista_restrictiva_sercop\": true}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-03\"}, {\"code\": \"RF-06\", \"name\": \"Demora atípica en denuncia de robo (>4 días)\", \"points\": 8.0, \"severity\": \"alta\", \"message\": \"Denuncia de robo reportada 6 días después del evento.\", \"evidence\": {\"dias_entre_ocurrencia_reporte\": 6, \"cobertura\": \"robo\"}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-06\"}, {\"code\": \"RV-001\", \"name\": \"Robo cercano al inicio de póliza\", \"points\": 10.0, \"severity\": \"critica\", \"message\": \"El evento de robo ocurrió 4 días después del inicio de la póliza.\", \"evidence\": {\"tipo_evento\": \"robo\", \"dias_desde_inicio_poliza\": 4}, \"category\": \"vehiculos\"}, {\"code\": \"RV-007\", \"name\": \"Zona de alta siniestralidad\", \"points\": 3.0, \"severity\": \"baja\", \"message\": \"El evento ocurrió en una zona con alta concentración de siniestros.\", \"evidence\": {\"zona_alta_siniestralidad\": true}, \"category\": \"vehiculos\"}, {\"code\": \"RV-009\", \"name\": \"Demora en denuncia de robo (>48h)\", \"points\": 8.0, \"severity\": \"alta\", \"message\": \"La denuncia de robo se realizó 144 horas (6 días) después del evento.\", \"evidence\": {\"dias_entre_ocurrencia_reporte\": 6, \"horas_demora\": 144, \"cobertura\": \"robo\"}, \"category\": \"vehiculos\"}]",
+          "explicacion": "El siniestro SIN-008905 fue clasificado como Rojo porque acumula señales de riesgo: Robo con monto reclamado cercano a la suma asegurada (posible pérdida total).; Se registran inconsistencias documentales que sugieren posible falsificación.; El proveedor o beneficiario coincide con la lista restrictiva SERCOP.; El evento de robo ocurrió 4 días después del inicio de la póliza.. El resultado es una priorización para revisión humana, no una acusación de fraude.",
+          "accion_sugerida": "Escalar a revisión antifraude especializada antes de continuar el flujo.",
+          "descripcion": "Vehículo impactado por tercero no identificado sin evidencia de cámaras en Guayaquil.",
+          "fecha_ocurrencia": "2024-10-10",
+          "fecha_reporte": "2024-10-16",
+          "dias_desde_inicio_poliza": 4,
+          "dias_desde_fin_poliza": 250,
+          "dias_entre_ocurrencia_reporte": 6,
+          "documentos_completos": "No",
+          "documentos_inconsistentes": true
+        },
+        {
+          "id_siniestro": "SIN-002023",
+          "id_poliza": "POL-00105",
+          "id_asegurado": "ASEG-006857",
+          "ramo": "vehiculos",
+          "cobertura": "robo",
+          "ciudad": "Guayaquil",
+          "id_proveedor": "PROV-119173386600",
+          "beneficiario": "PROV-RUC-1191733866001",
+          "monto_reclamado": 13388.03,
+          "monto_estimado": 11645.31,
+          "monto_pagado": 9386.28,
+          "suma_asegurada": 13974.37,
+          "score_reglas": 77.0,
+          "score_modelo": 98.19,
+          "score_anomalia": 80.0,
+          "score_nlp": 100,
+          "score_grafo": 100.0,
+          "score_categorico": 90.0,
+          "score_final": 86.45,
+          "nivel_riesgo": "Rojo",
+          "alertas_activadas": "[{\"code\": \"RB-001\", \"name\": \"Siniestro cerca del inicio de póliza\", \"points\": 4.0, \"severity\": \"media\", \"message\": \"El siniestro ocurrió 22 días después del inicio de la póliza.\", \"evidence\": {\"dias_desde_inicio_poliza\": 22}, \"category\": \"vigencia\"}, {\"code\": \"RB-003\", \"name\": \"Reporte tardío\", \"points\": 5.0, \"severity\": \"media\", \"message\": \"El siniestro fue reportado 17 días después de la ocurrencia.\", \"evidence\": {\"dias_entre_ocurrencia_reporte\": 17}, \"category\": \"tiempo_reporte\"}, {\"code\": \"RB-004\", \"name\": \"Monto cercano a suma asegurada\", \"points\": 7.0, \"severity\": \"alta\", \"message\": \"El monto reclamado representa el 96% de la suma asegurada.\", \"evidence\": {\"monto_reclamado\": 13388.03, \"suma_asegurada\": 13974.37, \"ratio\": 0.958}, \"category\": \"monto\"}, {\"code\": \"RB-006\", \"name\": \"Documentos incompletos\", \"points\": 4.0, \"severity\": \"media\", \"message\": \"El expediente documental está incompleto.\", \"evidence\": {\"documentos_completos\": \"No\"}, \"category\": \"documentos\"}, {\"code\": \"RB-010\", \"name\": \"Proveedor recurrente\", \"points\": 3.0, \"severity\": \"alta\", \"message\": \"El caso está asociado a un proveedor recurrente en casos observados.\", \"evidence\": {\"proveedor_recurrente\": true, \"proveedor_recurrencia_count\": null}, \"category\": \"recurrencia\"}, {\"code\": \"RB-011\", \"name\": \"Beneficiario recurrente\", \"points\": 3.0, \"severity\": \"alta\", \"message\": \"El caso está asociado a un beneficiario recurrente en casos observados.\", \"evidence\": {\"beneficiario_recurrente\": true, \"beneficiario_recurrencia_count\": null}, \"category\": \"recurrencia\"}, {\"code\": \"RF-01\", \"name\": \"Cobertura pérdida total por robo\", \"points\": 12.0, \"severity\": \"critica\", \"message\": \"Robo con monto reclamado cercano a la suma asegurada (posible pérdida total).\", \"evidence\": {\"cobertura\": \"robo\", \"ratio_monto_suma\": 0.958}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-01\"}, {\"code\": \"RF-02\", \"name\": \"Evidencia de falsificación o adulteración documental\", \"points\": 10.0, \"severity\": \"critica\", \"message\": \"Se registran inconsistencias documentales que sugieren posible falsificación.\", \"evidence\": {\"documentos_inconsistentes\": true}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-02\"}, {\"code\": \"RF-03\", \"name\": \"Coincidencia con lista restrictiva SERCOP\", \"points\": 10.0, \"severity\": \"critica\", \"message\": \"El proveedor o beneficiario coincide con la lista restrictiva SERCOP.\", \"evidence\": {\"supplier_ruc\": 1191733866001, \"lista_restrictiva_sercop\": true}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-03\"}, {\"code\": \"RF-06\", \"name\": \"Demora atípica en denuncia de robo (>4 días)\", \"points\": 8.0, \"severity\": \"alta\", \"message\": \"Denuncia de robo reportada 17 días después del evento.\", \"evidence\": {\"dias_entre_ocurrencia_reporte\": 17, \"cobertura\": \"robo\"}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-06\"}, {\"code\": \"RV-007\", \"name\": \"Zona de alta siniestralidad\", \"points\": 3.0, \"severity\": \"baja\", \"message\": \"El evento ocurrió en una zona con alta concentración de siniestros.\", \"evidence\": {\"zona_alta_siniestralidad\": true}, \"category\": \"vehiculos\"}, {\"code\": \"RV-009\", \"name\": \"Demora en denuncia de robo (>48h)\", \"points\": 8.0, \"severity\": \"alta\", \"message\": \"La denuncia de robo se realizó 408 horas (17 días) después del evento.\", \"evidence\": {\"dias_entre_ocurrencia_reporte\": 17, \"horas_demora\": 408, \"cobertura\": \"robo\"}, \"category\": \"vehiculos\"}]",
+          "explicacion": "El siniestro SIN-002023 fue clasificado como Rojo porque acumula señales de riesgo: Robo con monto reclamado cercano a la suma asegurada (posible pérdida total).; Se registran inconsistencias documentales que sugieren posible falsificación.; El proveedor o beneficiario coincide con la lista restrictiva SERCOP.; Denuncia de robo reportada 17 días después del evento.. El resultado es una priorización para revisión humana, no una acusación de fraude.",
+          "accion_sugerida": "Escalar a revisión antifraude especializada antes de continuar el flujo.",
+          "descripcion": "Vehículo impactado por tercero no identificado sin evidencia de cámaras en Guayaquil.",
+          "fecha_ocurrencia": "2020-08-26",
+          "fecha_reporte": "2020-09-12",
+          "dias_desde_inicio_poliza": 22,
+          "dias_desde_fin_poliza": 87,
+          "dias_entre_ocurrencia_reporte": 17,
+          "documentos_completos": "No",
+          "documentos_inconsistentes": true
+        },
+        {
+          "id_siniestro": "SIN-012427",
+          "id_poliza": "POL-02432",
+          "id_asegurado": "ASEG-002434",
+          "ramo": "vehiculos",
+          "cobertura": "robo",
+          "ciudad": "Guayaquil",
+          "id_proveedor": "PROV-119173386600",
+          "beneficiario": "PROV-RUC-1191733866001",
+          "monto_reclamado": 20212.71,
+          "monto_estimado": 19505.56,
+          "monto_pagado": 9317.65,
+          "suma_asegurada": 23406.67,
+          "score_reglas": 78.0,
+          "score_modelo": 94.9,
+          "score_anomalia": 80.0,
+          "score_nlp": 100,
+          "score_grafo": 100.0,
+          "score_categorico": 90.0,
+          "score_final": 86.27,
+          "nivel_riesgo": "Rojo",
+          "alertas_activadas": "[{\"code\": \"RB-003\", \"name\": \"Reporte tardío\", \"points\": 5.0, \"severity\": \"media\", \"message\": \"El siniestro fue reportado 15 días después de la ocurrencia.\", \"evidence\": {\"dias_entre_ocurrencia_reporte\": 15}, \"category\": \"tiempo_reporte\"}, {\"code\": \"RB-005\", \"name\": \"Monto elevado frente a suma asegurada\", \"points\": 4.0, \"severity\": \"media\", \"message\": \"El monto reclamado representa el 86% de la suma asegurada.\", \"evidence\": {\"monto_reclamado\": 20212.71, \"suma_asegurada\": 23406.67, \"ratio\": 0.8635}, \"category\": \"monto\"}, {\"code\": \"RB-006\", \"name\": \"Documentos incompletos\", \"points\": 4.0, \"severity\": \"media\", \"message\": \"El expediente documental está incompleto.\", \"evidence\": {\"documentos_completos\": \"No\"}, \"category\": \"documentos\"}, {\"code\": \"RB-010\", \"name\": \"Proveedor recurrente\", \"points\": 3.0, \"severity\": \"alta\", \"message\": \"El caso está asociado a un proveedor recurrente en casos observados.\", \"evidence\": {\"proveedor_recurrente\": true, \"proveedor_recurrencia_count\": null}, \"category\": \"recurrencia\"}, {\"code\": \"RB-011\", \"name\": \"Beneficiario recurrente\", \"points\": 3.0, \"severity\": \"alta\", \"message\": \"El caso está asociado a un beneficiario recurrente en casos observados.\", \"evidence\": {\"beneficiario_recurrente\": true, \"beneficiario_recurrencia_count\": null}, \"category\": \"recurrencia\"}, {\"code\": \"RF-01\", \"name\": \"Cobertura pérdida total por robo\", \"points\": 12.0, \"severity\": \"critica\", \"message\": \"Robo con monto reclamado cercano a la suma asegurada (posible pérdida total).\", \"evidence\": {\"cobertura\": \"robo\", \"ratio_monto_suma\": 0.8635}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-01\"}, {\"code\": \"RF-02\", \"name\": \"Evidencia de falsificación o adulteración documental\", \"points\": 10.0, \"severity\": \"critica\", \"message\": \"Se registran inconsistencias documentales que sugieren posible falsificación.\", \"evidence\": {\"documentos_inconsistentes\": true}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-02\"}, {\"code\": \"RF-03\", \"name\": \"Coincidencia con lista restrictiva SERCOP\", \"points\": 10.0, \"severity\": \"critica\", \"message\": \"El proveedor o beneficiario coincide con la lista restrictiva SERCOP.\", \"evidence\": {\"supplier_ruc\": 1191733866001, \"lista_restrictiva_sercop\": true}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-03\"}, {\"code\": \"RF-06\", \"name\": \"Demora atípica en denuncia de robo (>4 días)\", \"points\": 8.0, \"severity\": \"alta\", \"message\": \"Denuncia de robo reportada 15 días después del evento.\", \"evidence\": {\"dias_entre_ocurrencia_reporte\": 15, \"cobertura\": \"robo\"}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-06\"}, {\"code\": \"RF-07\", \"name\": \"Narrativa idéntica o clonada\", \"points\": 8.0, \"severity\": \"alta\", \"message\": \"Se detectó narrativa similar a otros reclamos del portafolio.\", \"evidence\": {\"alerta_narrativa\": true, \"explicacion_nlp\": \"Narrativa similar a SIN-006689 con 100% de similitud. Esto sugiere revisar posible repetición de relato o patrón operativo.\"}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-07\"}, {\"code\": \"RV-007\", \"name\": \"Zona de alta siniestralidad\", \"points\": 3.0, \"severity\": \"baja\", \"message\": \"El evento ocurrió en una zona con alta concentración de siniestros.\", \"evidence\": {\"zona_alta_siniestralidad\": true}, \"category\": \"vehiculos\"}, {\"code\": \"RV-009\", \"name\": \"Demora en denuncia de robo (>48h)\", \"points\": 8.0, \"severity\": \"alta\", \"message\": \"La denuncia de robo se realizó 360 horas (15 días) después del evento.\", \"evidence\": {\"dias_entre_ocurrencia_reporte\": 15, \"horas_demora\": 360, \"cobertura\": \"robo\"}, \"category\": \"vehiculos\"}]",
+          "explicacion": "El siniestro SIN-012427 fue clasificado como Rojo porque acumula señales de riesgo: Robo con monto reclamado cercano a la suma asegurada (posible pérdida total).; Se registran inconsistencias documentales que sugieren posible falsificación.; El proveedor o beneficiario coincide con la lista restrictiva SERCOP.; Denuncia de robo reportada 15 días después del evento.. El resultado es una priorización para revisión humana, no una acusación de fraude.",
+          "accion_sugerida": "Escalar a revisión antifraude especializada antes de continuar el flujo.",
+          "descripcion": "Reclamo recurrente con narrativa similar y proveedor observado en Guayaquil.",
+          "fecha_ocurrencia": "2024-11-02",
+          "fecha_reporte": "2024-11-17",
+          "dias_desde_inicio_poliza": 132,
+          "dias_desde_fin_poliza": -48,
+          "dias_entre_ocurrencia_reporte": 15,
+          "documentos_completos": "No",
+          "documentos_inconsistentes": true
+        },
+        {
+          "id_siniestro": "SIN-014665",
+          "id_poliza": "POL-00721",
+          "id_asegurado": "ASEG-000926",
+          "ramo": "vehiculos",
+          "cobertura": "robo",
+          "ciudad": "Guayaquil",
+          "id_proveedor": "PROV-170972199500",
+          "beneficiario": "PROV-RUC-1709721995001",
+          "monto_reclamado": 19430.95,
+          "monto_estimado": 17462.53,
+          "monto_pagado": 4158.77,
+          "suma_asegurada": 20955.04,
+          "score_reglas": 78.0,
+          "score_modelo": 99.14,
+          "score_anomalia": 80.0,
+          "score_nlp": 100,
+          "score_grafo": 100.0,
+          "score_categorico": 56.67,
+          "score_final": 86.06,
+          "nivel_riesgo": "Rojo",
+          "alertas_activadas": "[{\"code\": \"RB-002\", \"name\": \"Siniestro cerca del fin de póliza\", \"points\": 4.0, \"severity\": \"media\", \"message\": \"El siniestro ocurrió a 15 días del fin de vigencia.\", \"evidence\": {\"dias_desde_fin_poliza\": 15}, \"category\": \"vigencia\"}, {\"code\": \"RB-003\", \"name\": \"Reporte tardío\", \"points\": 5.0, \"severity\": \"media\", \"message\": \"El siniestro fue reportado 11 días después de la ocurrencia.\", \"evidence\": {\"dias_entre_ocurrencia_reporte\": 11}, \"category\": \"tiempo_reporte\"}, {\"code\": \"RB-005\", \"name\": \"Monto elevado frente a suma asegurada\", \"points\": 4.0, \"severity\": \"media\", \"message\": \"El monto reclamado representa el 93% de la suma asegurada.\", \"evidence\": {\"monto_reclamado\": 19430.95, \"suma_asegurada\": 20955.04, \"ratio\": 0.9273}, \"category\": \"monto\"}, {\"code\": \"RB-008\", \"name\": \"Alta frecuencia de reclamos del asegurado\", \"points\": 8.0, \"severity\": \"alta\", \"message\": \"El asegurado registra 3 siniestros previos.\", \"evidence\": {\"historial_siniestros_asegurado\": 3}, \"category\": \"frecuencia\"}, {\"code\": \"RB-010\", \"name\": \"Proveedor recurrente\", \"points\": 3.0, \"severity\": \"alta\", \"message\": \"El caso está asociado a un proveedor recurrente en casos observados.\", \"evidence\": {\"proveedor_recurrente\": true, \"proveedor_recurrencia_count\": null}, \"category\": \"recurrencia\"}, {\"code\": \"RB-011\", \"name\": \"Beneficiario recurrente\", \"points\": 3.0, \"severity\": \"alta\", \"message\": \"El caso está asociado a un beneficiario recurrente en casos observados.\", \"evidence\": {\"beneficiario_recurrente\": true, \"beneficiario_recurrencia_count\": null}, \"category\": \"recurrencia\"}, {\"code\": \"RF-01\", \"name\": \"Cobertura pérdida total por robo\", \"points\": 12.0, \"severity\": \"critica\", \"message\": \"Robo con monto reclamado cercano a la suma asegurada (posible pérdida total).\", \"evidence\": {\"cobertura\": \"robo\", \"ratio_monto_suma\": 0.9273}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-01\"}, {\"code\": \"RF-03\", \"name\": \"Coincidencia con lista restrictiva SERCOP\", \"points\": 10.0, \"severity\": \"critica\", \"message\": \"El proveedor o beneficiario coincide con la lista restrictiva SERCOP.\", \"evidence\": {\"supplier_ruc\": 1709721995001, \"lista_restrictiva_sercop\": true}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-03\"}, {\"code\": \"RF-06\", \"name\": \"Demora atípica en denuncia de robo (>4 días)\", \"points\": 8.0, \"severity\": \"alta\", \"message\": \"Denuncia de robo reportada 11 días después del evento.\", \"evidence\": {\"dias_entre_ocurrencia_reporte\": 11, \"cobertura\": \"robo\"}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-06\"}, {\"code\": \"RV-002\", \"name\": \"Vehículo con múltiples siniestros\", \"points\": 6.0, \"severity\": \"alta\", \"message\": \"El vehículo registra 3 siniestros previos.\", \"evidence\": {\"historial_siniestros_vehiculo\": 3}, \"category\": \"vehiculos\"}, {\"code\": \"RV-006\", \"name\": \"Conductor recurrente\", \"points\": 4.0, \"severity\": \"alta\", \"message\": \"El conductor aparece asociado a múltiples siniestros.\", \"evidence\": {\"conductor_recurrente\": true}, \"category\": \"vehiculos\"}, {\"code\": \"RV-007\", \"name\": \"Zona de alta siniestralidad\", \"points\": 3.0, \"severity\": \"baja\", \"message\": \"El evento ocurrió en una zona con alta concentración de siniestros.\", \"evidence\": {\"zona_alta_siniestralidad\": true}, \"category\": \"vehiculos\"}, {\"code\": \"RV-009\", \"name\": \"Demora en denuncia de robo (>48h)\", \"points\": 8.0, \"severity\": \"alta\", \"message\": \"La denuncia de robo se realizó 264 horas (11 días) después del evento.\", \"evidence\": {\"dias_entre_ocurrencia_reporte\": 11, \"horas_demora\": 264, \"cobertura\": \"robo\"}, \"category\": \"vehiculos\"}]",
+          "explicacion": "El siniestro SIN-014665 fue clasificado como Rojo porque acumula señales de riesgo: Robo con monto reclamado cercano a la suma asegurada (posible pérdida total).; El proveedor o beneficiario coincide con la lista restrictiva SERCOP.; El asegurado registra 3 siniestros previos.; Denuncia de robo reportada 11 días después del evento.. El resultado es una priorización para revisión humana, no una acusación de fraude.",
+          "accion_sugerida": "Escalar a revisión antifraude especializada antes de continuar el flujo.",
+          "descripcion": "Reporte de robo tardío con inconsistencias en factura y denuncia en Guayaquil.",
+          "fecha_ocurrencia": "2026-09-29",
+          "fecha_reporte": "2026-10-10",
+          "dias_desde_inicio_poliza": 248,
+          "dias_desde_fin_poliza": 15,
+          "dias_entre_ocurrencia_reporte": 11,
+          "documentos_completos": "Sí",
+          "documentos_inconsistentes": false
+        },
+        {
+          "id_siniestro": "SIN-017389",
+          "id_poliza": "POL-03738",
+          "id_asegurado": "ASEG-010121",
+          "ramo": "vehiculos",
+          "cobertura": "robo",
+          "ciudad": "Guayaquil",
+          "id_proveedor": "PROV-170889743200",
+          "beneficiario": "PROV-RUC-1708897432001",
+          "monto_reclamado": 20523.77,
+          "monto_estimado": 15788.77,
+          "monto_pagado": 13658.93,
+          "suma_asegurada": 18946.52,
+          "score_reglas": 77.0,
+          "score_modelo": 99.14,
+          "score_anomalia": 80.0,
+          "score_nlp": 100,
+          "score_grafo": 100.0,
+          "score_categorico": 56.67,
+          "score_final": 85.95,
+          "nivel_riesgo": "Rojo",
+          "alertas_activadas": "[{\"code\": \"RB-003\", \"name\": \"Reporte tardío\", \"points\": 5.0, \"severity\": \"media\", \"message\": \"El siniestro fue reportado 9 días después de la ocurrencia.\", \"evidence\": {\"dias_entre_ocurrencia_reporte\": 9}, \"category\": \"tiempo_reporte\"}, {\"code\": \"RB-004\", \"name\": \"Monto cercano a suma asegurada\", \"points\": 7.0, \"severity\": \"alta\", \"message\": \"El monto reclamado representa el 108% de la suma asegurada.\", \"evidence\": {\"monto_reclamado\": 20523.77, \"suma_asegurada\": 18946.52, \"ratio\": 1.0832}, \"category\": \"monto\"}, {\"code\": \"RB-008\", \"name\": \"Alta frecuencia de reclamos del asegurado\", \"points\": 8.0, \"severity\": \"alta\", \"message\": \"El asegurado registra 4 siniestros previos.\", \"evidence\": {\"historial_siniestros_asegurado\": 4}, \"category\": \"frecuencia\"}, {\"code\": \"RB-010\", \"name\": \"Proveedor recurrente\", \"points\": 3.0, \"severity\": \"alta\", \"message\": \"El caso está asociado a un proveedor recurrente en casos observados.\", \"evidence\": {\"proveedor_recurrente\": true, \"proveedor_recurrencia_count\": null}, \"category\": \"recurrencia\"}, {\"code\": \"RB-011\", \"name\": \"Beneficiario recurrente\", \"points\": 3.0, \"severity\": \"alta\", \"message\": \"El caso está asociado a un beneficiario recurrente en casos observados.\", \"evidence\": {\"beneficiario_recurrente\": true, \"beneficiario_recurrencia_count\": null}, \"category\": \"recurrencia\"}, {\"code\": \"RF-01\", \"name\": \"Cobertura pérdida total por robo\", \"points\": 12.0, \"severity\": \"critica\", \"message\": \"Robo con monto reclamado cercano a la suma asegurada (posible pérdida total).\", \"evidence\": {\"cobertura\": \"robo\", \"ratio_monto_suma\": 1.0832}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-01\"}, {\"code\": \"RF-03\", \"name\": \"Coincidencia con lista restrictiva SERCOP\", \"points\": 10.0, \"severity\": \"critica\", \"message\": \"El proveedor o beneficiario coincide con la lista restrictiva SERCOP.\", \"evidence\": {\"supplier_ruc\": 1708897432001, \"lista_restrictiva_sercop\": true}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-03\"}, {\"code\": \"RF-06\", \"name\": \"Demora atípica en denuncia de robo (>4 días)\", \"points\": 8.0, \"severity\": \"alta\", \"message\": \"Denuncia de robo reportada 9 días después del evento.\", \"evidence\": {\"dias_entre_ocurrencia_reporte\": 9, \"cobertura\": \"robo\"}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-06\"}, {\"code\": \"RV-002\", \"name\": \"Vehículo con múltiples siniestros\", \"points\": 6.0, \"severity\": \"alta\", \"message\": \"El vehículo registra 4 siniestros previos.\", \"evidence\": {\"historial_siniestros_vehiculo\": 4}, \"category\": \"vehiculos\"}, {\"code\": \"RV-006\", \"name\": \"Conductor recurrente\", \"points\": 4.0, \"severity\": \"alta\", \"message\": \"El conductor aparece asociado a múltiples siniestros.\", \"evidence\": {\"conductor_recurrente\": true}, \"category\": \"vehiculos\"}, {\"code\": \"RV-007\", \"name\": \"Zona de alta siniestralidad\", \"points\": 3.0, \"severity\": \"baja\", \"message\": \"El evento ocurrió en una zona con alta concentración de siniestros.\", \"evidence\": {\"zona_alta_siniestralidad\": true}, \"category\": \"vehiculos\"}, {\"code\": \"RV-009\", \"name\": \"Demora en denuncia de robo (>48h)\", \"points\": 8.0, \"severity\": \"alta\", \"message\": \"La denuncia de robo se realizó 216 horas (9 días) después del evento.\", \"evidence\": {\"dias_entre_ocurrencia_reporte\": 9, \"horas_demora\": 216, \"cobertura\": \"robo\"}, \"category\": \"vehiculos\"}]",
+          "explicacion": "El siniestro SIN-017389 fue clasificado como Rojo porque acumula señales de riesgo: Robo con monto reclamado cercano a la suma asegurada (posible pérdida total).; El proveedor o beneficiario coincide con la lista restrictiva SERCOP.; El asegurado registra 4 siniestros previos.; Denuncia de robo reportada 9 días después del evento.. El resultado es una priorización para revisión humana, no una acusación de fraude.",
+          "accion_sugerida": "Escalar a revisión antifraude especializada antes de continuar el flujo.",
+          "descripcion": "Reporte de robo tardío con inconsistencias en factura y denuncia en Guayaquil.",
+          "fecha_ocurrencia": "2024-08-27",
+          "fecha_reporte": "2024-09-05",
+          "dias_desde_inicio_poliza": 122,
+          "dias_desde_fin_poliza": -6,
+          "dias_entre_ocurrencia_reporte": 9,
+          "documentos_completos": "Sí",
+          "documentos_inconsistentes": false
+        },
+        {
+          "id_siniestro": "SIN-004675",
+          "id_poliza": "POL-00108",
+          "id_asegurado": "ASEG-001230",
+          "ramo": "vehiculos",
+          "cobertura": "robo",
+          "ciudad": "Guayaquil",
+          "id_proveedor": "PROV-179296758900",
+          "beneficiario": "PROV-RUC-1792967589001",
+          "monto_reclamado": 24975.0,
+          "monto_estimado": 21050.78,
+          "monto_pagado": 8129.22,
+          "suma_asegurada": 25260.94,
+          "score_reglas": 77.0,
+          "score_modelo": 98.6,
+          "score_anomalia": 80.0,
+          "score_nlp": 100,
+          "score_grafo": 100.0,
+          "score_categorico": 56.67,
+          "score_final": 85.9,
+          "nivel_riesgo": "Rojo",
+          "alertas_activadas": "[{\"code\": \"RB-003\", \"name\": \"Reporte tardío\", \"points\": 5.0, \"severity\": \"media\", \"message\": \"El siniestro fue reportado 20 días después de la ocurrencia.\", \"evidence\": {\"dias_entre_ocurrencia_reporte\": 20}, \"category\": \"tiempo_reporte\"}, {\"code\": \"RB-004\", \"name\": \"Monto cercano a suma asegurada\", \"points\": 7.0, \"severity\": \"alta\", \"message\": \"El monto reclamado representa el 99% de la suma asegurada.\", \"evidence\": {\"monto_reclamado\": 24975.0, \"suma_asegurada\": 25260.94, \"ratio\": 0.9887}, \"category\": \"monto\"}, {\"code\": \"RB-008\", \"name\": \"Alta frecuencia de reclamos del asegurado\", \"points\": 8.0, \"severity\": \"alta\", \"message\": \"El asegurado registra 6 siniestros previos.\", \"evidence\": {\"historial_siniestros_asegurado\": 6}, \"category\": \"frecuencia\"}, {\"code\": \"RB-010\", \"name\": \"Proveedor recurrente\", \"points\": 3.0, \"severity\": \"alta\", \"message\": \"El caso está asociado a un proveedor recurrente en casos observados.\", \"evidence\": {\"proveedor_recurrente\": true, \"proveedor_recurrencia_count\": null}, \"category\": \"recurrencia\"}, {\"code\": \"RB-011\", \"name\": \"Beneficiario recurrente\", \"points\": 3.0, \"severity\": \"alta\", \"message\": \"El caso está asociado a un beneficiario recurrente en casos observados.\", \"evidence\": {\"beneficiario_recurrente\": true, \"beneficiario_recurrencia_count\": null}, \"category\": \"recurrencia\"}, {\"code\": \"RF-01\", \"name\": \"Cobertura pérdida total por robo\", \"points\": 12.0, \"severity\": \"critica\", \"message\": \"Robo con monto reclamado cercano a la suma asegurada (posible pérdida total).\", \"evidence\": {\"cobertura\": \"robo\", \"ratio_monto_suma\": 0.9887}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-01\"}, {\"code\": \"RF-03\", \"name\": \"Coincidencia con lista restrictiva SERCOP\", \"points\": 10.0, \"severity\": \"critica\", \"message\": \"El proveedor o beneficiario coincide con la lista restrictiva SERCOP.\", \"evidence\": {\"supplier_ruc\": 1792967589001, \"lista_restrictiva_sercop\": true}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-03\"}, {\"code\": \"RF-06\", \"name\": \"Demora atípica en denuncia de robo (>4 días)\", \"points\": 8.0, \"severity\": \"alta\", \"message\": \"Denuncia de robo reportada 20 días después del evento.\", \"evidence\": {\"dias_entre_ocurrencia_reporte\": 20, \"cobertura\": \"robo\"}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-06\"}, {\"code\": \"RV-002\", \"name\": \"Vehículo con múltiples siniestros\", \"points\": 6.0, \"severity\": \"alta\", \"message\": \"El vehículo registra 6 siniestros previos.\", \"evidence\": {\"historial_siniestros_vehiculo\": 6}, \"category\": \"vehiculos\"}, {\"code\": \"RV-006\", \"name\": \"Conductor recurrente\", \"points\": 4.0, \"severity\": \"alta\", \"message\": \"El conductor aparece asociado a múltiples siniestros.\", \"evidence\": {\"conductor_recurrente\": true}, \"category\": \"vehiculos\"}, {\"code\": \"RV-007\", \"name\": \"Zona de alta siniestralidad\", \"points\": 3.0, \"severity\": \"baja\", \"message\": \"El evento ocurrió en una zona con alta concentración de siniestros.\", \"evidence\": {\"zona_alta_siniestralidad\": true}, \"category\": \"vehiculos\"}, {\"code\": \"RV-009\", \"name\": \"Demora en denuncia de robo (>48h)\", \"points\": 8.0, \"severity\": \"alta\", \"message\": \"La denuncia de robo se realizó 480 horas (20 días) después del evento.\", \"evidence\": {\"dias_entre_ocurrencia_reporte\": 20, \"horas_demora\": 480, \"cobertura\": \"robo\"}, \"category\": \"vehiculos\"}]",
+          "explicacion": "El siniestro SIN-004675 fue clasificado como Rojo porque acumula señales de riesgo: Robo con monto reclamado cercano a la suma asegurada (posible pérdida total).; El proveedor o beneficiario coincide con la lista restrictiva SERCOP.; El asegurado registra 6 siniestros previos.; Denuncia de robo reportada 20 días después del evento.. El resultado es una priorización para revisión humana, no una acusación de fraude.",
+          "accion_sugerida": "Escalar a revisión antifraude especializada antes de continuar el flujo.",
+          "descripcion": "Vehículo impactado por tercero no identificado sin evidencia de cámaras en Guayaquil.",
+          "fecha_ocurrencia": "2024-04-26",
+          "fecha_reporte": "2024-05-16",
+          "dias_desde_inicio_poliza": 168,
+          "dias_desde_fin_poliza": 291,
+          "dias_entre_ocurrencia_reporte": 20,
+          "documentos_completos": "Sí",
+          "documentos_inconsistentes": false
+        },
+        {
+          "id_siniestro": "SIN-020887",
+          "id_poliza": "POL-00923",
+          "id_asegurado": "ASEG-006880",
+          "ramo": "vehiculos",
+          "cobertura": "robo",
+          "ciudad": "Guayaquil",
+          "id_proveedor": "PROV-210005886200",
+          "beneficiario": "PROV-RUC-2100058862001",
+          "monto_reclamado": 20708.87,
+          "monto_estimado": 16794.04,
+          "monto_pagado": 9273.3,
+          "suma_asegurada": 20152.85,
+          "score_reglas": 77.0,
+          "score_modelo": 98.26,
+          "score_anomalia": 80.0,
+          "score_nlp": 100,
+          "score_grafo": 100.0,
+          "score_categorico": 56.67,
+          "score_final": 85.88,
+          "nivel_riesgo": "Rojo",
+          "alertas_activadas": "[{\"code\": \"RB-003\", \"name\": \"Reporte tardío\", \"points\": 5.0, \"severity\": \"media\", \"message\": \"El siniestro fue reportado 8 días después de la ocurrencia.\", \"evidence\": {\"dias_entre_ocurrencia_reporte\": 8}, \"category\": \"tiempo_reporte\"}, {\"code\": \"RB-004\", \"name\": \"Monto cercano a suma asegurada\", \"points\": 7.0, \"severity\": \"alta\", \"message\": \"El monto reclamado representa el 103% de la suma asegurada.\", \"evidence\": {\"monto_reclamado\": 20708.87, \"suma_asegurada\": 20152.85, \"ratio\": 1.0276}, \"category\": \"monto\"}, {\"code\": \"RB-008\", \"name\": \"Alta frecuencia de reclamos del asegurado\", \"points\": 8.0, \"severity\": \"alta\", \"message\": \"El asegurado registra 3 siniestros previos.\", \"evidence\": {\"historial_siniestros_asegurado\": 3}, \"category\": \"frecuencia\"}, {\"code\": \"RB-010\", \"name\": \"Proveedor recurrente\", \"points\": 3.0, \"severity\": \"alta\", \"message\": \"El caso está asociado a un proveedor recurrente en casos observados.\", \"evidence\": {\"proveedor_recurrente\": true, \"proveedor_recurrencia_count\": null}, \"category\": \"recurrencia\"}, {\"code\": \"RB-011\", \"name\": \"Beneficiario recurrente\", \"points\": 3.0, \"severity\": \"alta\", \"message\": \"El caso está asociado a un beneficiario recurrente en casos observados.\", \"evidence\": {\"beneficiario_recurrente\": true, \"beneficiario_recurrencia_count\": null}, \"category\": \"recurrencia\"}, {\"code\": \"RF-01\", \"name\": \"Cobertura pérdida total por robo\", \"points\": 12.0, \"severity\": \"critica\", \"message\": \"Robo con monto reclamado cercano a la suma asegurada (posible pérdida total).\", \"evidence\": {\"cobertura\": \"robo\", \"ratio_monto_suma\": 1.0276}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-01\"}, {\"code\": \"RF-03\", \"name\": \"Coincidencia con lista restrictiva SERCOP\", \"points\": 10.0, \"severity\": \"critica\", \"message\": \"El proveedor o beneficiario coincide con la lista restrictiva SERCOP.\", \"evidence\": {\"supplier_ruc\": 2100058862001, \"lista_restrictiva_sercop\": true}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-03\"}, {\"code\": \"RF-06\", \"name\": \"Demora atípica en denuncia de robo (>4 días)\", \"points\": 8.0, \"severity\": \"alta\", \"message\": \"Denuncia de robo reportada 8 días después del evento.\", \"evidence\": {\"dias_entre_ocurrencia_reporte\": 8, \"cobertura\": \"robo\"}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-06\"}, {\"code\": \"RV-002\", \"name\": \"Vehículo con múltiples siniestros\", \"points\": 6.0, \"severity\": \"alta\", \"message\": \"El vehículo registra 3 siniestros previos.\", \"evidence\": {\"historial_siniestros_vehiculo\": 3}, \"category\": \"vehiculos\"}, {\"code\": \"RV-006\", \"name\": \"Conductor recurrente\", \"points\": 4.0, \"severity\": \"alta\", \"message\": \"El conductor aparece asociado a múltiples siniestros.\", \"evidence\": {\"conductor_recurrente\": true}, \"category\": \"vehiculos\"}, {\"code\": \"RV-007\", \"name\": \"Zona de alta siniestralidad\", \"points\": 3.0, \"severity\": \"baja\", \"message\": \"El evento ocurrió en una zona con alta concentración de siniestros.\", \"evidence\": {\"zona_alta_siniestralidad\": true}, \"category\": \"vehiculos\"}, {\"code\": \"RV-009\", \"name\": \"Demora en denuncia de robo (>48h)\", \"points\": 8.0, \"severity\": \"alta\", \"message\": \"La denuncia de robo se realizó 192 horas (8 días) después del evento.\", \"evidence\": {\"dias_entre_ocurrencia_reporte\": 8, \"horas_demora\": 192, \"cobertura\": \"robo\"}, \"category\": \"vehiculos\"}]",
+          "explicacion": "El siniestro SIN-020887 fue clasificado como Rojo porque acumula señales de riesgo: Robo con monto reclamado cercano a la suma asegurada (posible pérdida total).; El proveedor o beneficiario coincide con la lista restrictiva SERCOP.; El asegurado registra 3 siniestros previos.; Denuncia de robo reportada 8 días después del evento.. El resultado es una priorización para revisión humana, no una acusación de fraude.",
+          "accion_sugerida": "Escalar a revisión antifraude especializada antes de continuar el flujo.",
+          "descripcion": "Vehículo impactado por tercero no identificado sin evidencia de cámaras en Guayaquil.",
+          "fecha_ocurrencia": "2024-07-26",
+          "fecha_reporte": "2024-08-03",
+          "dias_desde_inicio_poliza": 249,
+          "dias_desde_fin_poliza": 253,
+          "dias_entre_ocurrencia_reporte": 8,
+          "documentos_completos": "Sí",
+          "documentos_inconsistentes": false
+        }
+      ]
+    },
+    {
+      "question": "¿Por qué este siniestro fue marcado como alto riesgo?",
+      "expected_output": {
+        "id_siniestro": "SIN-006355",
+        "score_final": 87.92,
+        "nivel_riesgo": "Rojo",
+        "alertas": [
+          {
+            "code": "RB-002",
+            "name": "Siniestro cerca del fin de póliza",
+            "points": 4.0,
+            "severity": "media",
+            "message": "El siniestro ocurrió a 30 días del fin de vigencia.",
+            "evidence": {
+              "dias_desde_fin_poliza": 30
+            },
+            "category": "vigencia"
+          },
+          {
+            "code": "RB-003",
+            "name": "Reporte tardío",
+            "points": 5.0,
+            "severity": "media",
+            "message": "El siniestro fue reportado 12 días después de la ocurrencia.",
+            "evidence": {
+              "dias_entre_ocurrencia_reporte": 12
+            },
+            "category": "tiempo_reporte"
+          },
+          {
+            "code": "RB-004",
+            "name": "Monto cercano a suma asegurada",
+            "points": 7.0,
+            "severity": "alta",
+            "message": "El monto reclamado representa el 99% de la suma asegurada.",
+            "evidence": {
+              "monto_reclamado": 17643.18,
+              "suma_asegurada": 17855.57,
+              "ratio": 0.9881
+            },
+            "category": "monto"
+          },
+          {
+            "code": "RB-006",
+            "name": "Documentos incompletos",
+            "points": 4.0,
+            "severity": "media",
+            "message": "El expediente documental está incompleto.",
+            "evidence": {
+              "documentos_completos": "No"
+            },
+            "category": "documentos"
+          },
+          {
+            "code": "RB-008",
+            "name": "Alta frecuencia de reclamos del asegurado",
+            "points": 8.0,
+            "severity": "alta",
+            "message": "El asegurado registra 3 siniestros previos.",
+            "evidence": {
+              "historial_siniestros_asegurado": 3
+            },
+            "category": "frecuencia"
+          },
+          {
+            "code": "RB-010",
+            "name": "Proveedor recurrente",
+            "points": 3.0,
+            "severity": "alta",
+            "message": "El caso está asociado a un proveedor recurrente en casos observados.",
+            "evidence": {
+              "proveedor_recurrente": true,
+              "proveedor_recurrencia_count": null
+            },
+            "category": "recurrencia"
+          },
+          {
+            "code": "RB-011",
+            "name": "Beneficiario recurrente",
+            "points": 3.0,
+            "severity": "alta",
+            "message": "El caso está asociado a un beneficiario recurrente en casos observados.",
+            "evidence": {
+              "beneficiario_recurrente": true,
+              "beneficiario_recurrencia_count": null
+            },
+            "category": "recurrencia"
+          },
+          {
+            "code": "RF-01",
+            "name": "Cobertura pérdida total por robo",
+            "points": 12.0,
+            "severity": "critica",
+            "message": "Robo con monto reclamado cercano a la suma asegurada (posible pérdida total).",
+            "evidence": {
+              "cobertura": "robo",
+              "ratio_monto_suma": 0.9881
+            },
+            "category": "critica_pdf",
+            "pdf_ref": "RF-01"
+          },
+          {
+            "code": "RF-02",
+            "name": "Evidencia de falsificación o adulteración documental",
+            "points": 10.0,
+            "severity": "critica",
+            "message": "Se registran inconsistencias documentales que sugieren posible falsificación.",
+            "evidence": {
+              "documentos_inconsistentes": true
+            },
+            "category": "critica_pdf",
+            "pdf_ref": "RF-02"
+          },
+          {
+            "code": "RF-03",
+            "name": "Coincidencia con lista restrictiva SERCOP",
+            "points": 10.0,
+            "severity": "critica",
+            "message": "El proveedor o beneficiario coincide con la lista restrictiva SERCOP.",
+            "evidence": {
+              "supplier_ruc": 1720037355001,
+              "lista_restrictiva_sercop": true
+            },
+            "category": "critica_pdf",
+            "pdf_ref": "RF-03"
+          },
+          {
+            "code": "RF-06",
+            "name": "Demora atípica en denuncia de robo (>4 días)",
+            "points": 8.0,
+            "severity": "alta",
+            "message": "Denuncia de robo reportada 12 días después del evento.",
+            "evidence": {
+              "dias_entre_ocurrencia_reporte": 12,
+              "cobertura": "robo"
+            },
+            "category": "critica_pdf",
+            "pdf_ref": "RF-06"
+          },
+          {
+            "code": "RV-002",
+            "name": "Vehículo con múltiples siniestros",
+            "points": 6.0,
+            "severity": "alta",
+            "message": "El vehículo registra 3 siniestros previos.",
+            "evidence": {
+              "historial_siniestros_vehiculo": 3
+            },
+            "category": "vehiculos"
+          },
+          {
+            "code": "RV-006",
+            "name": "Conductor recurrente",
+            "points": 4.0,
+            "severity": "alta",
+            "message": "El conductor aparece asociado a múltiples siniestros.",
+            "evidence": {
+              "conductor_recurrente": true
+            },
+            "category": "vehiculos"
+          },
+          {
+            "code": "RV-007",
+            "name": "Zona de alta siniestralidad",
+            "points": 3.0,
+            "severity": "baja",
+            "message": "El evento ocurrió en una zona con alta concentración de siniestros.",
+            "evidence": {
+              "zona_alta_siniestralidad": true
+            },
+            "category": "vehiculos"
+          },
+          {
+            "code": "RV-009",
+            "name": "Demora en denuncia de robo (>48h)",
+            "points": 8.0,
+            "severity": "alta",
+            "message": "La denuncia de robo se realizó 288 horas (12 días) después del evento.",
+            "evidence": {
+              "dias_entre_ocurrencia_reporte": 12,
+              "horas_demora": 288,
+              "cobertura": "robo"
+            },
+            "category": "vehiculos"
+          }
+        ],
+        "explicacion": "El siniestro SIN-006355 fue clasificado como Rojo porque acumula señales de riesgo: Robo con monto reclamado cercano a la suma asegurada (posible pérdida total).; Se registran inconsistencias documentales que sugieren posible falsificación.; El proveedor o beneficiario coincide con la lista restrictiva SERCOP.; El asegurado registra 3 siniestros previos.. El resultado es una priorización para revisión humana, no una acusación de fraude.",
+        "accion_sugerida": "Escalar a revisión antifraude especializada antes de continuar el flujo.",
+        "componentes_score": {
+          "reglas": 95.0,
+          "modelo": 99.98,
+          "anomalia": 80.0,
+          "nlp": 100,
+          "grafo": 100.0,
+          "categorico": 56.67
+        },
+        "detalles_avanzados": {
+          "nlp": {
+            "explicacion": "Narrativa similar a SIN-020125 con 100% de similitud. Esto sugiere revisar posible repetición de relato o patrón operativo.",
+            "similares": [
+              {
+                "source_id": "SIN-006355",
+                "target_id": "SIN-020125",
+                "similarity": 1.0
+              },
+              {
+                "source_id": "SIN-006355",
+                "target_id": "SIN-007037",
+                "similarity": 1.0
+              },
+              {
+                "source_id": "SIN-006355",
+                "target_id": "SIN-004159",
+                "similarity": 1.0
+              }
+            ]
+          },
+          "grafo": {
+            "explicacion": "Se detectó recurrencia en proveedor PROV-172003735500 asociado a 21 siniestros.",
+            "conexiones": [
+              {
+                "type": "asegurado",
+                "value": "ASEG-011526",
+                "field": "id_asegurado",
+                "key": "asegurado:ASEG-011526"
+              },
+              {
+                "type": "proveedor",
+                "value": "PROV-172003735500",
+                "field": "id_proveedor",
+                "key": "proveedor:PROV-172003735500"
+              },
+              {
+                "type": "beneficiario",
+                "value": "PROV-RUC-1720037355001",
+                "field": "beneficiario",
+                "key": "beneficiario:PROV-RUC-1720037355001"
+              },
+              {
+                "type": "vehiculo",
+                "value": "ASEG-011526",
+                "field": "id_vehiculo",
+                "key": "vehiculo:ASEG-011526"
+              },
+              {
+                "type": "taller",
+                "value": "PROV-RUC-1720037355001",
+                "field": "taller",
+                "key": "taller:PROV-RUC-1720037355001"
+              },
+              {
+                "type": "ciudad",
+                "value": "Guayaquil",
+                "field": "ciudad",
+                "key": "ciudad:Guayaquil"
+              },
+              {
+                "type": "ramo",
+                "value": "vehiculos",
+                "field": "ramo",
+                "key": "ramo:vehiculos"
+              },
+              {
+                "type": "cobertura",
+                "value": "robo",
+                "field": "cobertura",
+                "key": "cobertura:robo"
+              }
+            ],
+            "entidades_recurrentes": [
+              {
+                "type": "proveedor",
+                "value": "PROV-172003735500",
+                "field": "id_proveedor",
+                "key": "proveedor:PROV-172003735500",
+                "total_siniestros": 21,
+                "siniestros_relacionados": [
+                  "SIN-001722",
+                  "SIN-001961",
+                  "SIN-002507",
+                  "SIN-003232",
+                  "SIN-003607",
+                  "SIN-003649",
+                  "SIN-003839",
+                  "SIN-003957",
+                  "SIN-006805",
+                  "SIN-007863"
+                ]
+              },
+              {
+                "type": "beneficiario",
+                "value": "PROV-RUC-1720037355001",
+                "field": "beneficiario",
+                "key": "beneficiario:PROV-RUC-1720037355001",
+                "total_siniestros": 21,
+                "siniestros_relacionados": [
+                  "SIN-001722",
+                  "SIN-001961",
+                  "SIN-002507",
+                  "SIN-003232",
+                  "SIN-003607",
+                  "SIN-003649",
+                  "SIN-003839",
+                  "SIN-003957",
+                  "SIN-006805",
+                  "SIN-007863"
+                ]
+              },
+              {
+                "type": "taller",
+                "value": "PROV-RUC-1720037355001",
+                "field": "taller",
+                "key": "taller:PROV-RUC-1720037355001",
+                "total_siniestros": 9,
+                "siniestros_relacionados": [
+                  "SIN-002507",
+                  "SIN-003607",
+                  "SIN-003649",
+                  "SIN-003839",
+                  "SIN-006805",
+                  "SIN-008725",
+                  "SIN-017063",
+                  "SIN-021599"
+                ]
+              }
+            ]
+          },
+          "categorico": {
+            "explicacion": "La categoría 'documentos_inconsistentes' aporta riesgo adicional: Categoría crítica: documentos inconsistentes.",
+            "senales": [
+              {
+                "field": "documentos_inconsistentes",
+                "value": true,
+                "points": 10,
+                "severity": "critica",
+                "message": "Categoría crítica: documentos inconsistentes."
+              },
+              {
+                "field": "zona_alta_siniestralidad",
+                "value": true,
+                "points": 7,
+                "severity": "alta",
+                "message": "Zona con alta siniestralidad de siniestros (ZONA1 en tesis)."
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "question": "¿Qué proveedores concentran más alertas?",
+      "expected_output": [
+        {
+          "id_proveedor": "PROV-179237002700",
+          "total_siniestros": 42,
+          "score_promedio": 74.56,
+          "casos_rojos": 42
+        },
+        {
+          "id_proveedor": "PROV-119173386600",
+          "total_siniestros": 40,
+          "score_promedio": 73.82,
+          "casos_rojos": 40
+        },
+        {
+          "id_proveedor": "PROV-179296758900",
+          "total_siniestros": 39,
+          "score_promedio": 73.42,
+          "casos_rojos": 39
+        },
+        {
+          "id_proveedor": "PROV-110059718400",
+          "total_siniestros": 38,
+          "score_promedio": 73.72,
+          "casos_rojos": 38
+        },
+        {
+          "id_proveedor": "PROV-180444784300",
+          "total_siniestros": 28,
+          "score_promedio": 72.53,
+          "casos_rojos": 28
+        },
+        {
+          "id_proveedor": "PROV-179198629600",
+          "total_siniestros": 26,
+          "score_promedio": 74.22,
+          "casos_rojos": 26
+        },
+        {
+          "id_proveedor": "PROV-110470770600",
+          "total_siniestros": 23,
+          "score_promedio": 73.63,
+          "casos_rojos": 23
+        },
+        {
+          "id_proveedor": "PROV-110382122700",
+          "total_siniestros": 23,
+          "score_promedio": 73.61,
+          "casos_rojos": 23
+        },
+        {
+          "id_proveedor": "PROV-179219205600",
+          "total_siniestros": 23,
+          "score_promedio": 73.16,
+          "casos_rojos": 23
+        },
+        {
+          "id_proveedor": "PROV-170250640100",
+          "total_siniestros": 23,
+          "score_promedio": 72.84,
+          "casos_rojos": 23
+        }
+      ]
+    },
+    {
+      "question": "¿Qué ramos tienen mayor porcentaje de casos sospechosos?",
+      "expected_output": [
+        {
+          "ramo": "vehiculos",
+          "casos": 928,
+          "sospechosos": 816,
+          "pct_sospechosos": 87.93
+        },
+        {
+          "ramo": "hogar",
+          "casos": 342,
+          "sospechosos": 280,
+          "pct_sospechosos": 81.87
+        },
+        {
+          "ramo": "generales",
+          "casos": 100,
+          "sospechosos": 80,
+          "pct_sospechosos": 80.0
+        },
+        {
+          "ramo": "vida",
+          "casos": 331,
+          "sospechosos": 263,
+          "pct_sospechosos": 79.46
+        },
+        {
+          "ramo": "salud",
+          "casos": 299,
+          "sospechosos": 225,
+          "pct_sospechosos": 75.25
+        }
+      ]
+    },
+    {
+      "question": "¿Qué ciudades presentan mayor concentración de alertas?",
+      "expected_output": [
+        {
+          "ciudad": "Guayaquil",
+          "total_siniestros": 641,
+          "score_promedio": 70.99,
+          "casos_rojos": 570
+        },
+        {
+          "ciudad": "Quito",
+          "total_siniestros": 687,
+          "score_promedio": 64.64,
+          "casos_rojos": 518
+        },
+        {
+          "ciudad": "Manta",
+          "total_siniestros": 342,
+          "score_promedio": 64.37,
+          "casos_rojos": 255
+        },
+        {
+          "ciudad": "Cuenca",
+          "total_siniestros": 330,
+          "score_promedio": 61.06,
+          "casos_rojos": 238
+        }
+      ]
+    },
+    {
+      "question": "¿Qué asegurados tienen mayor frecuencia de reclamos?",
+      "expected_output": [
+        {
+          "id_asegurado": "ASEG-000628",
+          "total_reclamos": 3,
+          "score_promedio": 73.73,
+          "casos_rojos": 3
+        },
+        {
+          "id_asegurado": "ASEG-001982",
+          "total_reclamos": 3,
+          "score_promedio": 69.77,
+          "casos_rojos": 3
+        },
+        {
+          "id_asegurado": "ASEG-007977",
+          "total_reclamos": 3,
+          "score_promedio": 69.43,
+          "casos_rojos": 3
+        },
+        {
+          "id_asegurado": "ASEG-010161",
+          "total_reclamos": 3,
+          "score_promedio": 76.66,
+          "casos_rojos": 3
+        },
+        {
+          "id_asegurado": "ASEG-011561",
+          "total_reclamos": 3,
+          "score_promedio": 78.18,
+          "casos_rojos": 3
+        },
+        {
+          "id_asegurado": "ASEG-012171",
+          "total_reclamos": 3,
+          "score_promedio": 71.05,
+          "casos_rojos": 3
+        },
+        {
+          "id_asegurado": "ASEG-004822",
+          "total_reclamos": 3,
+          "score_promedio": 61.93,
+          "casos_rojos": 2
+        },
+        {
+          "id_asegurado": "ASEG-006115",
+          "total_reclamos": 3,
+          "score_promedio": 69.89,
+          "casos_rojos": 2
+        },
+        {
+          "id_asegurado": "ASEG-011175",
+          "total_reclamos": 3,
+          "score_promedio": 60.91,
+          "casos_rojos": 2
+        },
+        {
+          "id_asegurado": "ASEG-000101",
+          "total_reclamos": 2,
+          "score_promedio": 69.0,
+          "casos_rojos": 2
+        }
+      ]
+    },
+    {
+      "question": "¿Qué documentos faltan en los casos críticos?",
+      "expected_output": [
+        {
+          "id_siniestro": "SIN-006523",
+          "nivel_riesgo": "Rojo",
+          "descripcion": "Vehículo impactado por tercero no identificado sin evidencia de cámaras en Guayaquil.",
+          "documentos_completos": "No"
+        },
+        {
+          "id_siniestro": "SIN-017212",
+          "nivel_riesgo": "Rojo",
+          "descripcion": "Reclamo recurrente con narrativa similar y proveedor observado en Manta.",
+          "documentos_completos": "No"
+        },
+        {
+          "id_siniestro": "SIN-004849",
+          "nivel_riesgo": "Rojo",
+          "descripcion": "Vehículo impactado por tercero no identificado sin evidencia de cámaras en Guayaquil.",
+          "documentos_completos": "No"
+        },
+        {
+          "id_siniestro": "SIN-008304",
+          "nivel_riesgo": "Rojo",
+          "descripcion": "Reporte de robo tardío con inconsistencias en factura y denuncia en Quito.",
+          "documentos_completos": "No"
+        },
+        {
+          "id_siniestro": "SIN-022986",
+          "nivel_riesgo": "Rojo",
+          "descripcion": "Vehículo impactado por tercero no identificado sin evidencia de cámaras en Quito.",
+          "documentos_completos": "No"
+        },
+        {
+          "id_siniestro": "SIN-013892",
+          "nivel_riesgo": "Rojo",
+          "descripcion": "Reclamo recurrente con narrativa similar y proveedor observado en Quito.",
+          "documentos_completos": "No"
+        },
+        {
+          "id_siniestro": "SIN-003880",
+          "nivel_riesgo": "Rojo",
+          "descripcion": "Vehículo impactado por tercero no identificado sin evidencia de cámaras en Manta.",
+          "documentos_completos": "No"
+        },
+        {
+          "id_siniestro": "SIN-019942",
+          "nivel_riesgo": "Rojo",
+          "descripcion": "Vehículo impactado por tercero no identificado sin evidencia de cámaras en Manta.",
+          "documentos_completos": "No"
+        },
+        {
+          "id_siniestro": "SIN-004159",
+          "nivel_riesgo": "Rojo",
+          "descripcion": "Reporte de robo tardío con inconsistencias en factura y denuncia en Guayaquil.",
+          "documentos_completos": "No"
+        },
+        {
+          "id_siniestro": "SIN-008710",
+          "nivel_riesgo": "Rojo",
+          "descripcion": "Vehículo impactado por tercero no identificado sin evidencia de cámaras en Manta.",
+          "documentos_completos": "No"
+        }
+      ]
+    },
+    {
+      "question": "¿Qué casos tienen montos atípicos?",
+      "expected_output": [
+        {
+          "id_siniestro": "SIN-006355",
+          "ramo": "vehiculos",
+          "monto_reclamado": 17643.18,
+          "suma_asegurada": 17855.57,
+          "score_final": 87.92,
+          "nivel_riesgo": "Rojo",
+          "ratio_monto_suma": 0.9881
+        },
+        {
+          "id_siniestro": "SIN-008677",
+          "ramo": "vehiculos",
+          "monto_reclamado": 19672.36,
+          "suma_asegurada": 17717.45,
+          "score_final": 86.96,
+          "nivel_riesgo": "Rojo",
+          "ratio_monto_suma": 1.1103
+        },
+        {
+          "id_siniestro": "SIN-008905",
+          "ramo": "vehiculos",
+          "monto_reclamado": 19210.85,
+          "suma_asegurada": 19327.88,
+          "score_final": 86.49,
+          "nivel_riesgo": "Rojo",
+          "ratio_monto_suma": 0.9939
+        },
+        {
+          "id_siniestro": "SIN-002023",
+          "ramo": "vehiculos",
+          "monto_reclamado": 13388.03,
+          "suma_asegurada": 13974.37,
+          "score_final": 86.45,
+          "nivel_riesgo": "Rojo",
+          "ratio_monto_suma": 0.958
+        },
+        {
+          "id_siniestro": "SIN-014665",
+          "ramo": "vehiculos",
+          "monto_reclamado": 19430.95,
+          "suma_asegurada": 20955.04,
+          "score_final": 86.06,
+          "nivel_riesgo": "Rojo",
+          "ratio_monto_suma": 0.9273
+        },
+        {
+          "id_siniestro": "SIN-017389",
+          "ramo": "vehiculos",
+          "monto_reclamado": 20523.77,
+          "suma_asegurada": 18946.52,
+          "score_final": 85.95,
+          "nivel_riesgo": "Rojo",
+          "ratio_monto_suma": 1.0832
+        },
+        {
+          "id_siniestro": "SIN-004675",
+          "ramo": "vehiculos",
+          "monto_reclamado": 24975.0,
+          "suma_asegurada": 25260.94,
+          "score_final": 85.9,
+          "nivel_riesgo": "Rojo",
+          "ratio_monto_suma": 0.9887
+        },
+        {
+          "id_siniestro": "SIN-020887",
+          "ramo": "vehiculos",
+          "monto_reclamado": 20708.87,
+          "suma_asegurada": 20152.85,
+          "score_final": 85.88,
+          "nivel_riesgo": "Rojo",
+          "ratio_monto_suma": 1.0276
+        },
+        {
+          "id_siniestro": "SIN-017833",
+          "ramo": "vehiculos",
+          "monto_reclamado": 24975.0,
+          "suma_asegurada": 25857.68,
+          "score_final": 85.82,
+          "nivel_riesgo": "Rojo",
+          "ratio_monto_suma": 0.9659
+        },
+        {
+          "id_siniestro": "SIN-002891",
+          "ramo": "vehiculos",
+          "monto_reclamado": 4755.07,
+          "suma_asegurada": 5084.63,
+          "score_final": 85.79,
+          "nivel_riesgo": "Rojo",
+          "ratio_monto_suma": 0.9352
+        }
+      ]
+    },
+    {
+      "question": "¿Qué siniestros ocurrieron cerca del inicio de la póliza?",
+      "expected_output": [
+        {
+          "id_siniestro": "SIN-008905",
+          "ramo": "vehiculos",
+          "dias_desde_inicio_poliza": 4,
+          "score_final": 86.49,
+          "nivel_riesgo": "Rojo",
+          "fecha_ocurrencia": "2024-10-10"
+        },
+        {
+          "id_siniestro": "SIN-002023",
+          "ramo": "vehiculos",
+          "dias_desde_inicio_poliza": 22,
+          "score_final": 86.45,
+          "nivel_riesgo": "Rojo",
+          "fecha_ocurrencia": "2020-08-26"
+        },
+        {
+          "id_siniestro": "SIN-002891",
+          "ramo": "vehiculos",
+          "dias_desde_inicio_poliza": 16,
+          "score_final": 85.79,
+          "nivel_riesgo": "Rojo",
+          "fecha_ocurrencia": "2022-11-11"
+        },
+        {
+          "id_siniestro": "SIN-014633",
+          "ramo": "vehiculos",
+          "dias_desde_inicio_poliza": 13,
+          "score_final": 85.64,
+          "nivel_riesgo": "Rojo",
+          "fecha_ocurrencia": "2026-02-28"
+        },
+        {
+          "id_siniestro": "SIN-018217",
+          "ramo": "vehiculos",
+          "dias_desde_inicio_poliza": 3,
+          "score_final": 85.41,
+          "nivel_riesgo": "Rojo",
+          "fecha_ocurrencia": "2021-07-09"
+        },
+        {
+          "id_siniestro": "SIN-007139",
+          "ramo": "vehiculos",
+          "dias_desde_inicio_poliza": 18,
+          "score_final": 85.41,
+          "nivel_riesgo": "Rojo",
+          "fecha_ocurrencia": "2020-02-22"
+        },
+        {
+          "id_siniestro": "SIN-020414",
+          "ramo": "vehiculos",
+          "dias_desde_inicio_poliza": 29,
+          "score_final": 84.46,
+          "nivel_riesgo": "Rojo",
+          "fecha_ocurrencia": "2021-12-21"
+        },
+        {
+          "id_siniestro": "SIN-023633",
+          "ramo": "vehiculos",
+          "dias_desde_inicio_poliza": 16,
+          "score_final": 84.21,
+          "nivel_riesgo": "Rojo",
+          "fecha_ocurrencia": "2026-05-08"
+        },
+        {
+          "id_siniestro": "SIN-022652",
+          "ramo": "vehiculos",
+          "dias_desde_inicio_poliza": 9,
+          "score_final": 83.91,
+          "nivel_riesgo": "Rojo",
+          "fecha_ocurrencia": "2019-03-10"
+        },
+        {
+          "id_siniestro": "SIN-015529",
+          "ramo": "vehiculos",
+          "dias_desde_inicio_poliza": 15,
+          "score_final": 83.83,
+          "nivel_riesgo": "Rojo",
+          "fecha_ocurrencia": "2019-07-24"
+        }
+      ]
+    },
+    {
+      "question": "¿Qué patrones se repiten en los reclamos sospechosos?",
+      "expected_output": [
+        {
+          "patron": "narrativas_similares",
+          "casos": 2000
+        },
+        {
+          "patron": "entidades_recurrentes",
+          "casos": 2000
+        },
+        {
+          "patron": "lista_restrictiva_sercop",
+          "casos": 1205
+        },
+        {
+          "patron": "proveedor_recurrente",
+          "id_proveedor": "PROV-179237002700",
+          "casos": 42
+        },
+        {
+          "patron": "proveedor_recurrente",
+          "id_proveedor": "PROV-119173386600",
+          "casos": 40
+        },
+        {
+          "patron": "proveedor_recurrente",
+          "id_proveedor": "PROV-179296758900",
+          "casos": 39
+        },
+        {
+          "patron": "proveedor_recurrente",
+          "id_proveedor": "PROV-110059718400",
+          "casos": 38
+        },
+        {
+          "patron": "proveedor_recurrente",
+          "id_proveedor": "PROV-050398871900",
+          "casos": 30
+        },
+        {
+          "patron": "proveedor_recurrente",
+          "id_proveedor": "PROV-092445812800",
+          "casos": 28
+        },
+        {
+          "patron": "proveedor_recurrente",
+          "id_proveedor": "PROV-180444784300",
+          "casos": 28
+        }
+      ]
+    },
+    {
+      "question": "Genera un resumen ejecutivo de los casos críticos.",
+      "expected_output": {
+        "generated_at": "2026-05-28T22:18:30.245210+00:00",
+        "summary": {
+          "total_siniestros": 2000,
+          "casos_verdes": 336,
+          "casos_amarillos": 83,
+          "casos_rojos": 1581,
+          "porcentaje_rojo": 79.05,
+          "mix_riesgo_pct": {
+            "verde": 16.8,
+            "amarillo": 4.15,
+            "rojo": 79.05
+          },
+          "monto_total_reclamado": 27730355.86,
+          "monto_reclamado_casos_rojos": 22090718.17,
+          "score_promedio_portafolio": 66.04
+        },
+        "ahorro_potencial_estimado": {
+          "casos_rojos": 1581,
+          "monto_expuesto_rojos": 22090718.17,
+          "tasa_prevencion_asumida": 0.2,
+          "ahorro_potencial_estimado": 4418143.63,
+          "desglose_por_ramo": [
+            {
+              "ramo": "vida",
+              "monto_expuesto": 11174776.57,
+              "ahorro_estimado": 2234955.31
+            },
+            {
+              "ramo": "vehiculos",
+              "monto_expuesto": 7677194.56,
+              "ahorro_estimado": 1535438.91
+            },
+            {
+              "ramo": "hogar",
+              "monto_expuesto": 2516710.31,
+              "ahorro_estimado": 503342.06
+            },
+            {
+              "ramo": "generales",
+              "monto_expuesto": 526173.2,
+              "ahorro_estimado": 105234.64
+            },
+            {
+              "ramo": "salud",
+              "monto_expuesto": 195863.53,
+              "ahorro_estimado": 39172.71
+            }
+          ],
+          "nota_etica": "Estimación ilustrativa basada en revisión temprana de casos rojos. No representa ahorro garantizado ni una decisión automática de pago."
+        },
+        "top_casos": [
+          {
+            "id_siniestro": "SIN-006355",
+            "ramo": "vehiculos",
+            "ciudad": "Guayaquil",
+            "id_proveedor": "PROV-172003735500",
+            "score_final": 87.92,
+            "nivel_riesgo": "Rojo",
+            "accion_sugerida": "Escalar a revisión antifraude especializada antes de continuar el flujo."
+          },
+          {
+            "id_siniestro": "SIN-009667",
+            "ramo": "vehiculos",
+            "ciudad": "Guayaquil",
+            "id_proveedor": "PROV-179257379300",
+            "score_final": 87.61,
+            "nivel_riesgo": "Rojo",
+            "accion_sugerida": "Escalar a revisión antifraude especializada antes de continuar el flujo."
+          },
+          {
+            "id_siniestro": "SIN-008677",
+            "ramo": "vehiculos",
+            "ciudad": "Guayaquil",
+            "id_proveedor": "PROV-110382122700",
+            "score_final": 86.96,
+            "nivel_riesgo": "Rojo",
+            "accion_sugerida": "Escalar a revisión antifraude especializada antes de continuar el flujo."
+          },
+          {
+            "id_siniestro": "SIN-008905",
+            "ramo": "vehiculos",
+            "ciudad": "Guayaquil",
+            "id_proveedor": "PROV-179198629600",
+            "score_final": 86.49,
+            "nivel_riesgo": "Rojo",
+            "accion_sugerida": "Escalar a revisión antifraude especializada antes de continuar el flujo."
+          },
+          {
+            "id_siniestro": "SIN-002023",
+            "ramo": "vehiculos",
+            "ciudad": "Guayaquil",
+            "id_proveedor": "PROV-119173386600",
+            "score_final": 86.45,
+            "nivel_riesgo": "Rojo",
+            "accion_sugerida": "Escalar a revisión antifraude especializada antes de continuar el flujo."
+          }
+        ],
+        "riesgo_por_ramo": [
+          {
+            "ramo": "vehiculos",
+            "total_siniestros": 928,
+            "casos_rojos": 794,
+            "score_promedio": 69.16
+          },
+          {
+            "ramo": "hogar",
+            "total_siniestros": 342,
+            "casos_rojos": 255,
+            "score_promedio": 64.37
+          },
+          {
+            "ramo": "vida",
+            "total_siniestros": 331,
+            "casos_rojos": 247,
+            "score_promedio": 64.24
+          },
+          {
+            "ramo": "salud",
+            "total_siniestros": 299,
+            "casos_rojos": 215,
+            "score_promedio": 60.81
+          },
+          {
+            "ramo": "generales",
+            "total_siniestros": 100,
+            "casos_rojos": 70,
+            "score_promedio": 64.34
+          }
+        ],
+        "top_proveedores": [
+          {
+            "id_proveedor": "PROV-179237002700",
+            "total_siniestros": 42,
+            "casos_rojos": 42,
+            "score_promedio": 74.56
+          },
+          {
+            "id_proveedor": "PROV-119173386600",
+            "total_siniestros": 40,
+            "casos_rojos": 40,
+            "score_promedio": 73.82
+          },
+          {
+            "id_proveedor": "PROV-179296758900",
+            "total_siniestros": 39,
+            "casos_rojos": 39,
+            "score_promedio": 73.42
+          },
+          {
+            "id_proveedor": "PROV-110059718400",
+            "total_siniestros": 38,
+            "casos_rojos": 38,
+            "score_promedio": 73.72
+          },
+          {
+            "id_proveedor": "PROV-180444784300",
+            "total_siniestros": 28,
+            "casos_rojos": 28,
+            "score_promedio": 72.53
+          },
+          {
+            "id_proveedor": "PROV-179198629600",
+            "total_siniestros": 26,
+            "casos_rojos": 26,
+            "score_promedio": 74.22
+          },
+          {
+            "id_proveedor": "PROV-110470770600",
+            "total_siniestros": 23,
+            "casos_rojos": 23,
+            "score_promedio": 73.63
+          },
+          {
+            "id_proveedor": "PROV-110382122700",
+            "total_siniestros": 23,
+            "casos_rojos": 23,
+            "score_promedio": 73.61
+          },
+          {
+            "id_proveedor": "PROV-179219205600",
+            "total_siniestros": 23,
+            "casos_rojos": 23,
+            "score_promedio": 73.16
+          },
+          {
+            "id_proveedor": "PROV-170250640100",
+            "total_siniestros": 23,
+            "casos_rojos": 23,
+            "score_promedio": 72.84
+          }
+        ],
+        "top_ciudades": [
+          {
+            "ciudad": "Guayaquil",
+            "total_siniestros": 641,
+            "casos_rojos": 570,
+            "score_promedio": 70.99
+          },
+          {
+            "ciudad": "Quito",
+            "total_siniestros": 687,
+            "casos_rojos": 518,
+            "score_promedio": 64.64
+          },
+          {
+            "ciudad": "Manta",
+            "total_siniestros": 342,
+            "casos_rojos": 255,
+            "score_promedio": 64.37
+          },
+          {
+            "ciudad": "Cuenca",
+            "total_siniestros": 330,
+            "casos_rojos": 238,
+            "score_promedio": 61.06
+          }
+        ],
+        "ethics_note": "RastroSeguro prioriza siniestros para revisión humana. No acusa fraude ni rechaza reclamos automáticamente."
+      }
+    },
+    {
+      "question": "Recomienda qué casos debería revisar primero el analista.",
+      "expected_output": [
+        {
+          "id_siniestro": "SIN-006355",
+          "id_poliza": "POL-06067",
+          "id_asegurado": "ASEG-011526",
+          "ramo": "vehiculos",
+          "cobertura": "robo",
+          "ciudad": "Guayaquil",
+          "id_proveedor": "PROV-172003735500",
+          "beneficiario": "PROV-RUC-1720037355001",
+          "monto_reclamado": 17643.18,
+          "monto_estimado": 14879.64,
+          "monto_pagado": 13617.9,
+          "suma_asegurada": 17855.57,
+          "score_reglas": 95.0,
+          "score_modelo": 99.98,
+          "score_anomalia": 80.0,
+          "score_nlp": 100,
+          "score_grafo": 100.0,
+          "score_categorico": 56.67,
+          "score_final": 87.92,
+          "nivel_riesgo": "Rojo",
+          "alertas_activadas": "[{\"code\": \"RB-002\", \"name\": \"Siniestro cerca del fin de póliza\", \"points\": 4.0, \"severity\": \"media\", \"message\": \"El siniestro ocurrió a 30 días del fin de vigencia.\", \"evidence\": {\"dias_desde_fin_poliza\": 30}, \"category\": \"vigencia\"}, {\"code\": \"RB-003\", \"name\": \"Reporte tardío\", \"points\": 5.0, \"severity\": \"media\", \"message\": \"El siniestro fue reportado 12 días después de la ocurrencia.\", \"evidence\": {\"dias_entre_ocurrencia_reporte\": 12}, \"category\": \"tiempo_reporte\"}, {\"code\": \"RB-004\", \"name\": \"Monto cercano a suma asegurada\", \"points\": 7.0, \"severity\": \"alta\", \"message\": \"El monto reclamado representa el 99% de la suma asegurada.\", \"evidence\": {\"monto_reclamado\": 17643.18, \"suma_asegurada\": 17855.57, \"ratio\": 0.9881}, \"category\": \"monto\"}, {\"code\": \"RB-006\", \"name\": \"Documentos incompletos\", \"points\": 4.0, \"severity\": \"media\", \"message\": \"El expediente documental está incompleto.\", \"evidence\": {\"documentos_completos\": \"No\"}, \"category\": \"documentos\"}, {\"code\": \"RB-008\", \"name\": \"Alta frecuencia de reclamos del asegurado\", \"points\": 8.0, \"severity\": \"alta\", \"message\": \"El asegurado registra 3 siniestros previos.\", \"evidence\": {\"historial_siniestros_asegurado\": 3}, \"category\": \"frecuencia\"}, {\"code\": \"RB-010\", \"name\": \"Proveedor recurrente\", \"points\": 3.0, \"severity\": \"alta\", \"message\": \"El caso está asociado a un proveedor recurrente en casos observados.\", \"evidence\": {\"proveedor_recurrente\": true, \"proveedor_recurrencia_count\": null}, \"category\": \"recurrencia\"}, {\"code\": \"RB-011\", \"name\": \"Beneficiario recurrente\", \"points\": 3.0, \"severity\": \"alta\", \"message\": \"El caso está asociado a un beneficiario recurrente en casos observados.\", \"evidence\": {\"beneficiario_recurrente\": true, \"beneficiario_recurrencia_count\": null}, \"category\": \"recurrencia\"}, {\"code\": \"RF-01\", \"name\": \"Cobertura pérdida total por robo\", \"points\": 12.0, \"severity\": \"critica\", \"message\": \"Robo con monto reclamado cercano a la suma asegurada (posible pérdida total).\", \"evidence\": {\"cobertura\": \"robo\", \"ratio_monto_suma\": 0.9881}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-01\"}, {\"code\": \"RF-02\", \"name\": \"Evidencia de falsificación o adulteración documental\", \"points\": 10.0, \"severity\": \"critica\", \"message\": \"Se registran inconsistencias documentales que sugieren posible falsificación.\", \"evidence\": {\"documentos_inconsistentes\": true}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-02\"}, {\"code\": \"RF-03\", \"name\": \"Coincidencia con lista restrictiva SERCOP\", \"points\": 10.0, \"severity\": \"critica\", \"message\": \"El proveedor o beneficiario coincide con la lista restrictiva SERCOP.\", \"evidence\": {\"supplier_ruc\": 1720037355001, \"lista_restrictiva_sercop\": true}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-03\"}, {\"code\": \"RF-06\", \"name\": \"Demora atípica en denuncia de robo (>4 días)\", \"points\": 8.0, \"severity\": \"alta\", \"message\": \"Denuncia de robo reportada 12 días después del evento.\", \"evidence\": {\"dias_entre_ocurrencia_reporte\": 12, \"cobertura\": \"robo\"}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-06\"}, {\"code\": \"RV-002\", \"name\": \"Vehículo con múltiples siniestros\", \"points\": 6.0, \"severity\": \"alta\", \"message\": \"El vehículo registra 3 siniestros previos.\", \"evidence\": {\"historial_siniestros_vehiculo\": 3}, \"category\": \"vehiculos\"}, {\"code\": \"RV-006\", \"name\": \"Conductor recurrente\", \"points\": 4.0, \"severity\": \"alta\", \"message\": \"El conductor aparece asociado a múltiples siniestros.\", \"evidence\": {\"conductor_recurrente\": true}, \"category\": \"vehiculos\"}, {\"code\": \"RV-007\", \"name\": \"Zona de alta siniestralidad\", \"points\": 3.0, \"severity\": \"baja\", \"message\": \"El evento ocurrió en una zona con alta concentración de siniestros.\", \"evidence\": {\"zona_alta_siniestralidad\": true}, \"category\": \"vehiculos\"}, {\"code\": \"RV-009\", \"name\": \"Demora en denuncia de robo (>48h)\", \"points\": 8.0, \"severity\": \"alta\", \"message\": \"La denuncia de robo se realizó 288 horas (12 días) después del evento.\", \"evidence\": {\"dias_entre_ocurrencia_reporte\": 12, \"horas_demora\": 288, \"cobertura\": \"robo\"}, \"category\": \"vehiculos\"}]",
+          "explicacion": "El siniestro SIN-006355 fue clasificado como Rojo porque acumula señales de riesgo: Robo con monto reclamado cercano a la suma asegurada (posible pérdida total).; Se registran inconsistencias documentales que sugieren posible falsificación.; El proveedor o beneficiario coincide con la lista restrictiva SERCOP.; El asegurado registra 3 siniestros previos.. El resultado es una priorización para revisión humana, no una acusación de fraude.",
+          "accion_sugerida": "Escalar a revisión antifraude especializada antes de continuar el flujo.",
+          "descripcion": "Reporte de robo tardío con inconsistencias en factura y denuncia en Guayaquil.",
+          "fecha_ocurrencia": "2019-07-15",
+          "fecha_reporte": "2019-07-27",
+          "dias_desde_inicio_poliza": 166,
+          "dias_desde_fin_poliza": 30,
+          "dias_entre_ocurrencia_reporte": 12,
+          "documentos_completos": "No",
+          "documentos_inconsistentes": true
+        },
+        {
+          "id_siniestro": "SIN-009667",
+          "id_poliza": "POL-05751",
+          "id_asegurado": "ASEG-008933",
+          "ramo": "vehiculos",
+          "cobertura": "robo",
+          "ciudad": "Guayaquil",
+          "id_proveedor": "PROV-179257379300",
+          "beneficiario": "PROV-RUC-1792573793001",
+          "monto_reclamado": 22102.26,
+          "monto_estimado": 20672.59,
+          "monto_pagado": 7402.71,
+          "suma_asegurada": 24807.11,
+          "score_reglas": 88.0,
+          "score_modelo": 98.24,
+          "score_anomalia": 80.0,
+          "score_nlp": 100,
+          "score_grafo": 100.0,
+          "score_categorico": 90.0,
+          "score_final": 87.61,
+          "nivel_riesgo": "Rojo",
+          "alertas_activadas": "[{\"code\": \"RB-003\", \"name\": \"Reporte tardío\", \"points\": 5.0, \"severity\": \"media\", \"message\": \"El siniestro fue reportado 8 días después de la ocurrencia.\", \"evidence\": {\"dias_entre_ocurrencia_reporte\": 8}, \"category\": \"tiempo_reporte\"}, {\"code\": \"RB-005\", \"name\": \"Monto elevado frente a suma asegurada\", \"points\": 4.0, \"severity\": \"media\", \"message\": \"El monto reclamado representa el 89% de la suma asegurada.\", \"evidence\": {\"monto_reclamado\": 22102.26, \"suma_asegurada\": 24807.11, \"ratio\": 0.891}, \"category\": \"monto\"}, {\"code\": \"RB-006\", \"name\": \"Documentos incompletos\", \"points\": 4.0, \"severity\": \"media\", \"message\": \"El expediente documental está incompleto.\", \"evidence\": {\"documentos_completos\": \"No\"}, \"category\": \"documentos\"}, {\"code\": \"RB-008\", \"name\": \"Alta frecuencia de reclamos del asegurado\", \"points\": 8.0, \"severity\": \"alta\", \"message\": \"El asegurado registra 3 siniestros previos.\", \"evidence\": {\"historial_siniestros_asegurado\": 3}, \"category\": \"frecuencia\"}, {\"code\": \"RB-010\", \"name\": \"Proveedor recurrente\", \"points\": 3.0, \"severity\": \"alta\", \"message\": \"El caso está asociado a un proveedor recurrente en casos observados.\", \"evidence\": {\"proveedor_recurrente\": true, \"proveedor_recurrencia_count\": null}, \"category\": \"recurrencia\"}, {\"code\": \"RB-011\", \"name\": \"Beneficiario recurrente\", \"points\": 3.0, \"severity\": \"alta\", \"message\": \"El caso está asociado a un beneficiario recurrente en casos observados.\", \"evidence\": {\"beneficiario_recurrente\": true, \"beneficiario_recurrencia_count\": null}, \"category\": \"recurrencia\"}, {\"code\": \"RF-01\", \"name\": \"Cobertura pérdida total por robo\", \"points\": 12.0, \"severity\": \"critica\", \"message\": \"Robo con monto reclamado cercano a la suma asegurada (posible pérdida total).\", \"evidence\": {\"cobertura\": \"robo\", \"ratio_monto_suma\": 0.891}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-01\"}, {\"code\": \"RF-02\", \"name\": \"Evidencia de falsificación o adulteración documental\", \"points\": 10.0, \"severity\": \"critica\", \"message\": \"Se registran inconsistencias documentales que sugieren posible falsificación.\", \"evidence\": {\"documentos_inconsistentes\": true}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-02\"}, {\"code\": \"RF-03\", \"name\": \"Coincidencia con lista restrictiva SERCOP\", \"points\": 10.0, \"severity\": \"critica\", \"message\": \"El proveedor o beneficiario coincide con la lista restrictiva SERCOP.\", \"evidence\": {\"supplier_ruc\": 1792573793001, \"lista_restrictiva_sercop\": true}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-03\"}, {\"code\": \"RF-06\", \"name\": \"Demora atípica en denuncia de robo (>4 días)\", \"points\": 8.0, \"severity\": \"alta\", \"message\": \"Denuncia de robo reportada 8 días después del evento.\", \"evidence\": {\"dias_entre_ocurrencia_reporte\": 8, \"cobertura\": \"robo\"}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-06\"}, {\"code\": \"RV-002\", \"name\": \"Vehículo con múltiples siniestros\", \"points\": 6.0, \"severity\": \"alta\", \"message\": \"El vehículo registra 3 siniestros previos.\", \"evidence\": {\"historial_siniestros_vehiculo\": 3}, \"category\": \"vehiculos\"}, {\"code\": \"RV-006\", \"name\": \"Conductor recurrente\", \"points\": 4.0, \"severity\": \"alta\", \"message\": \"El conductor aparece asociado a múltiples siniestros.\", \"evidence\": {\"conductor_recurrente\": true}, \"category\": \"vehiculos\"}, {\"code\": \"RV-007\", \"name\": \"Zona de alta siniestralidad\", \"points\": 3.0, \"severity\": \"baja\", \"message\": \"El evento ocurrió en una zona con alta concentración de siniestros.\", \"evidence\": {\"zona_alta_siniestralidad\": true}, \"category\": \"vehiculos\"}, {\"code\": \"RV-009\", \"name\": \"Demora en denuncia de robo (>48h)\", \"points\": 8.0, \"severity\": \"alta\", \"message\": \"La denuncia de robo se realizó 192 horas (8 días) después del evento.\", \"evidence\": {\"dias_entre_ocurrencia_reporte\": 8, \"horas_demora\": 192, \"cobertura\": \"robo\"}, \"category\": \"vehiculos\"}]",
+          "explicacion": "El siniestro SIN-009667 fue clasificado como Rojo porque acumula señales de riesgo: Robo con monto reclamado cercano a la suma asegurada (posible pérdida total).; Se registran inconsistencias documentales que sugieren posible falsificación.; El proveedor o beneficiario coincide con la lista restrictiva SERCOP.; El asegurado registra 3 siniestros previos.. El resultado es una priorización para revisión humana, no una acusación de fraude.",
+          "accion_sugerida": "Escalar a revisión antifraude especializada antes de continuar el flujo.",
+          "descripcion": "Vehículo impactado por tercero no identificado sin evidencia de cámaras en Guayaquil.",
+          "fecha_ocurrencia": "2024-08-03",
+          "fecha_reporte": "2024-08-11",
+          "dias_desde_inicio_poliza": 145,
+          "dias_desde_fin_poliza": -21,
+          "dias_entre_ocurrencia_reporte": 8,
+          "documentos_completos": "No",
+          "documentos_inconsistentes": true
+        },
+        {
+          "id_siniestro": "SIN-008677",
+          "id_poliza": "POL-04565",
+          "id_asegurado": "ASEG-003418",
+          "ramo": "vehiculos",
+          "cobertura": "robo",
+          "ciudad": "Guayaquil",
+          "id_proveedor": "PROV-110382122700",
+          "beneficiario": "PROV-RUC-1103821227001",
+          "monto_reclamado": 19672.36,
+          "monto_estimado": 14764.54,
+          "monto_pagado": 8772.45,
+          "suma_asegurada": 17717.45,
+          "score_reglas": 81.0,
+          "score_modelo": 99.14,
+          "score_anomalia": 80.0,
+          "score_nlp": 100,
+          "score_grafo": 100.0,
+          "score_categorico": 90.0,
+          "score_final": 86.96,
+          "nivel_riesgo": "Rojo",
+          "alertas_activadas": "[{\"code\": \"RB-003\", \"name\": \"Reporte tardío\", \"points\": 3.0, \"severity\": \"baja\", \"message\": \"El siniestro fue reportado 4 días después de la ocurrencia.\", \"evidence\": {\"dias_entre_ocurrencia_reporte\": 4}, \"category\": \"tiempo_reporte\"}, {\"code\": \"RB-004\", \"name\": \"Monto cercano a suma asegurada\", \"points\": 7.0, \"severity\": \"alta\", \"message\": \"El monto reclamado representa el 111% de la suma asegurada.\", \"evidence\": {\"monto_reclamado\": 19672.36, \"suma_asegurada\": 17717.45, \"ratio\": 1.1103}, \"category\": \"monto\"}, {\"code\": \"RB-006\", \"name\": \"Documentos incompletos\", \"points\": 4.0, \"severity\": \"media\", \"message\": \"El expediente documental está incompleto.\", \"evidence\": {\"documentos_completos\": \"No\"}, \"category\": \"documentos\"}, {\"code\": \"RB-008\", \"name\": \"Alta frecuencia de reclamos del asegurado\", \"points\": 8.0, \"severity\": \"alta\", \"message\": \"El asegurado registra 4 siniestros previos.\", \"evidence\": {\"historial_siniestros_asegurado\": 4}, \"category\": \"frecuencia\"}, {\"code\": \"RB-010\", \"name\": \"Proveedor recurrente\", \"points\": 3.0, \"severity\": \"alta\", \"message\": \"El caso está asociado a un proveedor recurrente en casos observados.\", \"evidence\": {\"proveedor_recurrente\": true, \"proveedor_recurrencia_count\": null}, \"category\": \"recurrencia\"}, {\"code\": \"RB-011\", \"name\": \"Beneficiario recurrente\", \"points\": 3.0, \"severity\": \"alta\", \"message\": \"El caso está asociado a un beneficiario recurrente en casos observados.\", \"evidence\": {\"beneficiario_recurrente\": true, \"beneficiario_recurrencia_count\": null}, \"category\": \"recurrencia\"}, {\"code\": \"RF-01\", \"name\": \"Cobertura pérdida total por robo\", \"points\": 12.0, \"severity\": \"critica\", \"message\": \"Robo con monto reclamado cercano a la suma asegurada (posible pérdida total).\", \"evidence\": {\"cobertura\": \"robo\", \"ratio_monto_suma\": 1.1103}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-01\"}, {\"code\": \"RF-02\", \"name\": \"Evidencia de falsificación o adulteración documental\", \"points\": 10.0, \"severity\": \"critica\", \"message\": \"Se registran inconsistencias documentales que sugieren posible falsificación.\", \"evidence\": {\"documentos_inconsistentes\": true}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-02\"}, {\"code\": \"RF-03\", \"name\": \"Coincidencia con lista restrictiva SERCOP\", \"points\": 10.0, \"severity\": \"critica\", \"message\": \"El proveedor o beneficiario coincide con la lista restrictiva SERCOP.\", \"evidence\": {\"supplier_ruc\": 1103821227001, \"lista_restrictiva_sercop\": true}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-03\"}, {\"code\": \"RV-002\", \"name\": \"Vehículo con múltiples siniestros\", \"points\": 6.0, \"severity\": \"alta\", \"message\": \"El vehículo registra 4 siniestros previos.\", \"evidence\": {\"historial_siniestros_vehiculo\": 4}, \"category\": \"vehiculos\"}, {\"code\": \"RV-006\", \"name\": \"Conductor recurrente\", \"points\": 4.0, \"severity\": \"alta\", \"message\": \"El conductor aparece asociado a múltiples siniestros.\", \"evidence\": {\"conductor_recurrente\": true}, \"category\": \"vehiculos\"}, {\"code\": \"RV-007\", \"name\": \"Zona de alta siniestralidad\", \"points\": 3.0, \"severity\": \"baja\", \"message\": \"El evento ocurrió en una zona con alta concentración de siniestros.\", \"evidence\": {\"zona_alta_siniestralidad\": true}, \"category\": \"vehiculos\"}, {\"code\": \"RV-009\", \"name\": \"Demora en denuncia de robo (>48h)\", \"points\": 8.0, \"severity\": \"alta\", \"message\": \"La denuncia de robo se realizó 96 horas (4 días) después del evento.\", \"evidence\": {\"dias_entre_ocurrencia_reporte\": 4, \"horas_demora\": 96, \"cobertura\": \"robo\"}, \"category\": \"vehiculos\"}]",
+          "explicacion": "El siniestro SIN-008677 fue clasificado como Rojo porque acumula señales de riesgo: Robo con monto reclamado cercano a la suma asegurada (posible pérdida total).; Se registran inconsistencias documentales que sugieren posible falsificación.; El proveedor o beneficiario coincide con la lista restrictiva SERCOP.; El asegurado registra 4 siniestros previos.. El resultado es una priorización para revisión humana, no una acusación de fraude.",
+          "accion_sugerida": "Escalar a revisión antifraude especializada antes de continuar el flujo.",
+          "descripcion": "Vehículo impactado por tercero no identificado sin evidencia de cámaras en Guayaquil.",
+          "fecha_ocurrencia": "2020-05-01",
+          "fecha_reporte": "2020-05-05",
+          "dias_desde_inicio_poliza": 346,
+          "dias_desde_fin_poliza": -15,
+          "dias_entre_ocurrencia_reporte": 4,
+          "documentos_completos": "No",
+          "documentos_inconsistentes": true
+        },
+        {
+          "id_siniestro": "SIN-008905",
+          "id_poliza": "POL-04850",
+          "id_asegurado": "ASEG-008304",
+          "ramo": "vehiculos",
+          "cobertura": "robo",
+          "ciudad": "Guayaquil",
+          "id_proveedor": "PROV-179198629600",
+          "beneficiario": "PROV-RUC-1791986296001",
+          "monto_reclamado": 19210.85,
+          "monto_estimado": 16106.57,
+          "monto_pagado": 11732.9,
+          "suma_asegurada": 19327.88,
+          "score_reglas": 89.0,
+          "score_modelo": 90.87,
+          "score_anomalia": 80.0,
+          "score_nlp": 100,
+          "score_grafo": 100.0,
+          "score_categorico": 56.67,
+          "score_final": 86.49,
+          "nivel_riesgo": "Rojo",
+          "alertas_activadas": "[{\"code\": \"RB-001\", \"name\": \"Siniestro cerca del inicio de póliza\", \"points\": 8.0, \"severity\": \"alta\", \"message\": \"El siniestro ocurrió 4 días después del inicio de la póliza.\", \"evidence\": {\"dias_desde_inicio_poliza\": 4}, \"category\": \"vigencia\"}, {\"code\": \"RB-003\", \"name\": \"Reporte tardío\", \"points\": 3.0, \"severity\": \"baja\", \"message\": \"El siniestro fue reportado 6 días después de la ocurrencia.\", \"evidence\": {\"dias_entre_ocurrencia_reporte\": 6}, \"category\": \"tiempo_reporte\"}, {\"code\": \"RB-004\", \"name\": \"Monto cercano a suma asegurada\", \"points\": 7.0, \"severity\": \"alta\", \"message\": \"El monto reclamado representa el 99% de la suma asegurada.\", \"evidence\": {\"monto_reclamado\": 19210.85, \"suma_asegurada\": 19327.88, \"ratio\": 0.9939}, \"category\": \"monto\"}, {\"code\": \"RB-006\", \"name\": \"Documentos incompletos\", \"points\": 4.0, \"severity\": \"media\", \"message\": \"El expediente documental está incompleto.\", \"evidence\": {\"documentos_completos\": \"No\"}, \"category\": \"documentos\"}, {\"code\": \"RB-010\", \"name\": \"Proveedor recurrente\", \"points\": 3.0, \"severity\": \"alta\", \"message\": \"El caso está asociado a un proveedor recurrente en casos observados.\", \"evidence\": {\"proveedor_recurrente\": true, \"proveedor_recurrencia_count\": null}, \"category\": \"recurrencia\"}, {\"code\": \"RB-011\", \"name\": \"Beneficiario recurrente\", \"points\": 3.0, \"severity\": \"alta\", \"message\": \"El caso está asociado a un beneficiario recurrente en casos observados.\", \"evidence\": {\"beneficiario_recurrente\": true, \"beneficiario_recurrencia_count\": null}, \"category\": \"recurrencia\"}, {\"code\": \"RF-01\", \"name\": \"Cobertura pérdida total por robo\", \"points\": 12.0, \"severity\": \"critica\", \"message\": \"Robo con monto reclamado cercano a la suma asegurada (posible pérdida total).\", \"evidence\": {\"cobertura\": \"robo\", \"ratio_monto_suma\": 0.9939}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-01\"}, {\"code\": \"RF-02\", \"name\": \"Evidencia de falsificación o adulteración documental\", \"points\": 10.0, \"severity\": \"critica\", \"message\": \"Se registran inconsistencias documentales que sugieren posible falsificación.\", \"evidence\": {\"documentos_inconsistentes\": true}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-02\"}, {\"code\": \"RF-03\", \"name\": \"Coincidencia con lista restrictiva SERCOP\", \"points\": 10.0, \"severity\": \"critica\", \"message\": \"El proveedor o beneficiario coincide con la lista restrictiva SERCOP.\", \"evidence\": {\"supplier_ruc\": 1791986296001, \"lista_restrictiva_sercop\": true}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-03\"}, {\"code\": \"RF-06\", \"name\": \"Demora atípica en denuncia de robo (>4 días)\", \"points\": 8.0, \"severity\": \"alta\", \"message\": \"Denuncia de robo reportada 6 días después del evento.\", \"evidence\": {\"dias_entre_ocurrencia_reporte\": 6, \"cobertura\": \"robo\"}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-06\"}, {\"code\": \"RV-001\", \"name\": \"Robo cercano al inicio de póliza\", \"points\": 10.0, \"severity\": \"critica\", \"message\": \"El evento de robo ocurrió 4 días después del inicio de la póliza.\", \"evidence\": {\"tipo_evento\": \"robo\", \"dias_desde_inicio_poliza\": 4}, \"category\": \"vehiculos\"}, {\"code\": \"RV-007\", \"name\": \"Zona de alta siniestralidad\", \"points\": 3.0, \"severity\": \"baja\", \"message\": \"El evento ocurrió en una zona con alta concentración de siniestros.\", \"evidence\": {\"zona_alta_siniestralidad\": true}, \"category\": \"vehiculos\"}, {\"code\": \"RV-009\", \"name\": \"Demora en denuncia de robo (>48h)\", \"points\": 8.0, \"severity\": \"alta\", \"message\": \"La denuncia de robo se realizó 144 horas (6 días) después del evento.\", \"evidence\": {\"dias_entre_ocurrencia_reporte\": 6, \"horas_demora\": 144, \"cobertura\": \"robo\"}, \"category\": \"vehiculos\"}]",
+          "explicacion": "El siniestro SIN-008905 fue clasificado como Rojo porque acumula señales de riesgo: Robo con monto reclamado cercano a la suma asegurada (posible pérdida total).; Se registran inconsistencias documentales que sugieren posible falsificación.; El proveedor o beneficiario coincide con la lista restrictiva SERCOP.; El evento de robo ocurrió 4 días después del inicio de la póliza.. El resultado es una priorización para revisión humana, no una acusación de fraude.",
+          "accion_sugerida": "Escalar a revisión antifraude especializada antes de continuar el flujo.",
+          "descripcion": "Vehículo impactado por tercero no identificado sin evidencia de cámaras en Guayaquil.",
+          "fecha_ocurrencia": "2024-10-10",
+          "fecha_reporte": "2024-10-16",
+          "dias_desde_inicio_poliza": 4,
+          "dias_desde_fin_poliza": 250,
+          "dias_entre_ocurrencia_reporte": 6,
+          "documentos_completos": "No",
+          "documentos_inconsistentes": true
+        },
+        {
+          "id_siniestro": "SIN-002023",
+          "id_poliza": "POL-00105",
+          "id_asegurado": "ASEG-006857",
+          "ramo": "vehiculos",
+          "cobertura": "robo",
+          "ciudad": "Guayaquil",
+          "id_proveedor": "PROV-119173386600",
+          "beneficiario": "PROV-RUC-1191733866001",
+          "monto_reclamado": 13388.03,
+          "monto_estimado": 11645.31,
+          "monto_pagado": 9386.28,
+          "suma_asegurada": 13974.37,
+          "score_reglas": 77.0,
+          "score_modelo": 98.19,
+          "score_anomalia": 80.0,
+          "score_nlp": 100,
+          "score_grafo": 100.0,
+          "score_categorico": 90.0,
+          "score_final": 86.45,
+          "nivel_riesgo": "Rojo",
+          "alertas_activadas": "[{\"code\": \"RB-001\", \"name\": \"Siniestro cerca del inicio de póliza\", \"points\": 4.0, \"severity\": \"media\", \"message\": \"El siniestro ocurrió 22 días después del inicio de la póliza.\", \"evidence\": {\"dias_desde_inicio_poliza\": 22}, \"category\": \"vigencia\"}, {\"code\": \"RB-003\", \"name\": \"Reporte tardío\", \"points\": 5.0, \"severity\": \"media\", \"message\": \"El siniestro fue reportado 17 días después de la ocurrencia.\", \"evidence\": {\"dias_entre_ocurrencia_reporte\": 17}, \"category\": \"tiempo_reporte\"}, {\"code\": \"RB-004\", \"name\": \"Monto cercano a suma asegurada\", \"points\": 7.0, \"severity\": \"alta\", \"message\": \"El monto reclamado representa el 96% de la suma asegurada.\", \"evidence\": {\"monto_reclamado\": 13388.03, \"suma_asegurada\": 13974.37, \"ratio\": 0.958}, \"category\": \"monto\"}, {\"code\": \"RB-006\", \"name\": \"Documentos incompletos\", \"points\": 4.0, \"severity\": \"media\", \"message\": \"El expediente documental está incompleto.\", \"evidence\": {\"documentos_completos\": \"No\"}, \"category\": \"documentos\"}, {\"code\": \"RB-010\", \"name\": \"Proveedor recurrente\", \"points\": 3.0, \"severity\": \"alta\", \"message\": \"El caso está asociado a un proveedor recurrente en casos observados.\", \"evidence\": {\"proveedor_recurrente\": true, \"proveedor_recurrencia_count\": null}, \"category\": \"recurrencia\"}, {\"code\": \"RB-011\", \"name\": \"Beneficiario recurrente\", \"points\": 3.0, \"severity\": \"alta\", \"message\": \"El caso está asociado a un beneficiario recurrente en casos observados.\", \"evidence\": {\"beneficiario_recurrente\": true, \"beneficiario_recurrencia_count\": null}, \"category\": \"recurrencia\"}, {\"code\": \"RF-01\", \"name\": \"Cobertura pérdida total por robo\", \"points\": 12.0, \"severity\": \"critica\", \"message\": \"Robo con monto reclamado cercano a la suma asegurada (posible pérdida total).\", \"evidence\": {\"cobertura\": \"robo\", \"ratio_monto_suma\": 0.958}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-01\"}, {\"code\": \"RF-02\", \"name\": \"Evidencia de falsificación o adulteración documental\", \"points\": 10.0, \"severity\": \"critica\", \"message\": \"Se registran inconsistencias documentales que sugieren posible falsificación.\", \"evidence\": {\"documentos_inconsistentes\": true}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-02\"}, {\"code\": \"RF-03\", \"name\": \"Coincidencia con lista restrictiva SERCOP\", \"points\": 10.0, \"severity\": \"critica\", \"message\": \"El proveedor o beneficiario coincide con la lista restrictiva SERCOP.\", \"evidence\": {\"supplier_ruc\": 1191733866001, \"lista_restrictiva_sercop\": true}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-03\"}, {\"code\": \"RF-06\", \"name\": \"Demora atípica en denuncia de robo (>4 días)\", \"points\": 8.0, \"severity\": \"alta\", \"message\": \"Denuncia de robo reportada 17 días después del evento.\", \"evidence\": {\"dias_entre_ocurrencia_reporte\": 17, \"cobertura\": \"robo\"}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-06\"}, {\"code\": \"RV-007\", \"name\": \"Zona de alta siniestralidad\", \"points\": 3.0, \"severity\": \"baja\", \"message\": \"El evento ocurrió en una zona con alta concentración de siniestros.\", \"evidence\": {\"zona_alta_siniestralidad\": true}, \"category\": \"vehiculos\"}, {\"code\": \"RV-009\", \"name\": \"Demora en denuncia de robo (>48h)\", \"points\": 8.0, \"severity\": \"alta\", \"message\": \"La denuncia de robo se realizó 408 horas (17 días) después del evento.\", \"evidence\": {\"dias_entre_ocurrencia_reporte\": 17, \"horas_demora\": 408, \"cobertura\": \"robo\"}, \"category\": \"vehiculos\"}]",
+          "explicacion": "El siniestro SIN-002023 fue clasificado como Rojo porque acumula señales de riesgo: Robo con monto reclamado cercano a la suma asegurada (posible pérdida total).; Se registran inconsistencias documentales que sugieren posible falsificación.; El proveedor o beneficiario coincide con la lista restrictiva SERCOP.; Denuncia de robo reportada 17 días después del evento.. El resultado es una priorización para revisión humana, no una acusación de fraude.",
+          "accion_sugerida": "Escalar a revisión antifraude especializada antes de continuar el flujo.",
+          "descripcion": "Vehículo impactado por tercero no identificado sin evidencia de cámaras en Guayaquil.",
+          "fecha_ocurrencia": "2020-08-26",
+          "fecha_reporte": "2020-09-12",
+          "dias_desde_inicio_poliza": 22,
+          "dias_desde_fin_poliza": 87,
+          "dias_entre_ocurrencia_reporte": 17,
+          "documentos_completos": "No",
+          "documentos_inconsistentes": true
+        },
+        {
+          "id_siniestro": "SIN-012427",
+          "id_poliza": "POL-02432",
+          "id_asegurado": "ASEG-002434",
+          "ramo": "vehiculos",
+          "cobertura": "robo",
+          "ciudad": "Guayaquil",
+          "id_proveedor": "PROV-119173386600",
+          "beneficiario": "PROV-RUC-1191733866001",
+          "monto_reclamado": 20212.71,
+          "monto_estimado": 19505.56,
+          "monto_pagado": 9317.65,
+          "suma_asegurada": 23406.67,
+          "score_reglas": 78.0,
+          "score_modelo": 94.9,
+          "score_anomalia": 80.0,
+          "score_nlp": 100,
+          "score_grafo": 100.0,
+          "score_categorico": 90.0,
+          "score_final": 86.27,
+          "nivel_riesgo": "Rojo",
+          "alertas_activadas": "[{\"code\": \"RB-003\", \"name\": \"Reporte tardío\", \"points\": 5.0, \"severity\": \"media\", \"message\": \"El siniestro fue reportado 15 días después de la ocurrencia.\", \"evidence\": {\"dias_entre_ocurrencia_reporte\": 15}, \"category\": \"tiempo_reporte\"}, {\"code\": \"RB-005\", \"name\": \"Monto elevado frente a suma asegurada\", \"points\": 4.0, \"severity\": \"media\", \"message\": \"El monto reclamado representa el 86% de la suma asegurada.\", \"evidence\": {\"monto_reclamado\": 20212.71, \"suma_asegurada\": 23406.67, \"ratio\": 0.8635}, \"category\": \"monto\"}, {\"code\": \"RB-006\", \"name\": \"Documentos incompletos\", \"points\": 4.0, \"severity\": \"media\", \"message\": \"El expediente documental está incompleto.\", \"evidence\": {\"documentos_completos\": \"No\"}, \"category\": \"documentos\"}, {\"code\": \"RB-010\", \"name\": \"Proveedor recurrente\", \"points\": 3.0, \"severity\": \"alta\", \"message\": \"El caso está asociado a un proveedor recurrente en casos observados.\", \"evidence\": {\"proveedor_recurrente\": true, \"proveedor_recurrencia_count\": null}, \"category\": \"recurrencia\"}, {\"code\": \"RB-011\", \"name\": \"Beneficiario recurrente\", \"points\": 3.0, \"severity\": \"alta\", \"message\": \"El caso está asociado a un beneficiario recurrente en casos observados.\", \"evidence\": {\"beneficiario_recurrente\": true, \"beneficiario_recurrencia_count\": null}, \"category\": \"recurrencia\"}, {\"code\": \"RF-01\", \"name\": \"Cobertura pérdida total por robo\", \"points\": 12.0, \"severity\": \"critica\", \"message\": \"Robo con monto reclamado cercano a la suma asegurada (posible pérdida total).\", \"evidence\": {\"cobertura\": \"robo\", \"ratio_monto_suma\": 0.8635}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-01\"}, {\"code\": \"RF-02\", \"name\": \"Evidencia de falsificación o adulteración documental\", \"points\": 10.0, \"severity\": \"critica\", \"message\": \"Se registran inconsistencias documentales que sugieren posible falsificación.\", \"evidence\": {\"documentos_inconsistentes\": true}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-02\"}, {\"code\": \"RF-03\", \"name\": \"Coincidencia con lista restrictiva SERCOP\", \"points\": 10.0, \"severity\": \"critica\", \"message\": \"El proveedor o beneficiario coincide con la lista restrictiva SERCOP.\", \"evidence\": {\"supplier_ruc\": 1191733866001, \"lista_restrictiva_sercop\": true}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-03\"}, {\"code\": \"RF-06\", \"name\": \"Demora atípica en denuncia de robo (>4 días)\", \"points\": 8.0, \"severity\": \"alta\", \"message\": \"Denuncia de robo reportada 15 días después del evento.\", \"evidence\": {\"dias_entre_ocurrencia_reporte\": 15, \"cobertura\": \"robo\"}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-06\"}, {\"code\": \"RF-07\", \"name\": \"Narrativa idéntica o clonada\", \"points\": 8.0, \"severity\": \"alta\", \"message\": \"Se detectó narrativa similar a otros reclamos del portafolio.\", \"evidence\": {\"alerta_narrativa\": true, \"explicacion_nlp\": \"Narrativa similar a SIN-006689 con 100% de similitud. Esto sugiere revisar posible repetición de relato o patrón operativo.\"}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-07\"}, {\"code\": \"RV-007\", \"name\": \"Zona de alta siniestralidad\", \"points\": 3.0, \"severity\": \"baja\", \"message\": \"El evento ocurrió en una zona con alta concentración de siniestros.\", \"evidence\": {\"zona_alta_siniestralidad\": true}, \"category\": \"vehiculos\"}, {\"code\": \"RV-009\", \"name\": \"Demora en denuncia de robo (>48h)\", \"points\": 8.0, \"severity\": \"alta\", \"message\": \"La denuncia de robo se realizó 360 horas (15 días) después del evento.\", \"evidence\": {\"dias_entre_ocurrencia_reporte\": 15, \"horas_demora\": 360, \"cobertura\": \"robo\"}, \"category\": \"vehiculos\"}]",
+          "explicacion": "El siniestro SIN-012427 fue clasificado como Rojo porque acumula señales de riesgo: Robo con monto reclamado cercano a la suma asegurada (posible pérdida total).; Se registran inconsistencias documentales que sugieren posible falsificación.; El proveedor o beneficiario coincide con la lista restrictiva SERCOP.; Denuncia de robo reportada 15 días después del evento.. El resultado es una priorización para revisión humana, no una acusación de fraude.",
+          "accion_sugerida": "Escalar a revisión antifraude especializada antes de continuar el flujo.",
+          "descripcion": "Reclamo recurrente con narrativa similar y proveedor observado en Guayaquil.",
+          "fecha_ocurrencia": "2024-11-02",
+          "fecha_reporte": "2024-11-17",
+          "dias_desde_inicio_poliza": 132,
+          "dias_desde_fin_poliza": -48,
+          "dias_entre_ocurrencia_reporte": 15,
+          "documentos_completos": "No",
+          "documentos_inconsistentes": true
+        },
+        {
+          "id_siniestro": "SIN-014665",
+          "id_poliza": "POL-00721",
+          "id_asegurado": "ASEG-000926",
+          "ramo": "vehiculos",
+          "cobertura": "robo",
+          "ciudad": "Guayaquil",
+          "id_proveedor": "PROV-170972199500",
+          "beneficiario": "PROV-RUC-1709721995001",
+          "monto_reclamado": 19430.95,
+          "monto_estimado": 17462.53,
+          "monto_pagado": 4158.77,
+          "suma_asegurada": 20955.04,
+          "score_reglas": 78.0,
+          "score_modelo": 99.14,
+          "score_anomalia": 80.0,
+          "score_nlp": 100,
+          "score_grafo": 100.0,
+          "score_categorico": 56.67,
+          "score_final": 86.06,
+          "nivel_riesgo": "Rojo",
+          "alertas_activadas": "[{\"code\": \"RB-002\", \"name\": \"Siniestro cerca del fin de póliza\", \"points\": 4.0, \"severity\": \"media\", \"message\": \"El siniestro ocurrió a 15 días del fin de vigencia.\", \"evidence\": {\"dias_desde_fin_poliza\": 15}, \"category\": \"vigencia\"}, {\"code\": \"RB-003\", \"name\": \"Reporte tardío\", \"points\": 5.0, \"severity\": \"media\", \"message\": \"El siniestro fue reportado 11 días después de la ocurrencia.\", \"evidence\": {\"dias_entre_ocurrencia_reporte\": 11}, \"category\": \"tiempo_reporte\"}, {\"code\": \"RB-005\", \"name\": \"Monto elevado frente a suma asegurada\", \"points\": 4.0, \"severity\": \"media\", \"message\": \"El monto reclamado representa el 93% de la suma asegurada.\", \"evidence\": {\"monto_reclamado\": 19430.95, \"suma_asegurada\": 20955.04, \"ratio\": 0.9273}, \"category\": \"monto\"}, {\"code\": \"RB-008\", \"name\": \"Alta frecuencia de reclamos del asegurado\", \"points\": 8.0, \"severity\": \"alta\", \"message\": \"El asegurado registra 3 siniestros previos.\", \"evidence\": {\"historial_siniestros_asegurado\": 3}, \"category\": \"frecuencia\"}, {\"code\": \"RB-010\", \"name\": \"Proveedor recurrente\", \"points\": 3.0, \"severity\": \"alta\", \"message\": \"El caso está asociado a un proveedor recurrente en casos observados.\", \"evidence\": {\"proveedor_recurrente\": true, \"proveedor_recurrencia_count\": null}, \"category\": \"recurrencia\"}, {\"code\": \"RB-011\", \"name\": \"Beneficiario recurrente\", \"points\": 3.0, \"severity\": \"alta\", \"message\": \"El caso está asociado a un beneficiario recurrente en casos observados.\", \"evidence\": {\"beneficiario_recurrente\": true, \"beneficiario_recurrencia_count\": null}, \"category\": \"recurrencia\"}, {\"code\": \"RF-01\", \"name\": \"Cobertura pérdida total por robo\", \"points\": 12.0, \"severity\": \"critica\", \"message\": \"Robo con monto reclamado cercano a la suma asegurada (posible pérdida total).\", \"evidence\": {\"cobertura\": \"robo\", \"ratio_monto_suma\": 0.9273}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-01\"}, {\"code\": \"RF-03\", \"name\": \"Coincidencia con lista restrictiva SERCOP\", \"points\": 10.0, \"severity\": \"critica\", \"message\": \"El proveedor o beneficiario coincide con la lista restrictiva SERCOP.\", \"evidence\": {\"supplier_ruc\": 1709721995001, \"lista_restrictiva_sercop\": true}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-03\"}, {\"code\": \"RF-06\", \"name\": \"Demora atípica en denuncia de robo (>4 días)\", \"points\": 8.0, \"severity\": \"alta\", \"message\": \"Denuncia de robo reportada 11 días después del evento.\", \"evidence\": {\"dias_entre_ocurrencia_reporte\": 11, \"cobertura\": \"robo\"}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-06\"}, {\"code\": \"RV-002\", \"name\": \"Vehículo con múltiples siniestros\", \"points\": 6.0, \"severity\": \"alta\", \"message\": \"El vehículo registra 3 siniestros previos.\", \"evidence\": {\"historial_siniestros_vehiculo\": 3}, \"category\": \"vehiculos\"}, {\"code\": \"RV-006\", \"name\": \"Conductor recurrente\", \"points\": 4.0, \"severity\": \"alta\", \"message\": \"El conductor aparece asociado a múltiples siniestros.\", \"evidence\": {\"conductor_recurrente\": true}, \"category\": \"vehiculos\"}, {\"code\": \"RV-007\", \"name\": \"Zona de alta siniestralidad\", \"points\": 3.0, \"severity\": \"baja\", \"message\": \"El evento ocurrió en una zona con alta concentración de siniestros.\", \"evidence\": {\"zona_alta_siniestralidad\": true}, \"category\": \"vehiculos\"}, {\"code\": \"RV-009\", \"name\": \"Demora en denuncia de robo (>48h)\", \"points\": 8.0, \"severity\": \"alta\", \"message\": \"La denuncia de robo se realizó 264 horas (11 días) después del evento.\", \"evidence\": {\"dias_entre_ocurrencia_reporte\": 11, \"horas_demora\": 264, \"cobertura\": \"robo\"}, \"category\": \"vehiculos\"}]",
+          "explicacion": "El siniestro SIN-014665 fue clasificado como Rojo porque acumula señales de riesgo: Robo con monto reclamado cercano a la suma asegurada (posible pérdida total).; El proveedor o beneficiario coincide con la lista restrictiva SERCOP.; El asegurado registra 3 siniestros previos.; Denuncia de robo reportada 11 días después del evento.. El resultado es una priorización para revisión humana, no una acusación de fraude.",
+          "accion_sugerida": "Escalar a revisión antifraude especializada antes de continuar el flujo.",
+          "descripcion": "Reporte de robo tardío con inconsistencias en factura y denuncia en Guayaquil.",
+          "fecha_ocurrencia": "2026-09-29",
+          "fecha_reporte": "2026-10-10",
+          "dias_desde_inicio_poliza": 248,
+          "dias_desde_fin_poliza": 15,
+          "dias_entre_ocurrencia_reporte": 11,
+          "documentos_completos": "Sí",
+          "documentos_inconsistentes": false
+        },
+        {
+          "id_siniestro": "SIN-017389",
+          "id_poliza": "POL-03738",
+          "id_asegurado": "ASEG-010121",
+          "ramo": "vehiculos",
+          "cobertura": "robo",
+          "ciudad": "Guayaquil",
+          "id_proveedor": "PROV-170889743200",
+          "beneficiario": "PROV-RUC-1708897432001",
+          "monto_reclamado": 20523.77,
+          "monto_estimado": 15788.77,
+          "monto_pagado": 13658.93,
+          "suma_asegurada": 18946.52,
+          "score_reglas": 77.0,
+          "score_modelo": 99.14,
+          "score_anomalia": 80.0,
+          "score_nlp": 100,
+          "score_grafo": 100.0,
+          "score_categorico": 56.67,
+          "score_final": 85.95,
+          "nivel_riesgo": "Rojo",
+          "alertas_activadas": "[{\"code\": \"RB-003\", \"name\": \"Reporte tardío\", \"points\": 5.0, \"severity\": \"media\", \"message\": \"El siniestro fue reportado 9 días después de la ocurrencia.\", \"evidence\": {\"dias_entre_ocurrencia_reporte\": 9}, \"category\": \"tiempo_reporte\"}, {\"code\": \"RB-004\", \"name\": \"Monto cercano a suma asegurada\", \"points\": 7.0, \"severity\": \"alta\", \"message\": \"El monto reclamado representa el 108% de la suma asegurada.\", \"evidence\": {\"monto_reclamado\": 20523.77, \"suma_asegurada\": 18946.52, \"ratio\": 1.0832}, \"category\": \"monto\"}, {\"code\": \"RB-008\", \"name\": \"Alta frecuencia de reclamos del asegurado\", \"points\": 8.0, \"severity\": \"alta\", \"message\": \"El asegurado registra 4 siniestros previos.\", \"evidence\": {\"historial_siniestros_asegurado\": 4}, \"category\": \"frecuencia\"}, {\"code\": \"RB-010\", \"name\": \"Proveedor recurrente\", \"points\": 3.0, \"severity\": \"alta\", \"message\": \"El caso está asociado a un proveedor recurrente en casos observados.\", \"evidence\": {\"proveedor_recurrente\": true, \"proveedor_recurrencia_count\": null}, \"category\": \"recurrencia\"}, {\"code\": \"RB-011\", \"name\": \"Beneficiario recurrente\", \"points\": 3.0, \"severity\": \"alta\", \"message\": \"El caso está asociado a un beneficiario recurrente en casos observados.\", \"evidence\": {\"beneficiario_recurrente\": true, \"beneficiario_recurrencia_count\": null}, \"category\": \"recurrencia\"}, {\"code\": \"RF-01\", \"name\": \"Cobertura pérdida total por robo\", \"points\": 12.0, \"severity\": \"critica\", \"message\": \"Robo con monto reclamado cercano a la suma asegurada (posible pérdida total).\", \"evidence\": {\"cobertura\": \"robo\", \"ratio_monto_suma\": 1.0832}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-01\"}, {\"code\": \"RF-03\", \"name\": \"Coincidencia con lista restrictiva SERCOP\", \"points\": 10.0, \"severity\": \"critica\", \"message\": \"El proveedor o beneficiario coincide con la lista restrictiva SERCOP.\", \"evidence\": {\"supplier_ruc\": 1708897432001, \"lista_restrictiva_sercop\": true}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-03\"}, {\"code\": \"RF-06\", \"name\": \"Demora atípica en denuncia de robo (>4 días)\", \"points\": 8.0, \"severity\": \"alta\", \"message\": \"Denuncia de robo reportada 9 días después del evento.\", \"evidence\": {\"dias_entre_ocurrencia_reporte\": 9, \"cobertura\": \"robo\"}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-06\"}, {\"code\": \"RV-002\", \"name\": \"Vehículo con múltiples siniestros\", \"points\": 6.0, \"severity\": \"alta\", \"message\": \"El vehículo registra 4 siniestros previos.\", \"evidence\": {\"historial_siniestros_vehiculo\": 4}, \"category\": \"vehiculos\"}, {\"code\": \"RV-006\", \"name\": \"Conductor recurrente\", \"points\": 4.0, \"severity\": \"alta\", \"message\": \"El conductor aparece asociado a múltiples siniestros.\", \"evidence\": {\"conductor_recurrente\": true}, \"category\": \"vehiculos\"}, {\"code\": \"RV-007\", \"name\": \"Zona de alta siniestralidad\", \"points\": 3.0, \"severity\": \"baja\", \"message\": \"El evento ocurrió en una zona con alta concentración de siniestros.\", \"evidence\": {\"zona_alta_siniestralidad\": true}, \"category\": \"vehiculos\"}, {\"code\": \"RV-009\", \"name\": \"Demora en denuncia de robo (>48h)\", \"points\": 8.0, \"severity\": \"alta\", \"message\": \"La denuncia de robo se realizó 216 horas (9 días) después del evento.\", \"evidence\": {\"dias_entre_ocurrencia_reporte\": 9, \"horas_demora\": 216, \"cobertura\": \"robo\"}, \"category\": \"vehiculos\"}]",
+          "explicacion": "El siniestro SIN-017389 fue clasificado como Rojo porque acumula señales de riesgo: Robo con monto reclamado cercano a la suma asegurada (posible pérdida total).; El proveedor o beneficiario coincide con la lista restrictiva SERCOP.; El asegurado registra 4 siniestros previos.; Denuncia de robo reportada 9 días después del evento.. El resultado es una priorización para revisión humana, no una acusación de fraude.",
+          "accion_sugerida": "Escalar a revisión antifraude especializada antes de continuar el flujo.",
+          "descripcion": "Reporte de robo tardío con inconsistencias en factura y denuncia en Guayaquil.",
+          "fecha_ocurrencia": "2024-08-27",
+          "fecha_reporte": "2024-09-05",
+          "dias_desde_inicio_poliza": 122,
+          "dias_desde_fin_poliza": -6,
+          "dias_entre_ocurrencia_reporte": 9,
+          "documentos_completos": "Sí",
+          "documentos_inconsistentes": false
+        },
+        {
+          "id_siniestro": "SIN-004675",
+          "id_poliza": "POL-00108",
+          "id_asegurado": "ASEG-001230",
+          "ramo": "vehiculos",
+          "cobertura": "robo",
+          "ciudad": "Guayaquil",
+          "id_proveedor": "PROV-179296758900",
+          "beneficiario": "PROV-RUC-1792967589001",
+          "monto_reclamado": 24975.0,
+          "monto_estimado": 21050.78,
+          "monto_pagado": 8129.22,
+          "suma_asegurada": 25260.94,
+          "score_reglas": 77.0,
+          "score_modelo": 98.6,
+          "score_anomalia": 80.0,
+          "score_nlp": 100,
+          "score_grafo": 100.0,
+          "score_categorico": 56.67,
+          "score_final": 85.9,
+          "nivel_riesgo": "Rojo",
+          "alertas_activadas": "[{\"code\": \"RB-003\", \"name\": \"Reporte tardío\", \"points\": 5.0, \"severity\": \"media\", \"message\": \"El siniestro fue reportado 20 días después de la ocurrencia.\", \"evidence\": {\"dias_entre_ocurrencia_reporte\": 20}, \"category\": \"tiempo_reporte\"}, {\"code\": \"RB-004\", \"name\": \"Monto cercano a suma asegurada\", \"points\": 7.0, \"severity\": \"alta\", \"message\": \"El monto reclamado representa el 99% de la suma asegurada.\", \"evidence\": {\"monto_reclamado\": 24975.0, \"suma_asegurada\": 25260.94, \"ratio\": 0.9887}, \"category\": \"monto\"}, {\"code\": \"RB-008\", \"name\": \"Alta frecuencia de reclamos del asegurado\", \"points\": 8.0, \"severity\": \"alta\", \"message\": \"El asegurado registra 6 siniestros previos.\", \"evidence\": {\"historial_siniestros_asegurado\": 6}, \"category\": \"frecuencia\"}, {\"code\": \"RB-010\", \"name\": \"Proveedor recurrente\", \"points\": 3.0, \"severity\": \"alta\", \"message\": \"El caso está asociado a un proveedor recurrente en casos observados.\", \"evidence\": {\"proveedor_recurrente\": true, \"proveedor_recurrencia_count\": null}, \"category\": \"recurrencia\"}, {\"code\": \"RB-011\", \"name\": \"Beneficiario recurrente\", \"points\": 3.0, \"severity\": \"alta\", \"message\": \"El caso está asociado a un beneficiario recurrente en casos observados.\", \"evidence\": {\"beneficiario_recurrente\": true, \"beneficiario_recurrencia_count\": null}, \"category\": \"recurrencia\"}, {\"code\": \"RF-01\", \"name\": \"Cobertura pérdida total por robo\", \"points\": 12.0, \"severity\": \"critica\", \"message\": \"Robo con monto reclamado cercano a la suma asegurada (posible pérdida total).\", \"evidence\": {\"cobertura\": \"robo\", \"ratio_monto_suma\": 0.9887}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-01\"}, {\"code\": \"RF-03\", \"name\": \"Coincidencia con lista restrictiva SERCOP\", \"points\": 10.0, \"severity\": \"critica\", \"message\": \"El proveedor o beneficiario coincide con la lista restrictiva SERCOP.\", \"evidence\": {\"supplier_ruc\": 1792967589001, \"lista_restrictiva_sercop\": true}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-03\"}, {\"code\": \"RF-06\", \"name\": \"Demora atípica en denuncia de robo (>4 días)\", \"points\": 8.0, \"severity\": \"alta\", \"message\": \"Denuncia de robo reportada 20 días después del evento.\", \"evidence\": {\"dias_entre_ocurrencia_reporte\": 20, \"cobertura\": \"robo\"}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-06\"}, {\"code\": \"RV-002\", \"name\": \"Vehículo con múltiples siniestros\", \"points\": 6.0, \"severity\": \"alta\", \"message\": \"El vehículo registra 6 siniestros previos.\", \"evidence\": {\"historial_siniestros_vehiculo\": 6}, \"category\": \"vehiculos\"}, {\"code\": \"RV-006\", \"name\": \"Conductor recurrente\", \"points\": 4.0, \"severity\": \"alta\", \"message\": \"El conductor aparece asociado a múltiples siniestros.\", \"evidence\": {\"conductor_recurrente\": true}, \"category\": \"vehiculos\"}, {\"code\": \"RV-007\", \"name\": \"Zona de alta siniestralidad\", \"points\": 3.0, \"severity\": \"baja\", \"message\": \"El evento ocurrió en una zona con alta concentración de siniestros.\", \"evidence\": {\"zona_alta_siniestralidad\": true}, \"category\": \"vehiculos\"}, {\"code\": \"RV-009\", \"name\": \"Demora en denuncia de robo (>48h)\", \"points\": 8.0, \"severity\": \"alta\", \"message\": \"La denuncia de robo se realizó 480 horas (20 días) después del evento.\", \"evidence\": {\"dias_entre_ocurrencia_reporte\": 20, \"horas_demora\": 480, \"cobertura\": \"robo\"}, \"category\": \"vehiculos\"}]",
+          "explicacion": "El siniestro SIN-004675 fue clasificado como Rojo porque acumula señales de riesgo: Robo con monto reclamado cercano a la suma asegurada (posible pérdida total).; El proveedor o beneficiario coincide con la lista restrictiva SERCOP.; El asegurado registra 6 siniestros previos.; Denuncia de robo reportada 20 días después del evento.. El resultado es una priorización para revisión humana, no una acusación de fraude.",
+          "accion_sugerida": "Escalar a revisión antifraude especializada antes de continuar el flujo.",
+          "descripcion": "Vehículo impactado por tercero no identificado sin evidencia de cámaras en Guayaquil.",
+          "fecha_ocurrencia": "2024-04-26",
+          "fecha_reporte": "2024-05-16",
+          "dias_desde_inicio_poliza": 168,
+          "dias_desde_fin_poliza": 291,
+          "dias_entre_ocurrencia_reporte": 20,
+          "documentos_completos": "Sí",
+          "documentos_inconsistentes": false
+        },
+        {
+          "id_siniestro": "SIN-020887",
+          "id_poliza": "POL-00923",
+          "id_asegurado": "ASEG-006880",
+          "ramo": "vehiculos",
+          "cobertura": "robo",
+          "ciudad": "Guayaquil",
+          "id_proveedor": "PROV-210005886200",
+          "beneficiario": "PROV-RUC-2100058862001",
+          "monto_reclamado": 20708.87,
+          "monto_estimado": 16794.04,
+          "monto_pagado": 9273.3,
+          "suma_asegurada": 20152.85,
+          "score_reglas": 77.0,
+          "score_modelo": 98.26,
+          "score_anomalia": 80.0,
+          "score_nlp": 100,
+          "score_grafo": 100.0,
+          "score_categorico": 56.67,
+          "score_final": 85.88,
+          "nivel_riesgo": "Rojo",
+          "alertas_activadas": "[{\"code\": \"RB-003\", \"name\": \"Reporte tardío\", \"points\": 5.0, \"severity\": \"media\", \"message\": \"El siniestro fue reportado 8 días después de la ocurrencia.\", \"evidence\": {\"dias_entre_ocurrencia_reporte\": 8}, \"category\": \"tiempo_reporte\"}, {\"code\": \"RB-004\", \"name\": \"Monto cercano a suma asegurada\", \"points\": 7.0, \"severity\": \"alta\", \"message\": \"El monto reclamado representa el 103% de la suma asegurada.\", \"evidence\": {\"monto_reclamado\": 20708.87, \"suma_asegurada\": 20152.85, \"ratio\": 1.0276}, \"category\": \"monto\"}, {\"code\": \"RB-008\", \"name\": \"Alta frecuencia de reclamos del asegurado\", \"points\": 8.0, \"severity\": \"alta\", \"message\": \"El asegurado registra 3 siniestros previos.\", \"evidence\": {\"historial_siniestros_asegurado\": 3}, \"category\": \"frecuencia\"}, {\"code\": \"RB-010\", \"name\": \"Proveedor recurrente\", \"points\": 3.0, \"severity\": \"alta\", \"message\": \"El caso está asociado a un proveedor recurrente en casos observados.\", \"evidence\": {\"proveedor_recurrente\": true, \"proveedor_recurrencia_count\": null}, \"category\": \"recurrencia\"}, {\"code\": \"RB-011\", \"name\": \"Beneficiario recurrente\", \"points\": 3.0, \"severity\": \"alta\", \"message\": \"El caso está asociado a un beneficiario recurrente en casos observados.\", \"evidence\": {\"beneficiario_recurrente\": true, \"beneficiario_recurrencia_count\": null}, \"category\": \"recurrencia\"}, {\"code\": \"RF-01\", \"name\": \"Cobertura pérdida total por robo\", \"points\": 12.0, \"severity\": \"critica\", \"message\": \"Robo con monto reclamado cercano a la suma asegurada (posible pérdida total).\", \"evidence\": {\"cobertura\": \"robo\", \"ratio_monto_suma\": 1.0276}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-01\"}, {\"code\": \"RF-03\", \"name\": \"Coincidencia con lista restrictiva SERCOP\", \"points\": 10.0, \"severity\": \"critica\", \"message\": \"El proveedor o beneficiario coincide con la lista restrictiva SERCOP.\", \"evidence\": {\"supplier_ruc\": 2100058862001, \"lista_restrictiva_sercop\": true}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-03\"}, {\"code\": \"RF-06\", \"name\": \"Demora atípica en denuncia de robo (>4 días)\", \"points\": 8.0, \"severity\": \"alta\", \"message\": \"Denuncia de robo reportada 8 días después del evento.\", \"evidence\": {\"dias_entre_ocurrencia_reporte\": 8, \"cobertura\": \"robo\"}, \"category\": \"critica_pdf\", \"pdf_ref\": \"RF-06\"}, {\"code\": \"RV-002\", \"name\": \"Vehículo con múltiples siniestros\", \"points\": 6.0, \"severity\": \"alta\", \"message\": \"El vehículo registra 3 siniestros previos.\", \"evidence\": {\"historial_siniestros_vehiculo\": 3}, \"category\": \"vehiculos\"}, {\"code\": \"RV-006\", \"name\": \"Conductor recurrente\", \"points\": 4.0, \"severity\": \"alta\", \"message\": \"El conductor aparece asociado a múltiples siniestros.\", \"evidence\": {\"conductor_recurrente\": true}, \"category\": \"vehiculos\"}, {\"code\": \"RV-007\", \"name\": \"Zona de alta siniestralidad\", \"points\": 3.0, \"severity\": \"baja\", \"message\": \"El evento ocurrió en una zona con alta concentración de siniestros.\", \"evidence\": {\"zona_alta_siniestralidad\": true}, \"category\": \"vehiculos\"}, {\"code\": \"RV-009\", \"name\": \"Demora en denuncia de robo (>48h)\", \"points\": 8.0, \"severity\": \"alta\", \"message\": \"La denuncia de robo se realizó 192 horas (8 días) después del evento.\", \"evidence\": {\"dias_entre_ocurrencia_reporte\": 8, \"horas_demora\": 192, \"cobertura\": \"robo\"}, \"category\": \"vehiculos\"}]",
+          "explicacion": "El siniestro SIN-020887 fue clasificado como Rojo porque acumula señales de riesgo: Robo con monto reclamado cercano a la suma asegurada (posible pérdida total).; El proveedor o beneficiario coincide con la lista restrictiva SERCOP.; El asegurado registra 3 siniestros previos.; Denuncia de robo reportada 8 días después del evento.. El resultado es una priorización para revisión humana, no una acusación de fraude.",
+          "accion_sugerida": "Escalar a revisión antifraude especializada antes de continuar el flujo.",
+          "descripcion": "Vehículo impactado por tercero no identificado sin evidencia de cámaras en Guayaquil.",
+          "fecha_ocurrencia": "2024-07-26",
+          "fecha_reporte": "2024-08-03",
+          "dias_desde_inicio_poliza": 249,
+          "dias_desde_fin_poliza": 253,
+          "dias_entre_ocurrencia_reporte": 8,
+          "documentos_completos": "Sí",
+          "documentos_inconsistentes": false
+        }
+      ]
+    },
+    {
+      "question": "¿Qué proveedores concentran el 80% de las alertas rojas?",
+      "expected_output": {
+        "threshold": 0.8,
+        "total_casos_rojos": 1581,
+        "proveedores": [
+          {
+            "id_proveedor": "PROV-179237002700",
+            "casos_rojos": 42,
+            "pct_del_total_rojo": 2.66,
+            "pct_acumulado": 2.66
+          },
+          {
+            "id_proveedor": "PROV-119173386600",
+            "casos_rojos": 40,
+            "pct_del_total_rojo": 2.53,
+            "pct_acumulado": 5.19
+          },
+          {
+            "id_proveedor": "PROV-179296758900",
+            "casos_rojos": 39,
+            "pct_del_total_rojo": 2.47,
+            "pct_acumulado": 7.66
+          },
+          {
+            "id_proveedor": "PROV-110059718400",
+            "casos_rojos": 38,
+            "pct_del_total_rojo": 2.4,
+            "pct_acumulado": 10.06
+          },
+          {
+            "id_proveedor": "PROV-180444784300",
+            "casos_rojos": 28,
+            "pct_del_total_rojo": 1.77,
+            "pct_acumulado": 11.83
+          },
+          {
+            "id_proveedor": "PROV-179198629600",
+            "casos_rojos": 26,
+            "pct_del_total_rojo": 1.64,
+            "pct_acumulado": 13.47
+          },
+          {
+            "id_proveedor": "PROV-110470770600",
+            "casos_rojos": 23,
+            "pct_del_total_rojo": 1.45,
+            "pct_acumulado": 14.92
+          },
+          {
+            "id_proveedor": "PROV-110382122700",
+            "casos_rojos": 23,
+            "pct_del_total_rojo": 1.45,
+            "pct_acumulado": 16.37
+          },
+          {
+            "id_proveedor": "PROV-170250640100",
+            "casos_rojos": 23,
+            "pct_del_total_rojo": 1.45,
+            "pct_acumulado": 17.82
+          },
+          {
+            "id_proveedor": "PROV-179219205600",
+            "casos_rojos": 23,
+            "pct_del_total_rojo": 1.45,
+            "pct_acumulado": 19.27
+          },
+          {
+            "id_proveedor": "PROV-210005677500",
+            "casos_rojos": 22,
+            "pct_del_total_rojo": 1.39,
+            "pct_acumulado": 20.66
+          },
+          {
+            "id_proveedor": "PROV-179292885000",
+            "casos_rojos": 22,
+            "pct_del_total_rojo": 1.39,
+            "pct_acumulado": 22.05
+          },
+          {
+            "id_proveedor": "PROV-110199455400",
+            "casos_rojos": 22,
+            "pct_del_total_rojo": 1.39,
+            "pct_acumulado": 23.44
+          },
+          {
+            "id_proveedor": "PROV-172003735500",
+            "casos_rojos": 21,
+            "pct_del_total_rojo": 1.33,
+            "pct_acumulado": 24.77
+          },
+          {
+            "id_proveedor": "PROV-170370955800",
+            "casos_rojos": 21,
+            "pct_del_total_rojo": 1.33,
+            "pct_acumulado": 26.1
+          },
+          {
+            "id_proveedor": "PROV-172185642300",
+            "casos_rojos": 21,
+            "pct_del_total_rojo": 1.33,
+            "pct_acumulado": 27.43
+          },
+          {
+            "id_proveedor": "PROV-179081934500",
+            "casos_rojos": 21,
+            "pct_del_total_rojo": 1.33,
+            "pct_acumulado": 28.76
+          },
+          {
+            "id_proveedor": "PROV-179291086200",
+            "casos_rojos": 21,
+            "pct_del_total_rojo": 1.33,
+            "pct_acumulado": 30.09
+          },
+          {
+            "id_proveedor": "PROV-109177043800",
+            "casos_rojos": 20,
+            "pct_del_total_rojo": 1.27,
+            "pct_acumulado": 31.36
+          },
+          {
+            "id_proveedor": "PROV-171202215900",
+            "casos_rojos": 20,
+            "pct_del_total_rojo": 1.27,
+            "pct_acumulado": 32.63
+          },
+          {
+            "id_proveedor": "PROV-179266972300",
+            "casos_rojos": 20,
+            "pct_del_total_rojo": 1.27,
+            "pct_acumulado": 33.9
+          },
+          {
+            "id_proveedor": "PROV-179257379300",
+            "casos_rojos": 20,
+            "pct_del_total_rojo": 1.27,
+            "pct_acumulado": 35.17
+          },
+          {
+            "id_proveedor": "PROV-170972199500",
+            "casos_rojos": 20,
+            "pct_del_total_rojo": 1.27,
+            "pct_acumulado": 36.44
+          },
+          {
+            "id_proveedor": "PROV-210041219200",
+            "casos_rojos": 19,
+            "pct_del_total_rojo": 1.2,
+            "pct_acumulado": 37.64
+          },
+          {
+            "id_proveedor": "PROV-119174671200",
+            "casos_rojos": 19,
+            "pct_del_total_rojo": 1.2,
+            "pct_acumulado": 38.84
+          },
+          {
+            "id_proveedor": "PROV-179098414100",
+            "casos_rojos": 19,
+            "pct_del_total_rojo": 1.2,
+            "pct_acumulado": 40.04
+          },
+          {
+            "id_proveedor": "PROV-179317421300",
+            "casos_rojos": 19,
+            "pct_del_total_rojo": 1.2,
+            "pct_acumulado": 41.24
+          },
+          {
+            "id_proveedor": "PROV-171425512000",
+            "casos_rojos": 19,
+            "pct_del_total_rojo": 1.2,
+            "pct_acumulado": 42.44
+          },
+          {
+            "id_proveedor": "PROV-171730636700",
+            "casos_rojos": 19,
+            "pct_del_total_rojo": 1.2,
+            "pct_acumulado": 43.64
+          },
+          {
+            "id_proveedor": "PROV-172454748200",
+            "casos_rojos": 19,
+            "pct_del_total_rojo": 1.2,
+            "pct_acumulado": 44.84
+          },
+          {
+            "id_proveedor": "PROV-171136224200",
+            "casos_rojos": 18,
+            "pct_del_total_rojo": 1.14,
+            "pct_acumulado": 45.98
+          },
+          {
+            "id_proveedor": "PROV-160046104800",
+            "casos_rojos": 18,
+            "pct_del_total_rojo": 1.14,
+            "pct_acumulado": 47.12
+          },
+          {
+            "id_proveedor": "PROV-179213680600",
+            "casos_rojos": 18,
+            "pct_del_total_rojo": 1.14,
+            "pct_acumulado": 48.26
+          },
+          {
+            "id_proveedor": "PROV-179134993800",
+            "casos_rojos": 18,
+            "pct_del_total_rojo": 1.14,
+            "pct_acumulado": 49.4
+          },
+          {
+            "id_proveedor": "PROV-179203167200",
+            "casos_rojos": 18,
+            "pct_del_total_rojo": 1.14,
+            "pct_acumulado": 50.54
+          },
+          {
+            "id_proveedor": "PROV-179096541400",
+            "casos_rojos": 17,
+            "pct_del_total_rojo": 1.08,
+            "pct_acumulado": 51.62
+          },
+          {
+            "id_proveedor": "PROV-160082084700",
+            "casos_rojos": 17,
+            "pct_del_total_rojo": 1.08,
+            "pct_acumulado": 52.7
+          },
+          {
+            "id_proveedor": "PROV-170491249000",
+            "casos_rojos": 17,
+            "pct_del_total_rojo": 1.08,
+            "pct_acumulado": 53.78
+          },
+          {
+            "id_proveedor": "PROV-180443892500",
+            "casos_rojos": 17,
+            "pct_del_total_rojo": 1.08,
+            "pct_acumulado": 54.86
+          },
+          {
+            "id_proveedor": "PROV-180369937800",
+            "casos_rojos": 16,
+            "pct_del_total_rojo": 1.01,
+            "pct_acumulado": 55.87
+          },
+          {
+            "id_proveedor": "PROV-171486071300",
+            "casos_rojos": 16,
+            "pct_del_total_rojo": 1.01,
+            "pct_acumulado": 56.88
+          },
+          {
+            "id_proveedor": "PROV-179284871700",
+            "casos_rojos": 16,
+            "pct_del_total_rojo": 1.01,
+            "pct_acumulado": 57.89
+          },
+          {
+            "id_proveedor": "PROV-150077184300",
+            "casos_rojos": 16,
+            "pct_del_total_rojo": 1.01,
+            "pct_acumulado": 58.9
+          },
+          {
+            "id_proveedor": "PROV-169171264400",
+            "casos_rojos": 16,
+            "pct_del_total_rojo": 1.01,
+            "pct_acumulado": 59.91
+          },
+          {
+            "id_proveedor": "PROV-119179442300",
+            "casos_rojos": 16,
+            "pct_del_total_rojo": 1.01,
+            "pct_acumulado": 60.92
+          },
+          {
+            "id_proveedor": "PROV-179280618600",
+            "casos_rojos": 16,
+            "pct_del_total_rojo": 1.01,
+            "pct_acumulado": 61.93
+          },
+          {
+            "id_proveedor": "PROV-179319397500",
+            "casos_rojos": 15,
+            "pct_del_total_rojo": 0.95,
+            "pct_acumulado": 62.88
+          },
+          {
+            "id_proveedor": "PROV-171698975900",
+            "casos_rojos": 15,
+            "pct_del_total_rojo": 0.95,
+            "pct_acumulado": 63.83
+          },
+          {
+            "id_proveedor": "PROV-170889743200",
+            "casos_rojos": 15,
+            "pct_del_total_rojo": 0.95,
+            "pct_acumulado": 64.78
+          },
+          {
+            "id_proveedor": "PROV-099280167000",
+            "casos_rojos": 15,
+            "pct_del_total_rojo": 0.95,
+            "pct_acumulado": 65.73
+          },
+          {
+            "id_proveedor": "PROV-172695787900",
+            "casos_rojos": 15,
+            "pct_del_total_rojo": 0.95,
+            "pct_acumulado": 66.68
+          },
+          {
+            "id_proveedor": "PROV-179214523600",
+            "casos_rojos": 14,
+            "pct_del_total_rojo": 0.89,
+            "pct_acumulado": 67.57
+          },
+          {
+            "id_proveedor": "PROV-189176237900",
+            "casos_rojos": 14,
+            "pct_del_total_rojo": 0.89,
+            "pct_acumulado": 68.46
+          },
+          {
+            "id_proveedor": "PROV-170777309700",
+            "casos_rojos": 14,
+            "pct_del_total_rojo": 0.89,
+            "pct_acumulado": 69.35
+          },
+          {
+            "id_proveedor": "PROV-170493094800",
+            "casos_rojos": 14,
+            "pct_del_total_rojo": 0.89,
+            "pct_acumulado": 70.24
+          },
+          {
+            "id_proveedor": "PROV-059175573000",
+            "casos_rojos": 14,
+            "pct_del_total_rojo": 0.89,
+            "pct_acumulado": 71.13
+          },
+          {
+            "id_proveedor": "PROV-050398871900",
+            "casos_rojos": 14,
+            "pct_del_total_rojo": 0.89,
+            "pct_acumulado": 72.02
+          },
+          {
+            "id_proveedor": "PROV-171928791200",
+            "casos_rojos": 14,
+            "pct_del_total_rojo": 0.89,
+            "pct_acumulado": 72.91
+          },
+          {
+            "id_proveedor": "PROV-210005886200",
+            "casos_rojos": 13,
+            "pct_del_total_rojo": 0.82,
+            "pct_acumulado": 73.73
+          },
+          {
+            "id_proveedor": "PROV-179234868400",
+            "casos_rojos": 13,
+            "pct_del_total_rojo": 0.82,
+            "pct_acumulado": 74.55
+          },
+          {
+            "id_proveedor": "PROV-029151828100",
+            "casos_rojos": 13,
+            "pct_del_total_rojo": 0.82,
+            "pct_acumulado": 75.37
+          },
+          {
+            "id_proveedor": "PROV-092445812800",
+            "casos_rojos": 13,
+            "pct_del_total_rojo": 0.82,
+            "pct_acumulado": 76.19
+          },
+          {
+            "id_proveedor": "PROV-079171917800",
+            "casos_rojos": 13,
+            "pct_del_total_rojo": 0.82,
+            "pct_acumulado": 77.01
+          },
+          {
+            "id_proveedor": "PROV-110394579400",
+            "casos_rojos": 13,
+            "pct_del_total_rojo": 0.82,
+            "pct_acumulado": 77.83
+          },
+          {
+            "id_proveedor": "PROV-171905213400",
+            "casos_rojos": 13,
+            "pct_del_total_rojo": 0.82,
+            "pct_acumulado": 78.65
+          },
+          {
+            "id_proveedor": "PROV-179121729200",
+            "casos_rojos": 13,
+            "pct_del_total_rojo": 0.82,
+            "pct_acumulado": 79.47
+          },
+          {
+            "id_proveedor": "PROV-159171709600",
+            "casos_rojos": 12,
+            "pct_del_total_rojo": 0.76,
+            "pct_acumulado": 80.23
+          }
+        ],
+        "cubre_pct_rojos": 80.23
+      }
+    }
+  ],
+  "rows_scored": 2000
+}

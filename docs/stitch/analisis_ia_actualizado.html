@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>RastroSeguro - Análisis IA y Score</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .risk-gauge {
+            background: conic-gradient(from 180deg at 50% 50%, #ef4444 0deg, #ef4444 313deg, #1e293b 313deg);
+            mask: radial-gradient(transparent 58%, black 60%);
+            -webkit-mask: radial-gradient(transparent 58%, black 60%);
+        }
+        .glass-morphism {
+            backdrop-filter: blur(12px);
+            background: rgba(30, 41, 59, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .slide-up-content {
+            animation: slideUp 0.6s ease-out forwards;
+        }
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "secondary-fixed": "#d8e2ff",
+                      "surface-container-low": "#1b1b1d",
+                      "on-tertiary-fixed-variant": "#574425",
+                      "surface-container-high": "#2a2a2b",
+                      "on-error-container": "#ffdad6",
+                      "surface-dim": "#131315",
+                      "inverse-primary": "#565e74",
+                      "surface-variant": "#353436",
+                      "on-surface": "#e4e2e4",
+                      "on-tertiary-fixed": "#271901",
+                      "on-secondary-fixed-variant": "#004395",
+                      "background": "#131315",
+                      "on-primary-fixed-variant": "#3f465c",
+                      "tertiary-fixed-dim": "#dec29a",
+                      "error": "#ffb4ab",
+                      "primary": "#bec6e0",
+                      "inverse-surface": "#e4e2e4",
+                      "on-primary": "#283044",
+                      "tertiary-fixed": "#fcdeb5",
+                      "secondary-container": "#0566d9",
+                      "on-primary-container": "#798098",
+                      "secondary": "#adc6ff",
+                      "primary-fixed": "#dae2fd",
+                      "on-secondary": "#002e6a",
+                      "tertiary-container": "#231500",
+                      "primary-container": "#0f172a",
+                      "tertiary": "#dec29a",
+                      "on-secondary-container": "#e6ecff",
+                      "secondary-fixed-dim": "#adc6ff",
+                      "surface-tint": "#bec6e0",
+                      "surface": "#131315",
+                      "surface-container": "#1f1f21",
+                      "on-background": "#e4e2e4",
+                      "surface-bright": "#39393b",
+                      "on-primary-fixed": "#131b2e",
+                      "primary-fixed-dim": "#bec6e0",
+                      "on-tertiary-container": "#957d5a",
+                      "on-secondary-fixed": "#001a42",
+                      "surface-container-highest": "#353436",
+                      "on-error": "#690005",
+                      "outline": "#909097",
+                      "on-tertiary": "#3e2d11",
+                      "inverse-on-surface": "#303032",
+                      "surface-container-lowest": "#0e0e10",
+                      "on-surface-variant": "#c6c6cd",
+                      "outline-variant": "#45464d",
+                      "error-container": "#93000a"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "xl": "80px",
+                      "container-max": "1440px",
+                      "lg": "48px",
+                      "sm": "12px",
+                      "xs": "4px",
+                      "md": "24px",
+                      "gutter": "24px",
+                      "base": "8px"
+              },
+              "fontFamily": {
+                      "display-score": ["Montserrat"],
+                      "headline-lg": ["Montserrat"],
+                      "headline-lg-mobile": ["Montserrat"],
+                      "body-lg": ["Inter"],
+                      "headline-md": ["Montserrat"],
+                      "body-md": ["Inter"],
+                      "label-sm": ["Inter"]
+              },
+              "fontSize": {
+                      "display-score": ["72px", {"lineHeight": "80px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                      "headline-lg-mobile": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                      "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                      "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                      "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                      "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}]
+              }
+            },
+          },
+        }
+      </script>
+</head>
+<body class="bg-background text-on-background font-body-md overflow-x-hidden">
+<!-- Progress Track Anchor -->
+<div class="fixed top-0 left-0 w-full h-1 bg-surface-container z-[60]">
+<div class="h-full bg-secondary-container" style="width: 100%;"></div>
+</div>
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full bg-background dark:bg-background border-b border-outline-variant dark:border-outline-variant shadow-sm z-50">
+<div class="flex justify-between items-center px-gutter py-sm max-w-container-max mx-auto">
+<div class="flex items-center gap-md">
+<span class="font-headline-md text-headline-md font-bold text-primary dark:text-primary">RastroSeguro</span>
+<nav class="hidden md:flex gap-md items-center ml-lg">
+<span class="text-on-surface-variant font-label-sm uppercase tracking-widest">Paso 1 &amp; 2 completados</span>
+<span class="material-symbols-outlined text-secondary">check_circle</span>
+<span class="text-primary font-bold border-b-2 border-primary pb-1 font-headline-md text-[16px] leading-tight">Evaluador Preliminar de Riesgo</span>
+</nav>
+</div>
+<div class="flex items-center gap-md">
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary transition-colors">notifications</span>
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary transition-colors">settings</span>
+<div class="w-8 h-8 rounded-full bg-primary-container overflow-hidden border border-outline-variant">
+<img alt="Investigator Profile" data-alt="A professional portrait of a senior financial fraud investigator in a modern, darkly lit office. The lighting is focused and dramatic, highlighting a sharp suit and a neutral, analytical expression. The background features blurred digital screens with data visualizations in deep blues and greys, maintaining a corporate and technologically advanced atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxBq6yTNT4vj9xnXwzM17nlYlCnzAOfebcBVpI2ve7NEi8NsYhVKJEAJaWcwfwSMQ480Yq4hRxFW3qU24e7pCEwJkaIlxk1nP5AEcgFMas3ZFAj3aUu7HNTwHJkL6udfcpkiqEdErgbQppb4AbTfehSS2jnSi6hlejCxvOw50s4lBRJIIi_vxap2SRU0bvMD1BWQ93iIhdPZFl4qIKQuw54Y5wJI6nAnZDMnRAUc5nf2neBcl34ROfQzTZSifmzBp4_gOqjNr2"/>
+</div>
+</div>
+</div>
+</header>
+<!-- SideNavBar -->
+<aside class="fixed left-0 top-0 h-full w-64 bg-surface-container dark:bg-surface-container border-r border-outline-variant shadow-md flex flex-col p-md gap-base hidden md:flex z-40 pt-20">
+<div class="mb-lg">
+<h2 class="font-headline-md text-headline-md text-primary">RastroSeguro</h2>
+<p class="text-on-surface-variant font-body-md opacity-70">Expert Intelligence</p>
+</div>
+<nav class="flex flex-col gap-xs flex-1">
+<div class="flex items-center gap-sm p-sm text-on-surface-variant hover:bg-surface-variant rounded-lg cursor-pointer transition-all">
+<span class="material-symbols-outlined">upload_file</span>
+<span class="font-body-md text-body-md">Carga</span>
+</div>
+<div class="flex items-center gap-sm p-sm text-on-surface-variant hover:bg-surface-variant rounded-lg cursor-pointer transition-all">
+<span class="material-symbols-outlined">analytics</span>
+<span class="font-body-md text-body-md">Resumen</span>
+</div>
+<div class="flex items-center gap-sm p-sm bg-secondary-container text-on-secondary-container rounded-lg font-bold cursor-pointer transition-all">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">psychology</span>
+<span class="font-body-md text-body-md">Análisis IA</span>
+</div>
+</nav>
+<div class="bg-primary-container/40 p-sm rounded-lg border border-outline-variant/30 mb-md">
+<p class="text-label-sm text-secondary leading-tight italic">La IA alerta y explica. No acusa ni rechaza reclamos.</p>
+</div>
+<div class="border-t border-outline-variant pt-md flex flex-col gap-xs">
+<div class="flex items-center gap-sm p-sm text-on-surface-variant hover:bg-surface-variant rounded-lg cursor-pointer transition-all">
+<span class="material-symbols-outlined">help</span>
+<span>Ayuda</span>
+</div>
+<div class="flex items-center gap-sm p-sm text-on-surface-variant hover:bg-surface-variant rounded-lg cursor-pointer transition-all">
+<span class="material-symbols-outlined">logout</span>
+<span>Cerrar Sesión</span>
+</div>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<main class="md:ml-64 pt-24 pb-32 px-gutter">
+<div class="max-w-4xl mx-auto slide-up-content">
+<h1 class="font-headline-lg text-headline-lg text-on-surface mb-lg">Paso 3: Análisis IA y Score de Riesgo</h1>
+<!-- Hero Score Section -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-lg mb-xl items-center">
+<div class="md:col-span-5 flex justify-center">
+<div class="relative w-64 h-64 flex items-center justify-center">
+<div class="absolute inset-0 risk-gauge rounded-full"></div>
+<div class="text-center z-10">
+<span class="font-display-score text-display-score text-error block">87</span>
+<span class="font-label-sm text-on-surface-variant tracking-widest uppercase">/ 100 Riesgo</span>
+</div>
+</div>
+</div>
+<div class="md:col-span-7">
+<div class="bg-error-container/20 border-l-4 border-error p-md rounded-r-xl">
+<h3 class="font-headline-md text-error mb-base">Nivel: Crítico</h3>
+<p class="font-body-lg text-on-surface leading-relaxed">Acción sugerida: Escalar a revisión antifraude especializada de forma inmediata.</p>
+</div>
+<div class="mt-md flex gap-sm">
+<div class="flex items-center gap-xs px-sm py-xs bg-surface-container-high rounded-full border border-outline-variant">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<span class="text-label-sm">Alta Probabilidad</span>
+</div>
+<div class="flex items-center gap-xs px-sm py-xs bg-surface-container-high rounded-full border border-outline-variant">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span class="text-label-sm">Auditable</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Score Breakdown Bento Grid -->
+<h4 class="font-headline-md text-on-surface mb-md">Desglose de Componentes del Score</h4>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-md mb-xl">
+<!-- Reglas -->
+<div class="bg-surface-container-low border border-outline-variant p-md rounded-xl hover:border-error transition-colors">
+<div class="flex justify-between items-start mb-base">
+<span class="material-symbols-outlined text-primary">rule</span>
+<span class="text-error font-bold">+24 pts</span>
+</div>
+<h5 class="font-headline-md text-[18px] mb-xs">Reglas</h5>
+<p class="text-on-surface-variant text-label-sm">Incumplimiento de 3 reglas de negocio críticas.</p>
+<div class="mt-md h-1 bg-surface-variant rounded-full overflow-hidden">
+<div class="h-full bg-error w-[80%]"></div>
+</div>
+</div>
+<!-- Modelo ML -->
+<div class="bg-surface-container-low border border-outline-variant p-md rounded-xl hover:border-error transition-colors">
+<div class="flex justify-between items-start mb-base">
+<span class="material-symbols-outlined text-primary">hub</span>
+<span class="text-error font-bold">+35 pts</span>
+</div>
+<h5 class="font-headline-md text-[18px] mb-xs">Modelo ML</h5>
+<p class="text-on-surface-variant text-label-sm">Vector de comportamiento inusual detectado.</p>
+<div class="mt-md h-1 bg-surface-variant rounded-full overflow-hidden">
+<div class="h-full bg-error w-[95%]"></div>
+</div>
+</div>
+<!-- Anomalías -->
+<div class="bg-surface-container-low border border-outline-variant p-md rounded-xl hover:border-primary transition-colors">
+<div class="flex justify-between items-start mb-base">
+<span class="material-symbols-outlined text-primary">warning</span>
+<span class="text-on-primary-container font-bold">+12 pts</span>
+</div>
+<h5 class="font-headline-md text-[18px] mb-xs">Anomalías</h5>
+<p class="text-on-surface-variant text-label-sm">Outliers en frecuencia de transacciones.</p>
+<div class="mt-md h-1 bg-surface-variant rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[45%]"></div>
+</div>
+</div>
+<!-- NLP -->
+<div class="bg-surface-container-low border border-outline-variant p-md rounded-xl hover:border-primary transition-colors">
+<div class="flex justify-between items-start mb-base">
+<span class="material-symbols-outlined text-primary">description</span>
+<span class="text-on-primary-container font-bold">+8 pts</span>
+</div>
+<h5 class="font-headline-md text-[18px] mb-xs">NLP</h5>
+<p class="text-on-surface-variant text-label-sm">Sentimiento y patrones de texto sospechosos.</p>
+<div class="mt-md h-1 bg-surface-variant rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[30%]"></div>
+</div>
+</div>
+<!-- Grafo -->
+<div class="bg-surface-container-low border border-outline-variant p-md rounded-xl hover:border-error transition-colors">
+<div class="flex justify-between items-start mb-base">
+<span class="material-symbols-outlined text-primary">account_tree</span>
+<span class="text-error font-bold">+15 pts</span>
+</div>
+<h5 class="font-headline-md text-[18px] mb-xs">Grafo</h5>
+<p class="text-on-surface-variant text-label-sm">Conexión con 2 entidades de riesgo previo.</p>
+<div class="mt-md h-1 bg-surface-variant rounded-full overflow-hidden">
+<div class="h-full bg-error w-[70%]"></div>
+</div>
+</div>
+<!-- Categórico -->
+<div class="bg-surface-container-low border border-outline-variant p-md rounded-xl hover:border-primary transition-colors">
+<div class="flex justify-between items-start mb-base">
+<span class="material-symbols-outlined text-primary">category</span>
+<span class="text-on-primary-container font-bold">-7 pts</span>
+</div>
+<h5 class="font-headline-md text-[18px] mb-xs">Categórico</h5>
+<p class="text-on-surface-variant text-label-sm">Atenuante por antigüedad del cliente.</p>
+<div class="mt-md h-1 bg-surface-variant rounded-full overflow-hidden">
+<div class="h-full bg-secondary-container w-[20%]"></div>
+</div>
+</div>
+</div>
+<footer class="text-center opacity-60 border-t border-outline-variant pt-lg">
+<p class="text-label-sm font-label-sm">EL SCORE NO CONFIRMA FRAUDE. PRIORIZA REVISIÓN HUMANA.</p>
+</footer>
+</div>
+</main>
+<!-- AI Floating Assistant -->
+<div class="fixed z-[70] flex flex-col gap-base left-1/2 -translate-x-1/2 items-center bottom-20" id="ai-assistant"><!-- Chat Window -->
+<div class="glass-morphism w-[600px] max-w-[90vw] rounded-[2rem] p-lg shadow-2xl slide-up-content border border-outline-variant mb-md bg-surface-container-low hidden" id="chat-window">
+<div class="flex items-center gap-sm mb-md border-b border-outline-variant pb-sm">
+<div class="bg-secondary-container/20 p-xs rounded-lg">
+<img alt="IA" class="w-6 h-6 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHKkJ-a3NoxbB12WQM4SCoOPYrsWvZS7X_GL3JUigfr_5dr7AiI5mMeKit9JCa4HqwdonlxrGZJOM2PtsESKxfggd-RLMpg1fOf9C7fwKPMOTAJmIAvMYO2TsouRmisDSGsUIMCtWx5H3fymRo5GdI4GYUszMtFLUqwjANxQN9yvtf_4TdRXRf1JnP8ZAKuKFxcuqDPCSEnFhkKdABIdTXF3tJR4m7ybuog6VJ-QnNjGeIVrXYtYkptvaftEjMYp2f4Y-vmUM7"/>
+</div>
+<span class="font-headline-md text-[16px] text-on-surface">image.png</span>
+<button class="ml-auto text-on-surface-variant hover:text-on-surface" onclick="toggleChat()">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="mb-lg">
+<p class="text-body-md text-on-surface leading-relaxed">puedes continuar con el pase 3 de las fases, pero ojo el boton de ia deberia estar en el medio y ser tipo asi</p>
+</div>
+<div class="flex items-center gap-md">
+<div class="flex gap-sm">
+<button class="p-xs hover:bg-surface-variant rounded-lg transition-colors">
+<span class="material-symbols-outlined text-on-surface-variant">add</span>
+</button>
+<span class="text-on-surface-variant">/</span>
+</div>
+<div class="ml-auto flex items-center gap-sm">
+<button class="p-xs hover:bg-surface-variant rounded-lg transition-colors">
+<span class="material-symbols-outlined text-on-surface-variant">note_add</span>
+</button>
+<button class="p-xs hover:bg-surface-variant rounded-lg transition-colors">
+<span class="material-symbols-outlined text-on-surface-variant">palette</span>
+</button>
+<div class="bg-surface-container-high px-md py-xs rounded-full border border-outline-variant flex items-center gap-xs cursor-pointer hover:bg-surface-variant">
+<span class="text-label-sm">3 Flash</span>
+<span class="material-symbols-outlined text-sm">expand_more</span>
+</div>
+<button class="p-xs hover:bg-surface-variant rounded-lg transition-colors">
+<span class="material-symbols-outlined text-on-surface-variant">auto_fix_high</span>
+</button>
+<button class="w-10 h-10 bg-on-surface text-surface rounded-full flex items-center justify-center hover:bg-on-surface-variant transition-colors">
+<span class="material-symbols-outlined">arrow_upward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- FAB -->
+<button class="w-12 h-12 bg-gradient-to-tr from-[#3b82f6] to-[#60a5fa] text-white rounded-full shadow-[0_0_20px_rgba(59,130,246,0.5)] flex items-center justify-center hover:scale-110 active:scale-95 transition-all group overflow-hidden relative" onclick="toggleChat()">
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">spark</span>
+</button></div>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 w-full z-50 backdrop-blur-md bg-surface-dim/80 dark:bg-surface-dim/80 border-t border-outline-variant shadow-lg">
+<div class="flex justify-between items-center px-lg py-md max-w-container-max mx-auto">
+<button class="flex items-center gap-xs text-on-surface-variant px-md py-base hover:brightness-110 transition-all active:scale-95 duration-200">
+<span class="material-symbols-outlined">arrow_back</span>
+<span class="font-label-sm text-label-sm">Anterior</span>
+</button>
+<div class="flex items-center gap-md">
+<div class="hidden md:flex gap-xs">
+<div class="w-2 h-2 rounded-full bg-on-surface-variant"></div>
+<div class="w-2 h-2 rounded-full bg-on-surface-variant"></div>
+<div class="w-6 h-2 rounded-full bg-secondary-container"></div>
+</div>
+<button class="flex items-center gap-xs bg-secondary-container text-on-secondary-container px-lg py-base rounded-full hover:brightness-110 transition-all active:scale-95 duration-200 font-bold">
+<span class="font-label-sm text-label-sm">Finalizar</span>
+<span class="material-symbols-outlined">check</span>
+</button>
+</div>
+</div>
+</nav>
+<script>
+        function toggleChat() {
+            const chat = document.getElementById('chat-window');
+            chat.classList.toggle('hidden');
+        }
+
+        // Initialize tooltips or specific interactions if needed
+        document.addEventListener('DOMContentLoaded', () => {
+            // Subtle entrance animation for score components
+            const cards = document.querySelectorAll('.bg-surface-container-low');
+            cards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(10px)';
+                setTimeout(() => {
+                    card.style.transition = 'all 0.4s ease-out';
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, 200 + (index * 100));
+            });
+        });
+    </script>
+</body></html>

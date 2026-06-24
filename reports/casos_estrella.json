@@ -1,0 +1,125 @@
+{
+  "count": 12,
+  "cases": [
+    {
+      "id_siniestro": "SIN-006355",
+      "ramo": "vehiculos",
+      "ciudad": "Guayaquil",
+      "nivel_riesgo": "Rojo",
+      "score_final": 87.92,
+      "monto_reclamado": 17643.18,
+      "explicacion_demo": "El siniestro SIN-006355 fue clasificado como Rojo porque acumula señales de riesgo: Robo con monto reclamado cercano a la suma asegurada (posible pérdida total).; Se registran inconsistencias documentales que sugieren posible falsificación.; El proveedor o beneficiario coincide con la lista restrictiva SERCOP.; El asegurado registra 3 siniestros previos.. El resultado es una priorización para revisión humana, no una acusación de fraude.",
+      "accion_sugerida": "Escalar a revisión antifraude especializada antes de continuar el flujo."
+    },
+    {
+      "id_siniestro": "SIN-009667",
+      "ramo": "vehiculos",
+      "ciudad": "Guayaquil",
+      "nivel_riesgo": "Rojo",
+      "score_final": 87.61,
+      "monto_reclamado": 22102.26,
+      "explicacion_demo": "El siniestro SIN-009667 fue clasificado como Rojo porque acumula señales de riesgo: Robo con monto reclamado cercano a la suma asegurada (posible pérdida total).; Se registran inconsistencias documentales que sugieren posible falsificación.; El proveedor o beneficiario coincide con la lista restrictiva SERCOP.; El asegurado registra 3 siniestros previos.. El resultado es una priorización para revisión humana, no una acusación de fraude.",
+      "accion_sugerida": "Escalar a revisión antifraude especializada antes de continuar el flujo."
+    },
+    {
+      "id_siniestro": "SIN-008677",
+      "ramo": "vehiculos",
+      "ciudad": "Guayaquil",
+      "nivel_riesgo": "Rojo",
+      "score_final": 86.96,
+      "monto_reclamado": 19672.36,
+      "explicacion_demo": "El siniestro SIN-008677 fue clasificado como Rojo porque acumula señales de riesgo: Robo con monto reclamado cercano a la suma asegurada (posible pérdida total).; Se registran inconsistencias documentales que sugieren posible falsificación.; El proveedor o beneficiario coincide con la lista restrictiva SERCOP.; El asegurado registra 4 siniestros previos.. El resultado es una priorización para revisión humana, no una acusación de fraude.",
+      "accion_sugerida": "Escalar a revisión antifraude especializada antes de continuar el flujo."
+    },
+    {
+      "id_siniestro": "SIN-008905",
+      "ramo": "vehiculos",
+      "ciudad": "Guayaquil",
+      "nivel_riesgo": "Rojo",
+      "score_final": 86.49,
+      "monto_reclamado": 19210.85,
+      "explicacion_demo": "El siniestro SIN-008905 fue clasificado como Rojo porque acumula señales de riesgo: Robo con monto reclamado cercano a la suma asegurada (posible pérdida total).; Se registran inconsistencias documentales que sugieren posible falsificación.; El proveedor o beneficiario coincide con la lista restrictiva SERCOP.; El evento de robo ocurrió 4 días después del inicio de la póliza.. El resultado es una priorización para revisión humana, no una acusación de fraude.",
+      "accion_sugerida": "Escalar a revisión antifraude especializada antes de continuar el flujo."
+    },
+    {
+      "id_siniestro": "SIN-002023",
+      "ramo": "vehiculos",
+      "ciudad": "Guayaquil",
+      "nivel_riesgo": "Rojo",
+      "score_final": 86.45,
+      "monto_reclamado": 13388.03,
+      "explicacion_demo": "El siniestro SIN-002023 fue clasificado como Rojo porque acumula señales de riesgo: Robo con monto reclamado cercano a la suma asegurada (posible pérdida total).; Se registran inconsistencias documentales que sugieren posible falsificación.; El proveedor o beneficiario coincide con la lista restrictiva SERCOP.; Denuncia de robo reportada 17 días después del evento.. El resultado es una priorización para revisión humana, no una acusación de fraude.",
+      "accion_sugerida": "Escalar a revisión antifraude especializada antes de continuar el flujo."
+    },
+    {
+      "id_siniestro": "SIN-012427",
+      "ramo": "vehiculos",
+      "ciudad": "Guayaquil",
+      "nivel_riesgo": "Rojo",
+      "score_final": 86.27,
+      "monto_reclamado": 20212.71,
+      "explicacion_demo": "El siniestro SIN-012427 fue clasificado como Rojo porque acumula señales de riesgo: Robo con monto reclamado cercano a la suma asegurada (posible pérdida total).; Se registran inconsistencias documentales que sugieren posible falsificación.; El proveedor o beneficiario coincide con la lista restrictiva SERCOP.; Denuncia de robo reportada 15 días después del evento.. El resultado es una priorización para revisión humana, no una acusación de fraude.",
+      "accion_sugerida": "Escalar a revisión antifraude especializada antes de continuar el flujo."
+    },
+    {
+      "id_siniestro": "SIN-021472",
+      "ramo": "hogar",
+      "ciudad": "Manta",
+      "nivel_riesgo": "Amarillo",
+      "score_final": 63.0,
+      "monto_reclamado": 6568.0,
+      "explicacion_demo": "El siniestro SIN-021472 fue clasificado como Amarillo porque acumula señales de riesgo: El monto reclamado representa el 109% de la suma asegurada.; El siniestro fue reportado 10 días después de la ocurrencia.; El reclamo de hogar no registra inspección realizada.; El asegurado registra 2 siniestros previos.. El resultado es una priorización para revisión humana, no una acusación de fraude.",
+      "accion_sugerida": "Solicitar revisión documental antes de continuar el flujo."
+    },
+    {
+      "id_siniestro": "SIN-018614",
+      "ramo": "vehiculos",
+      "ciudad": "Quito",
+      "nivel_riesgo": "Amarillo",
+      "score_final": 62.95,
+      "monto_reclamado": 4983.64,
+      "explicacion_demo": "El siniestro SIN-018614 fue clasificado como Amarillo porque acumula señales de riesgo: El monto reclamado representa el 110% de la suma asegurada.; El siniestro fue reportado 16 días después de la ocurrencia.; El caso no registra reporte policial para un evento que normalmente lo requiere.; El siniestro reporta tercero no identificado. Daño severo sin rastro del tercero.. El resultado es una priorización para revisión humana, no una acusación de fraude.",
+      "accion_sugerida": "Solicitar revisión documental antes de continuar el flujo."
+    },
+    {
+      "id_siniestro": "SIN-011057",
+      "ramo": "vehiculos",
+      "ciudad": "Guayaquil",
+      "nivel_riesgo": "Amarillo",
+      "score_final": 62.91,
+      "monto_reclamado": 4728.4,
+      "explicacion_demo": "El siniestro SIN-011057 fue clasificado como Amarillo porque acumula señales de riesgo: El monto reclamado representa el 95% de la suma asegurada.; El siniestro fue reportado 11 días después de la ocurrencia.; El caso no registra reporte policial para un evento que normalmente lo requiere.; El siniestro reporta tercero no identificado. Daño severo sin rastro del tercero.. El resultado es una priorización para revisión humana, no una acusación de fraude.",
+      "accion_sugerida": "Solicitar revisión documental antes de continuar el flujo."
+    },
+    {
+      "id_siniestro": "SIN-021132",
+      "ramo": "vida",
+      "ciudad": "Quito",
+      "nivel_riesgo": "Amarillo",
+      "score_final": 62.9,
+      "monto_reclamado": 60750.0,
+      "explicacion_demo": "El siniestro SIN-021132 fue clasificado como Amarillo porque acumula señales de riesgo: El asegurado registra 4 siniestros previos.; El beneficiario aparece asociado a múltiples reclamos observados.; El siniestro fue reportado 11 días después de la ocurrencia.; El monto reclamado representa el 83% de la suma asegurada.. El resultado es una priorización para revisión humana, no una acusación de fraude.",
+      "accion_sugerida": "Solicitar revisión documental antes de continuar el flujo."
+    },
+    {
+      "id_siniestro": "SIN-000982",
+      "ramo": "hogar",
+      "ciudad": "Manta",
+      "nivel_riesgo": "Amarillo",
+      "score_final": 62.74,
+      "monto_reclamado": 8993.32,
+      "explicacion_demo": "El siniestro SIN-000982 fue clasificado como Amarillo porque acumula señales de riesgo: El asegurado registra 3 siniestros previos.; El monto reclamado representa el 96% de la suma asegurada.; El reclamo de hogar no registra inspección realizada.; El caso está asociado a un proveedor recurrente en casos observados.. El resultado es una priorización para revisión humana, no una acusación de fraude.",
+      "accion_sugerida": "Solicitar revisión documental antes de continuar el flujo."
+    },
+    {
+      "id_siniestro": "SIN-020948",
+      "ramo": "vehiculos",
+      "ciudad": "Quito",
+      "nivel_riesgo": "Amarillo",
+      "score_final": 62.68,
+      "monto_reclamado": 3574.71,
+      "explicacion_demo": "El siniestro SIN-020948 fue clasificado como Amarillo porque acumula señales de riesgo: El asegurado registra 3 siniestros previos.; El monto reclamado representa el 96% de la suma asegurada.; El vehículo registra 3 siniestros previos.; El siniestro fue reportado 14 días después de la ocurrencia.. El resultado es una priorización para revisión humana, no una acusación de fraude.",
+      "accion_sugerida": "Solicitar revisión documental antes de continuar el flujo."
+    }
+  ]
+}

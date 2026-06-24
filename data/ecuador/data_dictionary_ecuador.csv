@@ -1,0 +1,8 @@
+dataset,column,type,description,map_to_reto
+ecu911_2021_2026.csv,source_file,string,Nombre del recurso original de ECU911,siniestros
+inec_siniestros_2021_2026.csv,record_type,string,Tipo de registro extraído (table_cell o download_link),siniestros (contexto agregado)
+sercop_sanciones_2021_2026.csv,ruc,string(13),RUC de proveedor sancionado cuando está disponible,proveedores
+sercop_sanciones_2021_2026.csv,fecha_emision,date,Fecha de emisión de sanción detectada en texto,proveedores
+ocds_proveedores_2021_2026.csv,ocid,string,Identificador OCDS del proceso de contratación,proveedores
+ocds_proveedores_2021_2026.csv,query_supplier_ruc,string(13),RUC usado en consulta supplier para traer historial,proveedores
+ocds_proveedores_2021_2026.csv,amount,numeric_string,Monto adjudicado o asociado al proceso (si existe),proveedores

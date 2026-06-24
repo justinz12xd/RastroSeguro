@@ -1,0 +1,25 @@
+source	category	url	method	note
+ckan_ecu911	Datos Abiertos Ecuador / ECU 911	https://www.datosabiertos.gob.ec/api/3/action/package_show	api	
+ckan_ecu911	Datos Abiertos Ecuador / ECU 911	https://www.datosabiertos.gob.ec/dataset/base-de-emergencias	hybrid	
+ckan_ant	Datos Abiertos Ecuador / ANT	https://datosabiertos.gob.ec/dataset/?organization=antec	html_scrape	
+ckan_ant	Datos Abiertos Ecuador / ANT	https://www.datosabiertos.gob.ec/api/3/action/package_search	api	
+ckan_transport_csv	Datos Abiertos Ecuador	https://www.datosabiertos.gob.ec/dataset/?res_format=CSV&groups=trans	html_scrape	
+ckan_transport_csv	Datos Abiertos Ecuador	https://www.datosabiertos.gob.ec/dataset/estadisticas-vehiculos-2024	hybrid	
+inec_siniestros	INEC / ESTRA (fuente ANT)	https://www.ecuadorencifras.gob.ec/estadisticas-siniestros-de-transito/	html_scrape	
+inec_siniestros	INEC / ESTRA (fuente ANT)	https://www.ecuadorencifras.gob.ec/siniestros-transito-trimestral/	html_scrape	
+inec_siniestros	INEC / ESTRA (fuente ANT)	https://www.ecuadorencifras.gob.ec/estadistica-de-transporte-bases-de-datos/	html_scrape	
+sercop_sanciones	SERCOP	https://portal.compraspublicas.gob.ec/sercop/cat_normativas/Sanciones2024	html_scrape	
+sercop_sanciones	SERCOP	https://portal.compraspublicas.gob.ec/sercop/cat_normativas/Sanciones-2023	html_scrape	
+sercop_sanciones	SERCOP	https://portal.compraspublicas.gob.ec/sercop/cat_normativas/Sanciones-2020	html_scrape	
+ocds_contratacion	Contrataciones Abiertas Ecuador / SERCOP	https://datosabiertos.compraspublicas.gob.ec/PLATAFORMA/api/search_ocds	api	
+ocds_contratacion	Contrataciones Abiertas Ecuador / SERCOP	https://datosabiertos.compraspublicas.gob.ec/PLATAFORMA/api/record	api	
+ocds_contratacion	Contrataciones Abiertas Ecuador / SERCOP	https://datosabiertos.compraspublicas.gob.ec/PLATAFORMA/datos-abiertos/api	download	
+gob_ec_tramites	Gob.ec / ANT / CTE	https://www.gob.ec/cte/tramites/provision-estadisticas-siniestros-transito	download	
+gob_ec_tramites	Gob.ec / ANT / CTE	https://www.gob.ec/ant/tramites/exoneracion-multas-calendarizacion-vehiculo-se-encuentra-taller-mecanico-no-se-presenta-revision-tecnica-vehicular	download	
+inec	INEC	https://www.ecuadorencifras.gob.ec/estadisticas-siniestros-de-transito/	html_scrape	anual
+inec	INEC	https://www.ecuadorencifras.gob.ec/siniestros-transito-trimestral/	html_scrape	trimestral
+inec	INEC	https://www.ecuadorencifras.gob.ec/estadistica-de-transporte-bases-de-datos/	html_scrape	bases
+sercop_sanciones	SERCOP	https://portal.compraspublicas.gob.ec/sercop/cat_normativas/Sanciones-2021	html_scrape	2021
+sercop_sanciones	SERCOP	https://portal.compraspublicas.gob.ec/sercop/cat_normativas/Sanciones-2022	html_scrape	2022
+sercop_sanciones	SERCOP	https://portal.compraspublicas.gob.ec/sercop/cat_normativas/Sanciones-2023	html_scrape	2023
+sercop_sanciones	SERCOP	https://portal.compraspublicas.gob.ec/sercop/cat_normativas/Sanciones2024	html_scrape	2024

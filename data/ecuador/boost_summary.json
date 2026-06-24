@@ -1,0 +1,34 @@
+{
+  "generated_at": "2026-05-27T08:28:18.405636+00:00",
+  "elapsed_seconds": 6447.0,
+  "sercop": {
+    "rows": 613,
+    "rucs_validos": 599,
+    "unique_rucs": 172,
+    "years_covered": [
+      "2019",
+      "2020",
+      "2021",
+      "2022",
+      "2023",
+      "2024"
+    ],
+    "path": "data\\raw\\ecuador\\sercop_sanciones_2021_2026.csv"
+  },
+  "ocds": {
+    "rows": 14279,
+    "thematic_terms": 29,
+    "supplier_rucs_searched": 172,
+    "years_covered": [
+      "2019",
+      "2020",
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      "2026"
+    ],
+    "path": "data\\raw\\ecuador\\ocds_proveedores_2021_2026.csv"
+  }
+}

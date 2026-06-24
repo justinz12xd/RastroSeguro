@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+
+# Notebooks
+.ipynb_checkpoints/
+
+# IDE & OS
+.idea/
+.vscode/
+.DS_Store
+
+# Build
+dist/
+build/
+
+# Agent chat persistence (local SQLite)
+db/
+
+# Data
+data/raw/
+data/curated/
+data/processed/*
+!data/processed/siniestros_scored.csv
+
+# Playwright & Screenshots
+.playwright-mcp/
+*.png
+
+# Agent Teams
+.atl/
+.claude/
+.agents/
+skills-lock.json
+

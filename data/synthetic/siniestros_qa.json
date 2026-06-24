@@ -1,0 +1,50 @@
+{
+  "rows": 25000,
+  "unique_ids": 25000,
+  "fraud_rate": 0.264,
+  "distribution_by_ramo": {
+    "vehiculos": 0.467,
+    "hogar": 0.1666,
+    "vida": 0.1666,
+    "salud": 0.1499,
+    "generales": 0.05
+  },
+  "distribution_by_city_top10": {
+    "Guayaquil": 0.3333,
+    "Quito": 0.3333,
+    "Cuenca": 0.1667,
+    "Manta": 0.1667
+  },
+  "distribution_by_provincia_top10": {
+    "GUAYAS": 0.3333,
+    "PICHINCHA": 0.3333,
+    "AZUAY": 0.1667,
+    "MANABI": 0.1667
+  },
+  "signal_coverage": {
+    "borde_vigencia": 0.2854,
+    "reporte_tardio": 0.3121,
+    "proveedor_recurrente": 0.9998,
+    "beneficiario_recurrente": 1.0,
+    "documentos_inconsistentes": 0.1227,
+    "monto_atipico": 0.5425,
+    "frecuencia_asegurado": 0.0978,
+    "frecuencia_vehiculo": 0.0454,
+    "conductor_recurrente": 0.2697,
+    "sin_tercero": 0.0769
+  },
+  "ecuador_coverage": {
+    "supplier_ruc_real_rate": 0.6236,
+    "lista_restrictiva_rate": 0.6147,
+    "ecu911_provincia_rate": 1.0,
+    "lineage_with_sercop_rate": 1.0
+  },
+  "ecuador_source_usage": {
+    "sercop_usage_rate": 1.0,
+    "ocds_usage_rate": 1.0,
+    "ecu911_usage_rate": 1.0,
+    "inec_usage_rate": 1.0
+  },
+  "ok": true,
+  "issues": []
+}

@@ -1,0 +1,1304 @@
+id_documento,id_siniestro,tipo_documento,entregado,legible,fecha_emision,inconsistencia_detectada,observacion
+DOC-SIN-000001-01,SIN-000001,denuncia,True,False,2019-04-17,False,Documento pendiente de revisión
+DOC-SIN-000001-02,SIN-000001,factura,False,False,2019-04-17,True,Documento pendiente de revisión
+DOC-SIN-000002-01,SIN-000002,denuncia,True,False,2025-02-14,False,Documento pendiente de revisión
+DOC-SIN-000002-02,SIN-000002,factura,False,False,2025-02-14,True,Documento pendiente de revisión
+DOC-SIN-000003-01,SIN-000003,denuncia,True,False,2020-02-02,False,Documento pendiente de revisión
+DOC-SIN-000003-02,SIN-000003,factura,False,False,2020-02-02,True,Documento pendiente de revisión
+DOC-SIN-000004-01,SIN-000004,denuncia,True,False,2026-12-09,False,Documento pendiente de revisión
+DOC-SIN-000004-02,SIN-000004,factura,False,False,2026-12-09,True,Documento pendiente de revisión
+DOC-SIN-000005-01,SIN-000005,denuncia,True,False,2026-11-26,False,Documento pendiente de revisión
+DOC-SIN-000005-02,SIN-000005,factura,False,False,2026-11-26,True,Documento pendiente de revisión
+DOC-SIN-000006-01,SIN-000006,denuncia,True,False,2019-05-18,False,Documento pendiente de revisión
+DOC-SIN-000006-02,SIN-000006,factura,False,False,2019-05-18,True,Documento pendiente de revisión
+DOC-SIN-000007-01,SIN-000007,denuncia,True,False,2025-04-18,False,Documento pendiente de revisión
+DOC-SIN-000007-02,SIN-000007,factura,False,False,2025-04-18,True,Documento pendiente de revisión
+DOC-SIN-000008-01,SIN-000008,denuncia,True,False,2019-09-22,False,Documento pendiente de revisión
+DOC-SIN-000008-02,SIN-000008,factura,False,False,2019-09-22,True,Documento pendiente de revisión
+DOC-SIN-000009-01,SIN-000009,denuncia,True,False,2022-11-03,False,Documento pendiente de revisión
+DOC-SIN-000009-02,SIN-000009,factura,False,False,2022-11-03,True,Documento pendiente de revisión
+DOC-SIN-000010-01,SIN-000010,denuncia,True,False,2023-03-12,False,Documento pendiente de revisión
+DOC-SIN-000010-02,SIN-000010,factura,False,False,2023-03-12,True,Documento pendiente de revisión
+DOC-SIN-000011-01,SIN-000011,denuncia,True,False,2019-11-29,False,Documento pendiente de revisión
+DOC-SIN-000011-02,SIN-000011,factura,False,False,2019-11-29,True,Documento pendiente de revisión
+DOC-SIN-000012-01,SIN-000012,denuncia,True,False,2026-09-26,False,Documento pendiente de revisión
+DOC-SIN-000012-02,SIN-000012,factura,False,False,2026-09-26,True,Documento pendiente de revisión
+DOC-SIN-000013-01,SIN-000013,denuncia,True,True,2021-07-05,False,
+DOC-SIN-000013-02,SIN-000013,factura,True,True,2021-07-05,False,
+DOC-SIN-000013-03,SIN-000013,informe_tecnico,True,True,2021-07-05,False,
+DOC-SIN-000016-01,SIN-000016,denuncia,True,True,2025-03-15,False,
+DOC-SIN-000016-02,SIN-000016,factura,True,True,2025-03-15,False,
+DOC-SIN-000016-03,SIN-000016,informe_tecnico,True,True,2025-03-15,False,
+DOC-SIN-000022-01,SIN-000022,denuncia,True,True,2025-04-04,False,
+DOC-SIN-000022-02,SIN-000022,factura,True,True,2025-04-04,False,
+DOC-SIN-000022-03,SIN-000022,informe_tecnico,True,True,2025-04-04,False,
+DOC-SIN-000023-01,SIN-000023,denuncia,True,True,2026-02-19,False,
+DOC-SIN-000023-02,SIN-000023,factura,True,True,2026-02-19,False,
+DOC-SIN-000023-03,SIN-000023,informe_tecnico,True,True,2026-02-19,False,
+DOC-SIN-000027-01,SIN-000027,denuncia,True,False,2020-03-21,False,Documento pendiente de revisión
+DOC-SIN-000027-02,SIN-000027,factura,False,False,2020-03-21,True,Documento pendiente de revisión
+DOC-SIN-000028-01,SIN-000028,denuncia,True,False,2019-10-27,False,Documento pendiente de revisión
+DOC-SIN-000028-02,SIN-000028,factura,False,False,2019-10-27,True,Documento pendiente de revisión
+DOC-SIN-000034-01,SIN-000034,denuncia,True,True,2025-06-21,False,
+DOC-SIN-000034-02,SIN-000034,factura,True,True,2025-06-21,False,
+DOC-SIN-000034-03,SIN-000034,informe_tecnico,True,True,2025-06-21,False,
+DOC-SIN-000038-01,SIN-000038,denuncia,True,True,2023-09-06,False,
+DOC-SIN-000038-02,SIN-000038,factura,True,True,2023-09-06,False,
+DOC-SIN-000038-03,SIN-000038,informe_tecnico,True,True,2023-09-06,False,
+DOC-SIN-000042-01,SIN-000042,denuncia,True,False,2022-12-05,False,Documento pendiente de revisión
+DOC-SIN-000042-02,SIN-000042,factura,False,False,2022-12-05,True,Documento pendiente de revisión
+DOC-SIN-000043-01,SIN-000043,denuncia,True,False,2021-06-11,False,Documento pendiente de revisión
+DOC-SIN-000043-02,SIN-000043,factura,False,False,2021-06-11,True,Documento pendiente de revisión
+DOC-SIN-000046-01,SIN-000046,denuncia,True,True,2026-04-25,False,
+DOC-SIN-000046-02,SIN-000046,factura,True,True,2026-04-25,False,
+DOC-SIN-000046-03,SIN-000046,informe_tecnico,True,True,2026-04-25,False,
+DOC-SIN-000051-01,SIN-000051,denuncia,True,True,2022-05-03,False,
+DOC-SIN-000051-02,SIN-000051,factura,True,True,2022-05-03,False,
+DOC-SIN-000051-03,SIN-000051,informe_tecnico,True,True,2022-05-03,False,
+DOC-SIN-000052-01,SIN-000052,denuncia,True,False,2025-06-12,False,Documento pendiente de revisión
+DOC-SIN-000052-02,SIN-000052,factura,False,False,2025-06-12,True,Documento pendiente de revisión
+DOC-SIN-000054-01,SIN-000054,denuncia,True,True,2023-11-01,False,
+DOC-SIN-000054-02,SIN-000054,factura,True,True,2023-11-01,False,
+DOC-SIN-000054-03,SIN-000054,informe_tecnico,True,True,2023-11-01,False,
+DOC-SIN-000057-01,SIN-000057,denuncia,True,False,2026-11-07,False,Documento pendiente de revisión
+DOC-SIN-000057-02,SIN-000057,factura,False,False,2026-11-07,True,Documento pendiente de revisión
+DOC-SIN-000059-01,SIN-000059,denuncia,True,True,2024-07-18,False,
+DOC-SIN-000059-02,SIN-000059,factura,True,True,2024-07-18,False,
+DOC-SIN-000059-03,SIN-000059,informe_tecnico,True,True,2024-07-18,False,
+DOC-SIN-000065-01,SIN-000065,denuncia,True,True,2022-08-27,False,
+DOC-SIN-000065-02,SIN-000065,factura,True,True,2022-08-27,False,
+DOC-SIN-000065-03,SIN-000065,informe_tecnico,True,True,2022-08-27,False,
+DOC-SIN-000067-01,SIN-000067,denuncia,True,True,2019-11-03,False,
+DOC-SIN-000067-02,SIN-000067,factura,True,True,2019-11-03,False,
+DOC-SIN-000067-03,SIN-000067,informe_tecnico,True,True,2019-11-03,False,
+DOC-SIN-000071-01,SIN-000071,denuncia,True,True,2026-08-09,False,
+DOC-SIN-000071-02,SIN-000071,factura,True,True,2026-08-09,False,
+DOC-SIN-000071-03,SIN-000071,informe_tecnico,True,True,2026-08-09,False,
+DOC-SIN-000072-01,SIN-000072,denuncia,True,True,2025-06-14,False,
+DOC-SIN-000072-02,SIN-000072,factura,True,True,2025-06-14,False,
+DOC-SIN-000072-03,SIN-000072,informe_tecnico,True,True,2025-06-14,False,
+DOC-SIN-000080-01,SIN-000080,denuncia,True,True,2026-03-27,False,
+DOC-SIN-000080-02,SIN-000080,factura,True,True,2026-03-27,False,
+DOC-SIN-000080-03,SIN-000080,informe_tecnico,True,True,2026-03-27,False,
+DOC-SIN-000088-01,SIN-000088,denuncia,True,True,2026-07-16,False,
+DOC-SIN-000088-02,SIN-000088,factura,True,True,2026-07-16,False,
+DOC-SIN-000088-03,SIN-000088,informe_tecnico,True,True,2026-07-16,False,
+DOC-SIN-000101-01,SIN-000101,denuncia,True,True,2025-05-31,False,
+DOC-SIN-000101-02,SIN-000101,factura,True,True,2025-05-31,False,
+DOC-SIN-000101-03,SIN-000101,informe_tecnico,True,True,2025-05-31,False,
+DOC-SIN-000109-01,SIN-000109,denuncia,True,False,2020-02-28,False,Documento pendiente de revisión
+DOC-SIN-000109-02,SIN-000109,factura,False,False,2020-02-28,True,Documento pendiente de revisión
+DOC-SIN-000115-01,SIN-000115,denuncia,True,True,2025-07-15,False,
+DOC-SIN-000115-02,SIN-000115,factura,True,True,2025-07-15,False,
+DOC-SIN-000115-03,SIN-000115,informe_tecnico,True,True,2025-07-15,False,
+DOC-SIN-000118-01,SIN-000118,denuncia,True,False,2024-11-06,False,Documento pendiente de revisión
+DOC-SIN-000118-02,SIN-000118,factura,False,False,2024-11-06,True,Documento pendiente de revisión
+DOC-SIN-000119-01,SIN-000119,denuncia,True,True,2023-10-20,False,
+DOC-SIN-000119-02,SIN-000119,factura,True,True,2023-10-20,False,
+DOC-SIN-000119-03,SIN-000119,informe_tecnico,True,True,2023-10-20,False,
+DOC-SIN-000124-01,SIN-000124,denuncia,True,False,2026-03-03,False,Documento pendiente de revisión
+DOC-SIN-000124-02,SIN-000124,factura,False,False,2026-03-03,True,Documento pendiente de revisión
+DOC-SIN-000126-01,SIN-000126,denuncia,True,True,2022-11-21,False,
+DOC-SIN-000126-02,SIN-000126,factura,True,True,2022-11-21,False,
+DOC-SIN-000126-03,SIN-000126,informe_tecnico,True,True,2022-11-21,False,
+DOC-SIN-000128-01,SIN-000128,denuncia,True,False,2025-07-25,False,Documento pendiente de revisión
+DOC-SIN-000128-02,SIN-000128,factura,False,False,2025-07-25,True,Documento pendiente de revisión
+DOC-SIN-000131-01,SIN-000131,denuncia,True,True,2024-10-10,False,
+DOC-SIN-000131-02,SIN-000131,factura,True,True,2024-10-10,False,
+DOC-SIN-000131-03,SIN-000131,informe_tecnico,True,True,2024-10-10,False,
+DOC-SIN-000135-01,SIN-000135,denuncia,True,False,2023-06-02,False,Documento pendiente de revisión
+DOC-SIN-000135-02,SIN-000135,factura,False,False,2023-06-02,True,Documento pendiente de revisión
+DOC-SIN-000150-01,SIN-000150,denuncia,True,False,2024-04-04,False,Documento pendiente de revisión
+DOC-SIN-000150-02,SIN-000150,factura,False,False,2024-04-04,True,Documento pendiente de revisión
+DOC-SIN-000153-01,SIN-000153,denuncia,True,True,2026-08-25,False,
+DOC-SIN-000153-02,SIN-000153,factura,True,True,2026-08-25,False,
+DOC-SIN-000153-03,SIN-000153,informe_tecnico,True,True,2026-08-25,False,
+DOC-SIN-000155-01,SIN-000155,denuncia,True,True,2020-07-14,False,
+DOC-SIN-000155-02,SIN-000155,factura,True,True,2020-07-14,False,
+DOC-SIN-000155-03,SIN-000155,informe_tecnico,True,True,2020-07-14,False,
+DOC-SIN-000161-01,SIN-000161,denuncia,True,True,2023-03-30,False,
+DOC-SIN-000161-02,SIN-000161,factura,True,True,2023-03-30,False,
+DOC-SIN-000161-03,SIN-000161,informe_tecnico,True,True,2023-03-30,False,
+DOC-SIN-000163-01,SIN-000163,denuncia,True,False,2019-11-03,False,Documento pendiente de revisión
+DOC-SIN-000163-02,SIN-000163,factura,False,False,2019-11-03,True,Documento pendiente de revisión
+DOC-SIN-000168-01,SIN-000168,denuncia,True,True,2019-09-12,False,
+DOC-SIN-000168-02,SIN-000168,factura,True,True,2019-09-12,False,
+DOC-SIN-000168-03,SIN-000168,informe_tecnico,True,True,2019-09-12,False,
+DOC-SIN-000173-01,SIN-000173,denuncia,True,True,2019-06-30,False,
+DOC-SIN-000173-02,SIN-000173,factura,True,True,2019-06-30,False,
+DOC-SIN-000173-03,SIN-000173,informe_tecnico,True,True,2019-06-30,False,
+DOC-SIN-000175-01,SIN-000175,denuncia,True,True,2020-08-03,False,
+DOC-SIN-000175-02,SIN-000175,factura,True,True,2020-08-03,False,
+DOC-SIN-000175-03,SIN-000175,informe_tecnico,True,True,2020-08-03,False,
+DOC-SIN-000177-01,SIN-000177,denuncia,True,False,2021-10-10,False,Documento pendiente de revisión
+DOC-SIN-000177-02,SIN-000177,factura,False,False,2021-10-10,True,Documento pendiente de revisión
+DOC-SIN-000183-01,SIN-000183,denuncia,True,True,2025-05-09,False,
+DOC-SIN-000183-02,SIN-000183,factura,True,True,2025-05-09,False,
+DOC-SIN-000183-03,SIN-000183,informe_tecnico,True,True,2025-05-09,False,
+DOC-SIN-000187-01,SIN-000187,denuncia,True,False,2026-09-17,False,Documento pendiente de revisión
+DOC-SIN-000187-02,SIN-000187,factura,False,False,2026-09-17,True,Documento pendiente de revisión
+DOC-SIN-000188-01,SIN-000188,denuncia,True,True,2022-07-05,False,
+DOC-SIN-000188-02,SIN-000188,factura,True,True,2022-07-05,False,
+DOC-SIN-000188-03,SIN-000188,informe_tecnico,True,True,2022-07-05,False,
+DOC-SIN-000190-01,SIN-000190,denuncia,True,False,2026-03-16,False,Documento pendiente de revisión
+DOC-SIN-000190-02,SIN-000190,factura,False,False,2026-03-16,True,Documento pendiente de revisión
+DOC-SIN-000192-01,SIN-000192,denuncia,True,True,2025-08-11,False,
+DOC-SIN-000192-02,SIN-000192,factura,True,True,2025-08-11,False,
+DOC-SIN-000192-03,SIN-000192,informe_tecnico,True,True,2025-08-11,False,
+DOC-SIN-000193-01,SIN-000193,denuncia,True,True,2022-06-13,False,
+DOC-SIN-000193-02,SIN-000193,factura,True,True,2022-06-13,False,
+DOC-SIN-000193-03,SIN-000193,informe_tecnico,True,True,2022-06-13,False,
+DOC-SIN-000194-01,SIN-000194,denuncia,True,True,2021-02-07,False,
+DOC-SIN-000194-02,SIN-000194,factura,True,True,2021-02-07,False,
+DOC-SIN-000194-03,SIN-000194,informe_tecnico,True,True,2021-02-07,False,
+DOC-SIN-000196-01,SIN-000196,denuncia,True,False,2024-07-21,False,Documento pendiente de revisión
+DOC-SIN-000196-02,SIN-000196,factura,False,False,2024-07-21,True,Documento pendiente de revisión
+DOC-SIN-000199-01,SIN-000199,denuncia,True,True,2026-11-25,False,
+DOC-SIN-000199-02,SIN-000199,factura,True,True,2026-11-25,False,
+DOC-SIN-000199-03,SIN-000199,informe_tecnico,True,True,2026-11-25,False,
+DOC-SIN-000200-01,SIN-000200,denuncia,True,True,2020-07-10,False,
+DOC-SIN-000200-02,SIN-000200,factura,True,True,2020-07-10,False,
+DOC-SIN-000200-03,SIN-000200,informe_tecnico,True,True,2020-07-10,False,
+DOC-SIN-000203-01,SIN-000203,denuncia,True,False,2022-11-21,False,Documento pendiente de revisión
+DOC-SIN-000203-02,SIN-000203,factura,False,False,2022-11-21,True,Documento pendiente de revisión
+DOC-SIN-000204-01,SIN-000204,denuncia,True,True,2022-06-03,False,
+DOC-SIN-000204-02,SIN-000204,factura,True,True,2022-06-03,False,
+DOC-SIN-000204-03,SIN-000204,informe_tecnico,True,True,2022-06-03,False,
+DOC-SIN-000205-01,SIN-000205,denuncia,True,False,2021-08-19,False,Documento pendiente de revisión
+DOC-SIN-000205-02,SIN-000205,factura,False,False,2021-08-19,True,Documento pendiente de revisión
+DOC-SIN-000219-01,SIN-000219,denuncia,True,False,2021-09-20,False,Documento pendiente de revisión
+DOC-SIN-000219-02,SIN-000219,factura,False,False,2021-09-20,True,Documento pendiente de revisión
+DOC-SIN-000222-01,SIN-000222,denuncia,True,True,2023-06-15,False,
+DOC-SIN-000222-02,SIN-000222,factura,True,True,2023-06-15,False,
+DOC-SIN-000222-03,SIN-000222,informe_tecnico,True,True,2023-06-15,False,
+DOC-SIN-000223-01,SIN-000223,denuncia,True,True,2022-01-24,False,
+DOC-SIN-000223-02,SIN-000223,factura,True,True,2022-01-24,False,
+DOC-SIN-000223-03,SIN-000223,informe_tecnico,True,True,2022-01-24,False,
+DOC-SIN-000224-01,SIN-000224,denuncia,True,True,2020-05-15,False,
+DOC-SIN-000224-02,SIN-000224,factura,True,True,2020-05-15,False,
+DOC-SIN-000224-03,SIN-000224,informe_tecnico,True,True,2020-05-15,False,
+DOC-SIN-000225-01,SIN-000225,denuncia,True,True,2022-12-31,False,
+DOC-SIN-000225-02,SIN-000225,factura,True,True,2022-12-31,False,
+DOC-SIN-000225-03,SIN-000225,informe_tecnico,True,True,2022-12-31,False,
+DOC-SIN-000227-01,SIN-000227,denuncia,True,False,2019-11-11,False,Documento pendiente de revisión
+DOC-SIN-000227-02,SIN-000227,factura,False,False,2019-11-11,True,Documento pendiente de revisión
+DOC-SIN-000230-01,SIN-000230,denuncia,True,True,2025-02-24,False,
+DOC-SIN-000230-02,SIN-000230,factura,True,True,2025-02-24,False,
+DOC-SIN-000230-03,SIN-000230,informe_tecnico,True,True,2025-02-24,False,
+DOC-SIN-000236-01,SIN-000236,denuncia,True,True,2023-04-01,False,
+DOC-SIN-000236-02,SIN-000236,factura,True,True,2023-04-01,False,
+DOC-SIN-000236-03,SIN-000236,informe_tecnico,True,True,2023-04-01,False,
+DOC-SIN-000238-01,SIN-000238,denuncia,True,False,2022-10-16,False,Documento pendiente de revisión
+DOC-SIN-000238-02,SIN-000238,factura,False,False,2022-10-16,True,Documento pendiente de revisión
+DOC-SIN-000239-01,SIN-000239,denuncia,True,True,2020-11-22,False,
+DOC-SIN-000239-02,SIN-000239,factura,True,True,2020-11-22,False,
+DOC-SIN-000239-03,SIN-000239,informe_tecnico,True,True,2020-11-22,False,
+DOC-SIN-000242-01,SIN-000242,denuncia,True,False,2022-03-05,False,Documento pendiente de revisión
+DOC-SIN-000242-02,SIN-000242,factura,False,False,2022-03-05,True,Documento pendiente de revisión
+DOC-SIN-000244-01,SIN-000244,denuncia,True,True,2023-05-07,False,
+DOC-SIN-000244-02,SIN-000244,factura,True,True,2023-05-07,False,
+DOC-SIN-000244-03,SIN-000244,informe_tecnico,True,True,2023-05-07,False,
+DOC-SIN-000248-01,SIN-000248,denuncia,True,True,2025-04-12,False,
+DOC-SIN-000248-02,SIN-000248,factura,True,True,2025-04-12,False,
+DOC-SIN-000248-03,SIN-000248,informe_tecnico,True,True,2025-04-12,False,
+DOC-SIN-000251-01,SIN-000251,denuncia,True,False,2024-05-16,False,Documento pendiente de revisión
+DOC-SIN-000251-02,SIN-000251,factura,False,False,2024-05-16,True,Documento pendiente de revisión
+DOC-SIN-000253-01,SIN-000253,denuncia,True,False,2019-09-28,False,Documento pendiente de revisión
+DOC-SIN-000253-02,SIN-000253,factura,False,False,2019-09-28,True,Documento pendiente de revisión
+DOC-SIN-000254-01,SIN-000254,denuncia,True,True,2022-02-11,False,
+DOC-SIN-000254-02,SIN-000254,factura,True,True,2022-02-11,False,
+DOC-SIN-000254-03,SIN-000254,informe_tecnico,True,True,2022-02-11,False,
+DOC-SIN-000256-01,SIN-000256,denuncia,True,True,2021-05-01,False,
+DOC-SIN-000256-02,SIN-000256,factura,True,True,2021-05-01,False,
+DOC-SIN-000256-03,SIN-000256,informe_tecnico,True,True,2021-05-01,False,
+DOC-SIN-000258-01,SIN-000258,denuncia,True,True,2023-03-24,False,
+DOC-SIN-000258-02,SIN-000258,factura,True,True,2023-03-24,False,
+DOC-SIN-000258-03,SIN-000258,informe_tecnico,True,True,2023-03-24,False,
+DOC-SIN-000262-01,SIN-000262,denuncia,True,True,2023-01-10,False,
+DOC-SIN-000262-02,SIN-000262,factura,True,True,2023-01-10,False,
+DOC-SIN-000262-03,SIN-000262,informe_tecnico,True,True,2023-01-10,False,
+DOC-SIN-000272-01,SIN-000272,denuncia,True,False,2019-06-11,False,Documento pendiente de revisión
+DOC-SIN-000272-02,SIN-000272,factura,False,False,2019-06-11,True,Documento pendiente de revisión
+DOC-SIN-000274-01,SIN-000274,denuncia,True,True,2026-08-13,False,
+DOC-SIN-000274-02,SIN-000274,factura,True,True,2026-08-13,False,
+DOC-SIN-000274-03,SIN-000274,informe_tecnico,True,True,2026-08-13,False,
+DOC-SIN-000277-01,SIN-000277,denuncia,True,True,2026-09-16,False,
+DOC-SIN-000277-02,SIN-000277,factura,True,True,2026-09-16,False,
+DOC-SIN-000277-03,SIN-000277,informe_tecnico,True,True,2026-09-16,False,
+DOC-SIN-000279-01,SIN-000279,denuncia,True,True,2022-11-17,False,
+DOC-SIN-000279-02,SIN-000279,factura,True,True,2022-11-17,False,
+DOC-SIN-000279-03,SIN-000279,informe_tecnico,True,True,2022-11-17,False,
+DOC-SIN-000280-01,SIN-000280,denuncia,True,True,2022-08-12,False,
+DOC-SIN-000280-02,SIN-000280,factura,True,True,2022-08-12,False,
+DOC-SIN-000280-03,SIN-000280,informe_tecnico,True,True,2022-08-12,False,
+DOC-SIN-000281-01,SIN-000281,denuncia,True,False,2024-08-05,False,Documento pendiente de revisión
+DOC-SIN-000281-02,SIN-000281,factura,False,False,2024-08-05,True,Documento pendiente de revisión
+DOC-SIN-000282-01,SIN-000282,denuncia,True,True,2024-09-22,False,
+DOC-SIN-000282-02,SIN-000282,factura,True,True,2024-09-22,False,
+DOC-SIN-000282-03,SIN-000282,informe_tecnico,True,True,2024-09-22,False,
+DOC-SIN-000283-01,SIN-000283,denuncia,True,True,2026-05-15,False,
+DOC-SIN-000283-02,SIN-000283,factura,True,True,2026-05-15,False,
+DOC-SIN-000283-03,SIN-000283,informe_tecnico,True,True,2026-05-15,False,
+DOC-SIN-000284-01,SIN-000284,denuncia,True,True,2023-08-15,False,
+DOC-SIN-000284-02,SIN-000284,factura,True,True,2023-08-15,False,
+DOC-SIN-000284-03,SIN-000284,informe_tecnico,True,True,2023-08-15,False,
+DOC-SIN-000288-01,SIN-000288,denuncia,True,True,2024-10-07,False,
+DOC-SIN-000288-02,SIN-000288,factura,True,True,2024-10-07,False,
+DOC-SIN-000288-03,SIN-000288,informe_tecnico,True,True,2024-10-07,False,
+DOC-SIN-000290-01,SIN-000290,denuncia,True,True,2025-01-03,False,
+DOC-SIN-000290-02,SIN-000290,factura,True,True,2025-01-03,False,
+DOC-SIN-000290-03,SIN-000290,informe_tecnico,True,True,2025-01-03,False,
+DOC-SIN-000292-01,SIN-000292,denuncia,True,True,2023-05-22,False,
+DOC-SIN-000292-02,SIN-000292,factura,True,True,2023-05-22,False,
+DOC-SIN-000292-03,SIN-000292,informe_tecnico,True,True,2023-05-22,False,
+DOC-SIN-000295-01,SIN-000295,denuncia,True,True,2024-03-29,False,
+DOC-SIN-000295-02,SIN-000295,factura,True,True,2024-03-29,False,
+DOC-SIN-000295-03,SIN-000295,informe_tecnico,True,True,2024-03-29,False,
+DOC-SIN-000297-01,SIN-000297,denuncia,True,True,2022-04-23,False,
+DOC-SIN-000297-02,SIN-000297,factura,True,True,2022-04-23,False,
+DOC-SIN-000297-03,SIN-000297,informe_tecnico,True,True,2022-04-23,False,
+DOC-SIN-000298-01,SIN-000298,denuncia,True,True,2022-08-15,False,
+DOC-SIN-000298-02,SIN-000298,factura,True,True,2022-08-15,False,
+DOC-SIN-000298-03,SIN-000298,informe_tecnico,True,True,2022-08-15,False,
+DOC-SIN-000301-01,SIN-000301,denuncia,True,False,2019-11-12,False,Documento pendiente de revisión
+DOC-SIN-000301-02,SIN-000301,factura,False,False,2019-11-12,True,Documento pendiente de revisión
+DOC-SIN-000302-01,SIN-000302,denuncia,True,False,2026-03-20,False,Documento pendiente de revisión
+DOC-SIN-000302-02,SIN-000302,factura,False,False,2026-03-20,True,Documento pendiente de revisión
+DOC-SIN-000304-01,SIN-000304,denuncia,True,True,2026-04-07,False,
+DOC-SIN-000304-02,SIN-000304,factura,True,True,2026-04-07,False,
+DOC-SIN-000304-03,SIN-000304,informe_tecnico,True,True,2026-04-07,False,
+DOC-SIN-000313-01,SIN-000313,denuncia,True,True,2021-04-26,False,
+DOC-SIN-000313-02,SIN-000313,factura,True,True,2021-04-26,False,
+DOC-SIN-000313-03,SIN-000313,informe_tecnico,True,True,2021-04-26,False,
+DOC-SIN-000322-01,SIN-000322,denuncia,True,True,2023-10-24,False,
+DOC-SIN-000322-02,SIN-000322,factura,True,True,2023-10-24,False,
+DOC-SIN-000322-03,SIN-000322,informe_tecnico,True,True,2023-10-24,False,
+DOC-SIN-000325-01,SIN-000325,denuncia,True,True,2020-07-29,False,
+DOC-SIN-000325-02,SIN-000325,factura,True,True,2020-07-29,False,
+DOC-SIN-000325-03,SIN-000325,informe_tecnico,True,True,2020-07-29,False,
+DOC-SIN-000326-01,SIN-000326,denuncia,True,True,2026-02-26,False,
+DOC-SIN-000326-02,SIN-000326,factura,True,True,2026-02-26,False,
+DOC-SIN-000326-03,SIN-000326,informe_tecnico,True,True,2026-02-26,False,
+DOC-SIN-000331-01,SIN-000331,denuncia,True,False,2023-12-31,False,Documento pendiente de revisión
+DOC-SIN-000331-02,SIN-000331,factura,False,False,2023-12-31,True,Documento pendiente de revisión
+DOC-SIN-000332-01,SIN-000332,denuncia,True,False,2021-08-05,False,Documento pendiente de revisión
+DOC-SIN-000332-02,SIN-000332,factura,False,False,2021-08-05,True,Documento pendiente de revisión
+DOC-SIN-000334-01,SIN-000334,denuncia,True,True,2025-12-13,False,
+DOC-SIN-000334-02,SIN-000334,factura,True,True,2025-12-13,False,
+DOC-SIN-000334-03,SIN-000334,informe_tecnico,True,True,2025-12-13,False,
+DOC-SIN-000335-01,SIN-000335,denuncia,True,True,2024-07-23,False,
+DOC-SIN-000335-02,SIN-000335,factura,True,True,2024-07-23,False,
+DOC-SIN-000335-03,SIN-000335,informe_tecnico,True,True,2024-07-23,False,
+DOC-SIN-000348-01,SIN-000348,denuncia,True,False,2024-05-26,False,Documento pendiente de revisión
+DOC-SIN-000348-02,SIN-000348,factura,False,False,2024-05-26,True,Documento pendiente de revisión
+DOC-SIN-000350-01,SIN-000350,denuncia,True,True,2026-04-08,False,
+DOC-SIN-000350-02,SIN-000350,factura,True,True,2026-04-08,False,
+DOC-SIN-000350-03,SIN-000350,informe_tecnico,True,True,2026-04-08,False,
+DOC-SIN-000352-01,SIN-000352,denuncia,True,False,2024-12-31,False,Documento pendiente de revisión
+DOC-SIN-000352-02,SIN-000352,factura,False,False,2024-12-31,True,Documento pendiente de revisión
+DOC-SIN-000353-01,SIN-000353,denuncia,True,True,2022-07-06,False,
+DOC-SIN-000353-02,SIN-000353,factura,True,True,2022-07-06,False,
+DOC-SIN-000353-03,SIN-000353,informe_tecnico,True,True,2022-07-06,False,
+DOC-SIN-000368-01,SIN-000368,denuncia,True,True,2021-11-15,False,
+DOC-SIN-000368-02,SIN-000368,factura,True,True,2021-11-15,False,
+DOC-SIN-000368-03,SIN-000368,informe_tecnico,True,True,2021-11-15,False,
+DOC-SIN-000377-01,SIN-000377,denuncia,True,False,2023-03-22,False,Documento pendiente de revisión
+DOC-SIN-000377-02,SIN-000377,factura,False,False,2023-03-22,True,Documento pendiente de revisión
+DOC-SIN-000379-01,SIN-000379,denuncia,True,False,2026-06-10,False,Documento pendiente de revisión
+DOC-SIN-000379-02,SIN-000379,factura,False,False,2026-06-10,True,Documento pendiente de revisión
+DOC-SIN-000380-01,SIN-000380,denuncia,True,False,2020-03-28,False,Documento pendiente de revisión
+DOC-SIN-000380-02,SIN-000380,factura,False,False,2020-03-28,True,Documento pendiente de revisión
+DOC-SIN-000397-01,SIN-000397,denuncia,True,False,2025-02-22,False,Documento pendiente de revisión
+DOC-SIN-000397-02,SIN-000397,factura,False,False,2025-02-22,True,Documento pendiente de revisión
+DOC-SIN-000403-01,SIN-000403,denuncia,True,True,2022-03-03,False,
+DOC-SIN-000403-02,SIN-000403,factura,True,True,2022-03-03,False,
+DOC-SIN-000403-03,SIN-000403,informe_tecnico,True,True,2022-03-03,False,
+DOC-SIN-000406-01,SIN-000406,denuncia,True,False,2019-05-21,False,Documento pendiente de revisión
+DOC-SIN-000406-02,SIN-000406,factura,False,False,2019-05-21,True,Documento pendiente de revisión
+DOC-SIN-000407-01,SIN-000407,denuncia,True,False,2026-12-28,False,Documento pendiente de revisión
+DOC-SIN-000407-02,SIN-000407,factura,False,False,2026-12-28,True,Documento pendiente de revisión
+DOC-SIN-000412-01,SIN-000412,denuncia,True,False,2019-10-29,False,Documento pendiente de revisión
+DOC-SIN-000412-02,SIN-000412,factura,False,False,2019-10-29,True,Documento pendiente de revisión
+DOC-SIN-000418-01,SIN-000418,denuncia,True,True,2024-06-16,False,
+DOC-SIN-000418-02,SIN-000418,factura,True,True,2024-06-16,False,
+DOC-SIN-000418-03,SIN-000418,informe_tecnico,True,True,2024-06-16,False,
+DOC-SIN-000421-01,SIN-000421,denuncia,True,True,2025-08-05,False,
+DOC-SIN-000421-02,SIN-000421,factura,True,True,2025-08-05,False,
+DOC-SIN-000421-03,SIN-000421,informe_tecnico,True,True,2025-08-05,False,
+DOC-SIN-000438-01,SIN-000438,denuncia,True,True,2023-04-17,False,
+DOC-SIN-000438-02,SIN-000438,factura,True,True,2023-04-17,False,
+DOC-SIN-000438-03,SIN-000438,informe_tecnico,True,True,2023-04-17,False,
+DOC-SIN-000448-01,SIN-000448,denuncia,True,True,2019-10-05,False,
+DOC-SIN-000448-02,SIN-000448,factura,True,True,2019-10-05,False,
+DOC-SIN-000448-03,SIN-000448,informe_tecnico,True,True,2019-10-05,False,
+DOC-SIN-000450-01,SIN-000450,denuncia,True,True,2026-03-05,False,
+DOC-SIN-000450-02,SIN-000450,factura,True,True,2026-03-05,False,
+DOC-SIN-000450-03,SIN-000450,informe_tecnico,True,True,2026-03-05,False,
+DOC-SIN-000451-01,SIN-000451,denuncia,True,True,2019-01-20,False,
+DOC-SIN-000451-02,SIN-000451,factura,True,True,2019-01-20,False,
+DOC-SIN-000451-03,SIN-000451,informe_tecnico,True,True,2019-01-20,False,
+DOC-SIN-000458-01,SIN-000458,denuncia,True,True,2025-06-21,False,
+DOC-SIN-000458-02,SIN-000458,factura,True,True,2025-06-21,False,
+DOC-SIN-000458-03,SIN-000458,informe_tecnico,True,True,2025-06-21,False,
+DOC-SIN-000464-01,SIN-000464,denuncia,True,True,2023-03-22,False,
+DOC-SIN-000464-02,SIN-000464,factura,True,True,2023-03-22,False,
+DOC-SIN-000464-03,SIN-000464,informe_tecnico,True,True,2023-03-22,False,
+DOC-SIN-000465-01,SIN-000465,denuncia,True,False,2019-10-05,False,Documento pendiente de revisión
+DOC-SIN-000465-02,SIN-000465,factura,False,False,2019-10-05,True,Documento pendiente de revisión
+DOC-SIN-000468-01,SIN-000468,denuncia,True,True,2022-06-09,False,
+DOC-SIN-000468-02,SIN-000468,factura,True,True,2022-06-09,False,
+DOC-SIN-000468-03,SIN-000468,informe_tecnico,True,True,2022-06-09,False,
+DOC-SIN-000469-01,SIN-000469,denuncia,True,False,2021-02-01,False,Documento pendiente de revisión
+DOC-SIN-000469-02,SIN-000469,factura,False,False,2021-02-01,True,Documento pendiente de revisión
+DOC-SIN-000481-01,SIN-000481,denuncia,True,True,2022-04-09,False,
+DOC-SIN-000481-02,SIN-000481,factura,True,True,2022-04-09,False,
+DOC-SIN-000481-03,SIN-000481,informe_tecnico,True,True,2022-04-09,False,
+DOC-SIN-000488-01,SIN-000488,denuncia,True,False,2019-03-06,False,Documento pendiente de revisión
+DOC-SIN-000488-02,SIN-000488,factura,False,False,2019-03-06,True,Documento pendiente de revisión
+DOC-SIN-000494-01,SIN-000494,denuncia,True,False,2024-02-06,False,Documento pendiente de revisión
+DOC-SIN-000494-02,SIN-000494,factura,False,False,2024-02-06,True,Documento pendiente de revisión
+DOC-SIN-000495-01,SIN-000495,denuncia,True,True,2021-01-03,False,
+DOC-SIN-000495-02,SIN-000495,factura,True,True,2021-01-03,False,
+DOC-SIN-000495-03,SIN-000495,informe_tecnico,True,True,2021-01-03,False,
+DOC-SIN-000496-01,SIN-000496,denuncia,True,False,2024-09-07,False,Documento pendiente de revisión
+DOC-SIN-000496-02,SIN-000496,factura,False,False,2024-09-07,True,Documento pendiente de revisión
+DOC-SIN-000500-01,SIN-000500,denuncia,True,False,2021-08-19,False,Documento pendiente de revisión
+DOC-SIN-000500-02,SIN-000500,factura,False,False,2021-08-19,True,Documento pendiente de revisión
+DOC-SIN-000503-01,SIN-000503,denuncia,True,False,2022-01-15,False,Documento pendiente de revisión
+DOC-SIN-000503-02,SIN-000503,factura,False,False,2022-01-15,True,Documento pendiente de revisión
+DOC-SIN-000509-01,SIN-000509,denuncia,True,True,2019-04-09,False,
+DOC-SIN-000509-02,SIN-000509,factura,True,True,2019-04-09,False,
+DOC-SIN-000509-03,SIN-000509,informe_tecnico,True,True,2019-04-09,False,
+DOC-SIN-000517-01,SIN-000517,denuncia,True,True,2025-06-24,False,
+DOC-SIN-000517-02,SIN-000517,factura,True,True,2025-06-24,False,
+DOC-SIN-000517-03,SIN-000517,informe_tecnico,True,True,2025-06-24,False,
+DOC-SIN-000523-01,SIN-000523,denuncia,True,True,2021-11-26,False,
+DOC-SIN-000523-02,SIN-000523,factura,True,True,2021-11-26,False,
+DOC-SIN-000523-03,SIN-000523,informe_tecnico,True,True,2021-11-26,False,
+DOC-SIN-000524-01,SIN-000524,denuncia,True,True,2025-12-17,False,
+DOC-SIN-000524-02,SIN-000524,factura,True,True,2025-12-17,False,
+DOC-SIN-000524-03,SIN-000524,informe_tecnico,True,True,2025-12-17,False,
+DOC-SIN-000527-01,SIN-000527,denuncia,True,True,2019-08-17,False,
+DOC-SIN-000527-02,SIN-000527,factura,True,True,2019-08-17,False,
+DOC-SIN-000527-03,SIN-000527,informe_tecnico,True,True,2019-08-17,False,
+DOC-SIN-000534-01,SIN-000534,denuncia,True,True,2024-05-06,False,
+DOC-SIN-000534-02,SIN-000534,factura,True,True,2024-05-06,False,
+DOC-SIN-000534-03,SIN-000534,informe_tecnico,True,True,2024-05-06,False,
+DOC-SIN-000536-01,SIN-000536,denuncia,True,True,2024-11-23,False,
+DOC-SIN-000536-02,SIN-000536,factura,True,True,2024-11-23,False,
+DOC-SIN-000536-03,SIN-000536,informe_tecnico,True,True,2024-11-23,False,
+DOC-SIN-000539-01,SIN-000539,denuncia,True,True,2019-03-22,False,
+DOC-SIN-000539-02,SIN-000539,factura,True,True,2019-03-22,False,
+DOC-SIN-000539-03,SIN-000539,informe_tecnico,True,True,2019-03-22,False,
+DOC-SIN-000551-01,SIN-000551,denuncia,True,True,2024-09-03,False,
+DOC-SIN-000551-02,SIN-000551,factura,True,True,2024-09-03,False,
+DOC-SIN-000551-03,SIN-000551,informe_tecnico,True,True,2024-09-03,False,
+DOC-SIN-000553-01,SIN-000553,denuncia,True,True,2023-08-20,False,
+DOC-SIN-000553-02,SIN-000553,factura,True,True,2023-08-20,False,
+DOC-SIN-000553-03,SIN-000553,informe_tecnico,True,True,2023-08-20,False,
+DOC-SIN-000556-01,SIN-000556,denuncia,True,True,2026-10-27,False,
+DOC-SIN-000556-02,SIN-000556,factura,True,True,2026-10-27,False,
+DOC-SIN-000556-03,SIN-000556,informe_tecnico,True,True,2026-10-27,False,
+DOC-SIN-000563-01,SIN-000563,denuncia,True,False,2026-11-25,False,Documento pendiente de revisión
+DOC-SIN-000563-02,SIN-000563,factura,False,False,2026-11-25,True,Documento pendiente de revisión
+DOC-SIN-000564-01,SIN-000564,denuncia,True,True,2024-11-22,False,
+DOC-SIN-000564-02,SIN-000564,factura,True,True,2024-11-22,False,
+DOC-SIN-000564-03,SIN-000564,informe_tecnico,True,True,2024-11-22,False,
+DOC-SIN-000565-01,SIN-000565,denuncia,True,True,2021-06-11,False,
+DOC-SIN-000565-02,SIN-000565,factura,True,True,2021-06-11,False,
+DOC-SIN-000565-03,SIN-000565,informe_tecnico,True,True,2021-06-11,False,
+DOC-SIN-000566-01,SIN-000566,denuncia,True,True,2020-07-29,False,
+DOC-SIN-000566-02,SIN-000566,factura,True,True,2020-07-29,False,
+DOC-SIN-000566-03,SIN-000566,informe_tecnico,True,True,2020-07-29,False,
+DOC-SIN-000567-01,SIN-000567,denuncia,True,True,2019-07-24,False,
+DOC-SIN-000567-02,SIN-000567,factura,True,True,2019-07-24,False,
+DOC-SIN-000567-03,SIN-000567,informe_tecnico,True,True,2019-07-24,False,
+DOC-SIN-000571-01,SIN-000571,denuncia,True,True,2019-08-30,False,
+DOC-SIN-000571-02,SIN-000571,factura,True,True,2019-08-30,False,
+DOC-SIN-000571-03,SIN-000571,informe_tecnico,True,True,2019-08-30,False,
+DOC-SIN-000572-01,SIN-000572,denuncia,True,False,2024-07-22,False,Documento pendiente de revisión
+DOC-SIN-000572-02,SIN-000572,factura,False,False,2024-07-22,True,Documento pendiente de revisión
+DOC-SIN-000574-01,SIN-000574,denuncia,True,False,2020-08-06,False,Documento pendiente de revisión
+DOC-SIN-000574-02,SIN-000574,factura,False,False,2020-08-06,True,Documento pendiente de revisión
+DOC-SIN-000581-01,SIN-000581,denuncia,True,True,2026-11-26,False,
+DOC-SIN-000581-02,SIN-000581,factura,True,True,2026-11-26,False,
+DOC-SIN-000581-03,SIN-000581,informe_tecnico,True,True,2026-11-26,False,
+DOC-SIN-000587-01,SIN-000587,denuncia,True,False,2025-07-15,False,Documento pendiente de revisión
+DOC-SIN-000587-02,SIN-000587,factura,False,False,2025-07-15,True,Documento pendiente de revisión
+DOC-SIN-000592-01,SIN-000592,denuncia,True,True,2019-08-29,False,
+DOC-SIN-000592-02,SIN-000592,factura,True,True,2019-08-29,False,
+DOC-SIN-000592-03,SIN-000592,informe_tecnico,True,True,2019-08-29,False,
+DOC-SIN-000595-01,SIN-000595,denuncia,True,True,2025-03-30,False,
+DOC-SIN-000595-02,SIN-000595,factura,True,True,2025-03-30,False,
+DOC-SIN-000595-03,SIN-000595,informe_tecnico,True,True,2025-03-30,False,
+DOC-SIN-000599-01,SIN-000599,denuncia,True,False,2022-03-06,False,Documento pendiente de revisión
+DOC-SIN-000599-02,SIN-000599,factura,False,False,2022-03-06,True,Documento pendiente de revisión
+DOC-SIN-000611-01,SIN-000611,denuncia,True,True,2019-02-25,False,
+DOC-SIN-000611-02,SIN-000611,factura,True,True,2019-02-25,False,
+DOC-SIN-000611-03,SIN-000611,informe_tecnico,True,True,2019-02-25,False,
+DOC-SIN-000618-01,SIN-000618,denuncia,True,True,2026-05-20,False,
+DOC-SIN-000618-02,SIN-000618,factura,True,True,2026-05-20,False,
+DOC-SIN-000618-03,SIN-000618,informe_tecnico,True,True,2026-05-20,False,
+DOC-SIN-000625-01,SIN-000625,denuncia,True,True,2020-12-19,False,
+DOC-SIN-000625-02,SIN-000625,factura,True,True,2020-12-19,False,
+DOC-SIN-000625-03,SIN-000625,informe_tecnico,True,True,2020-12-19,False,
+DOC-SIN-000626-01,SIN-000626,denuncia,True,False,2019-03-08,False,Documento pendiente de revisión
+DOC-SIN-000626-02,SIN-000626,factura,False,False,2019-03-08,True,Documento pendiente de revisión
+DOC-SIN-000629-01,SIN-000629,denuncia,True,True,2025-11-05,False,
+DOC-SIN-000629-02,SIN-000629,factura,True,True,2025-11-05,False,
+DOC-SIN-000629-03,SIN-000629,informe_tecnico,True,True,2025-11-05,False,
+DOC-SIN-000631-01,SIN-000631,denuncia,True,True,2024-06-12,False,
+DOC-SIN-000631-02,SIN-000631,factura,True,True,2024-06-12,False,
+DOC-SIN-000631-03,SIN-000631,informe_tecnico,True,True,2024-06-12,False,
+DOC-SIN-000633-01,SIN-000633,denuncia,True,True,2019-10-22,False,
+DOC-SIN-000633-02,SIN-000633,factura,True,True,2019-10-22,False,
+DOC-SIN-000633-03,SIN-000633,informe_tecnico,True,True,2019-10-22,False,
+DOC-SIN-000634-01,SIN-000634,denuncia,True,True,2024-06-28,False,
+DOC-SIN-000634-02,SIN-000634,factura,True,True,2024-06-28,False,
+DOC-SIN-000634-03,SIN-000634,informe_tecnico,True,True,2024-06-28,False,
+DOC-SIN-000636-01,SIN-000636,denuncia,True,False,2021-12-17,False,Documento pendiente de revisión
+DOC-SIN-000636-02,SIN-000636,factura,False,False,2021-12-17,True,Documento pendiente de revisión
+DOC-SIN-000641-01,SIN-000641,denuncia,True,False,2026-02-26,False,Documento pendiente de revisión
+DOC-SIN-000641-02,SIN-000641,factura,False,False,2026-02-26,True,Documento pendiente de revisión
+DOC-SIN-000651-01,SIN-000651,denuncia,True,True,2022-07-19,False,
+DOC-SIN-000651-02,SIN-000651,factura,True,True,2022-07-19,False,
+DOC-SIN-000651-03,SIN-000651,informe_tecnico,True,True,2022-07-19,False,
+DOC-SIN-000653-01,SIN-000653,denuncia,True,True,2026-06-29,False,
+DOC-SIN-000653-02,SIN-000653,factura,True,True,2026-06-29,False,
+DOC-SIN-000653-03,SIN-000653,informe_tecnico,True,True,2026-06-29,False,
+DOC-SIN-000654-01,SIN-000654,denuncia,True,True,2022-10-15,False,
+DOC-SIN-000654-02,SIN-000654,factura,True,True,2022-10-15,False,
+DOC-SIN-000654-03,SIN-000654,informe_tecnico,True,True,2022-10-15,False,
+DOC-SIN-000655-01,SIN-000655,denuncia,True,False,2026-06-01,False,Documento pendiente de revisión
+DOC-SIN-000655-02,SIN-000655,factura,False,False,2026-06-01,True,Documento pendiente de revisión
+DOC-SIN-000661-01,SIN-000661,denuncia,True,False,2026-10-16,False,Documento pendiente de revisión
+DOC-SIN-000661-02,SIN-000661,factura,False,False,2026-10-16,True,Documento pendiente de revisión
+DOC-SIN-000663-01,SIN-000663,denuncia,True,False,2021-01-20,False,Documento pendiente de revisión
+DOC-SIN-000663-02,SIN-000663,factura,False,False,2021-01-20,True,Documento pendiente de revisión
+DOC-SIN-000664-01,SIN-000664,denuncia,True,False,2020-05-31,False,Documento pendiente de revisión
+DOC-SIN-000664-02,SIN-000664,factura,False,False,2020-05-31,True,Documento pendiente de revisión
+DOC-SIN-000666-01,SIN-000666,denuncia,True,False,2021-06-04,False,Documento pendiente de revisión
+DOC-SIN-000666-02,SIN-000666,factura,False,False,2021-06-04,True,Documento pendiente de revisión
+DOC-SIN-000668-01,SIN-000668,denuncia,True,True,2025-10-14,False,
+DOC-SIN-000668-02,SIN-000668,factura,True,True,2025-10-14,False,
+DOC-SIN-000668-03,SIN-000668,informe_tecnico,True,True,2025-10-14,False,
+DOC-SIN-000678-01,SIN-000678,denuncia,True,False,2019-01-22,False,Documento pendiente de revisión
+DOC-SIN-000678-02,SIN-000678,factura,False,False,2019-01-22,True,Documento pendiente de revisión
+DOC-SIN-000679-01,SIN-000679,denuncia,True,False,2025-11-26,False,Documento pendiente de revisión
+DOC-SIN-000679-02,SIN-000679,factura,False,False,2025-11-26,True,Documento pendiente de revisión
+DOC-SIN-000680-01,SIN-000680,denuncia,True,False,2026-05-20,False,Documento pendiente de revisión
+DOC-SIN-000680-02,SIN-000680,factura,False,False,2026-05-20,True,Documento pendiente de revisión
+DOC-SIN-000681-01,SIN-000681,denuncia,True,False,2023-11-30,False,Documento pendiente de revisión
+DOC-SIN-000681-02,SIN-000681,factura,False,False,2023-11-30,True,Documento pendiente de revisión
+DOC-SIN-000682-01,SIN-000682,denuncia,True,True,2022-01-02,False,
+DOC-SIN-000682-02,SIN-000682,factura,True,True,2022-01-02,False,
+DOC-SIN-000682-03,SIN-000682,informe_tecnico,True,True,2022-01-02,False,
+DOC-SIN-000683-01,SIN-000683,denuncia,True,True,2023-05-27,False,
+DOC-SIN-000683-02,SIN-000683,factura,True,True,2023-05-27,False,
+DOC-SIN-000683-03,SIN-000683,informe_tecnico,True,True,2023-05-27,False,
+DOC-SIN-000688-01,SIN-000688,denuncia,True,False,2025-10-22,False,Documento pendiente de revisión
+DOC-SIN-000688-02,SIN-000688,factura,False,False,2025-10-22,True,Documento pendiente de revisión
+DOC-SIN-000690-01,SIN-000690,denuncia,True,False,2020-02-11,False,Documento pendiente de revisión
+DOC-SIN-000690-02,SIN-000690,factura,False,False,2020-02-11,True,Documento pendiente de revisión
+DOC-SIN-000691-01,SIN-000691,denuncia,True,True,2025-05-01,False,
+DOC-SIN-000691-02,SIN-000691,factura,True,True,2025-05-01,False,
+DOC-SIN-000691-03,SIN-000691,informe_tecnico,True,True,2025-05-01,False,
+DOC-SIN-000692-01,SIN-000692,denuncia,True,True,2020-06-17,False,
+DOC-SIN-000692-02,SIN-000692,factura,True,True,2020-06-17,False,
+DOC-SIN-000692-03,SIN-000692,informe_tecnico,True,True,2020-06-17,False,
+DOC-SIN-000694-01,SIN-000694,denuncia,True,True,2024-11-28,False,
+DOC-SIN-000694-02,SIN-000694,factura,True,True,2024-11-28,False,
+DOC-SIN-000694-03,SIN-000694,informe_tecnico,True,True,2024-11-28,False,
+DOC-SIN-000696-01,SIN-000696,denuncia,True,True,2020-07-11,False,
+DOC-SIN-000696-02,SIN-000696,factura,True,True,2020-07-11,False,
+DOC-SIN-000696-03,SIN-000696,informe_tecnico,True,True,2020-07-11,False,
+DOC-SIN-000704-01,SIN-000704,denuncia,True,True,2022-03-01,False,
+DOC-SIN-000704-02,SIN-000704,factura,True,True,2022-03-01,False,
+DOC-SIN-000704-03,SIN-000704,informe_tecnico,True,True,2022-03-01,False,
+DOC-SIN-000705-01,SIN-000705,denuncia,True,True,2023-10-18,False,
+DOC-SIN-000705-02,SIN-000705,factura,True,True,2023-10-18,False,
+DOC-SIN-000705-03,SIN-000705,informe_tecnico,True,True,2023-10-18,False,
+DOC-SIN-000709-01,SIN-000709,denuncia,True,True,2019-01-20,False,
+DOC-SIN-000709-02,SIN-000709,factura,True,True,2019-01-20,False,
+DOC-SIN-000709-03,SIN-000709,informe_tecnico,True,True,2019-01-20,False,
+DOC-SIN-000710-01,SIN-000710,denuncia,True,True,2023-09-28,False,
+DOC-SIN-000710-02,SIN-000710,factura,True,True,2023-09-28,False,
+DOC-SIN-000710-03,SIN-000710,informe_tecnico,True,True,2023-09-28,False,
+DOC-SIN-000714-01,SIN-000714,denuncia,True,True,2024-11-06,False,
+DOC-SIN-000714-02,SIN-000714,factura,True,True,2024-11-06,False,
+DOC-SIN-000714-03,SIN-000714,informe_tecnico,True,True,2024-11-06,False,
+DOC-SIN-000718-01,SIN-000718,denuncia,True,True,2020-02-13,False,
+DOC-SIN-000718-02,SIN-000718,factura,True,True,2020-02-13,False,
+DOC-SIN-000718-03,SIN-000718,informe_tecnico,True,True,2020-02-13,False,
+DOC-SIN-000730-01,SIN-000730,denuncia,True,True,2025-09-23,False,
+DOC-SIN-000730-02,SIN-000730,factura,True,True,2025-09-23,False,
+DOC-SIN-000730-03,SIN-000730,informe_tecnico,True,True,2025-09-23,False,
+DOC-SIN-000742-01,SIN-000742,denuncia,True,False,2021-07-08,False,Documento pendiente de revisión
+DOC-SIN-000742-02,SIN-000742,factura,False,False,2021-07-08,True,Documento pendiente de revisión
+DOC-SIN-000743-01,SIN-000743,denuncia,True,True,2020-03-14,False,
+DOC-SIN-000743-02,SIN-000743,factura,True,True,2020-03-14,False,
+DOC-SIN-000743-03,SIN-000743,informe_tecnico,True,True,2020-03-14,False,
+DOC-SIN-000746-01,SIN-000746,denuncia,True,False,2024-10-01,False,Documento pendiente de revisión
+DOC-SIN-000746-02,SIN-000746,factura,False,False,2024-10-01,True,Documento pendiente de revisión
+DOC-SIN-000755-01,SIN-000755,denuncia,True,True,2023-07-12,False,
+DOC-SIN-000755-02,SIN-000755,factura,True,True,2023-07-12,False,
+DOC-SIN-000755-03,SIN-000755,informe_tecnico,True,True,2023-07-12,False,
+DOC-SIN-000756-01,SIN-000756,denuncia,True,True,2019-02-16,False,
+DOC-SIN-000756-02,SIN-000756,factura,True,True,2019-02-16,False,
+DOC-SIN-000756-03,SIN-000756,informe_tecnico,True,True,2019-02-16,False,
+DOC-SIN-000767-01,SIN-000767,denuncia,True,True,2022-06-14,False,
+DOC-SIN-000767-02,SIN-000767,factura,True,True,2022-06-14,False,
+DOC-SIN-000767-03,SIN-000767,informe_tecnico,True,True,2022-06-14,False,
+DOC-SIN-000769-01,SIN-000769,denuncia,True,True,2022-04-13,False,
+DOC-SIN-000769-02,SIN-000769,factura,True,True,2022-04-13,False,
+DOC-SIN-000769-03,SIN-000769,informe_tecnico,True,True,2022-04-13,False,
+DOC-SIN-000773-01,SIN-000773,denuncia,True,True,2019-06-18,False,
+DOC-SIN-000773-02,SIN-000773,factura,True,True,2019-06-18,False,
+DOC-SIN-000773-03,SIN-000773,informe_tecnico,True,True,2019-06-18,False,
+DOC-SIN-000779-01,SIN-000779,denuncia,True,True,2022-12-21,False,
+DOC-SIN-000779-02,SIN-000779,factura,True,True,2022-12-21,False,
+DOC-SIN-000779-03,SIN-000779,informe_tecnico,True,True,2022-12-21,False,
+DOC-SIN-000784-01,SIN-000784,denuncia,True,False,2025-02-17,False,Documento pendiente de revisión
+DOC-SIN-000784-02,SIN-000784,factura,False,False,2025-02-17,True,Documento pendiente de revisión
+DOC-SIN-000787-01,SIN-000787,denuncia,True,False,2024-02-23,False,Documento pendiente de revisión
+DOC-SIN-000787-02,SIN-000787,factura,False,False,2024-02-23,True,Documento pendiente de revisión
+DOC-SIN-000790-01,SIN-000790,denuncia,True,True,2020-10-31,False,
+DOC-SIN-000790-02,SIN-000790,factura,True,True,2020-10-31,False,
+DOC-SIN-000790-03,SIN-000790,informe_tecnico,True,True,2020-10-31,False,
+DOC-SIN-000796-01,SIN-000796,denuncia,True,True,2021-11-04,False,
+DOC-SIN-000796-02,SIN-000796,factura,True,True,2021-11-04,False,
+DOC-SIN-000796-03,SIN-000796,informe_tecnico,True,True,2021-11-04,False,
+DOC-SIN-000797-01,SIN-000797,denuncia,True,True,2025-12-21,False,
+DOC-SIN-000797-02,SIN-000797,factura,True,True,2025-12-21,False,
+DOC-SIN-000797-03,SIN-000797,informe_tecnico,True,True,2025-12-21,False,
+DOC-SIN-000800-01,SIN-000800,denuncia,True,False,2019-08-17,False,Documento pendiente de revisión
+DOC-SIN-000800-02,SIN-000800,factura,False,False,2019-08-17,True,Documento pendiente de revisión
+DOC-SIN-000802-01,SIN-000802,denuncia,True,True,2025-01-14,False,
+DOC-SIN-000802-02,SIN-000802,factura,True,True,2025-01-14,False,
+DOC-SIN-000802-03,SIN-000802,informe_tecnico,True,True,2025-01-14,False,
+DOC-SIN-000803-01,SIN-000803,denuncia,True,True,2026-05-28,False,
+DOC-SIN-000803-02,SIN-000803,factura,True,True,2026-05-28,False,
+DOC-SIN-000803-03,SIN-000803,informe_tecnico,True,True,2026-05-28,False,
+DOC-SIN-000810-01,SIN-000810,denuncia,True,True,2019-03-13,False,
+DOC-SIN-000810-02,SIN-000810,factura,True,True,2019-03-13,False,
+DOC-SIN-000810-03,SIN-000810,informe_tecnico,True,True,2019-03-13,False,
+DOC-SIN-000811-01,SIN-000811,denuncia,True,False,2026-05-06,False,Documento pendiente de revisión
+DOC-SIN-000811-02,SIN-000811,factura,False,False,2026-05-06,True,Documento pendiente de revisión
+DOC-SIN-000822-01,SIN-000822,denuncia,True,True,2020-05-22,False,
+DOC-SIN-000822-02,SIN-000822,factura,True,True,2020-05-22,False,
+DOC-SIN-000822-03,SIN-000822,informe_tecnico,True,True,2020-05-22,False,
+DOC-SIN-000823-01,SIN-000823,denuncia,True,True,2024-12-24,False,
+DOC-SIN-000823-02,SIN-000823,factura,True,True,2024-12-24,False,
+DOC-SIN-000823-03,SIN-000823,informe_tecnico,True,True,2024-12-24,False,
+DOC-SIN-000828-01,SIN-000828,denuncia,True,False,2020-12-11,False,Documento pendiente de revisión
+DOC-SIN-000828-02,SIN-000828,factura,False,False,2020-12-11,True,Documento pendiente de revisión
+DOC-SIN-000829-01,SIN-000829,denuncia,True,True,2019-06-24,False,
+DOC-SIN-000829-02,SIN-000829,factura,True,True,2019-06-24,False,
+DOC-SIN-000829-03,SIN-000829,informe_tecnico,True,True,2019-06-24,False,
+DOC-SIN-000833-01,SIN-000833,denuncia,True,True,2024-04-20,False,
+DOC-SIN-000833-02,SIN-000833,factura,True,True,2024-04-20,False,
+DOC-SIN-000833-03,SIN-000833,informe_tecnico,True,True,2024-04-20,False,
+DOC-SIN-000837-01,SIN-000837,denuncia,True,True,2021-08-28,False,
+DOC-SIN-000837-02,SIN-000837,factura,True,True,2021-08-28,False,
+DOC-SIN-000837-03,SIN-000837,informe_tecnico,True,True,2021-08-28,False,
+DOC-SIN-000838-01,SIN-000838,denuncia,True,True,2019-08-14,False,
+DOC-SIN-000838-02,SIN-000838,factura,True,True,2019-08-14,False,
+DOC-SIN-000838-03,SIN-000838,informe_tecnico,True,True,2019-08-14,False,
+DOC-SIN-000844-01,SIN-000844,denuncia,True,True,2020-02-14,False,
+DOC-SIN-000844-02,SIN-000844,factura,True,True,2020-02-14,False,
+DOC-SIN-000844-03,SIN-000844,informe_tecnico,True,True,2020-02-14,False,
+DOC-SIN-000852-01,SIN-000852,denuncia,True,True,2020-07-20,False,
+DOC-SIN-000852-02,SIN-000852,factura,True,True,2020-07-20,False,
+DOC-SIN-000852-03,SIN-000852,informe_tecnico,True,True,2020-07-20,False,
+DOC-SIN-000856-01,SIN-000856,denuncia,True,True,2021-05-07,False,
+DOC-SIN-000856-02,SIN-000856,factura,True,True,2021-05-07,False,
+DOC-SIN-000856-03,SIN-000856,informe_tecnico,True,True,2021-05-07,False,
+DOC-SIN-000860-01,SIN-000860,denuncia,True,False,2023-01-18,False,Documento pendiente de revisión
+DOC-SIN-000860-02,SIN-000860,factura,False,False,2023-01-18,True,Documento pendiente de revisión
+DOC-SIN-000869-01,SIN-000869,denuncia,True,True,2023-01-29,False,
+DOC-SIN-000869-02,SIN-000869,factura,True,True,2023-01-29,False,
+DOC-SIN-000869-03,SIN-000869,informe_tecnico,True,True,2023-01-29,False,
+DOC-SIN-000872-01,SIN-000872,denuncia,True,True,2020-02-19,False,
+DOC-SIN-000872-02,SIN-000872,factura,True,True,2020-02-19,False,
+DOC-SIN-000872-03,SIN-000872,informe_tecnico,True,True,2020-02-19,False,
+DOC-SIN-000873-01,SIN-000873,denuncia,True,True,2021-09-28,False,
+DOC-SIN-000873-02,SIN-000873,factura,True,True,2021-09-28,False,
+DOC-SIN-000873-03,SIN-000873,informe_tecnico,True,True,2021-09-28,False,
+DOC-SIN-000876-01,SIN-000876,denuncia,True,True,2021-04-17,False,
+DOC-SIN-000876-02,SIN-000876,factura,True,True,2021-04-17,False,
+DOC-SIN-000876-03,SIN-000876,informe_tecnico,True,True,2021-04-17,False,
+DOC-SIN-000885-01,SIN-000885,denuncia,True,False,2019-03-13,False,Documento pendiente de revisión
+DOC-SIN-000885-02,SIN-000885,factura,False,False,2019-03-13,True,Documento pendiente de revisión
+DOC-SIN-000890-01,SIN-000890,denuncia,True,False,2026-05-15,False,Documento pendiente de revisión
+DOC-SIN-000890-02,SIN-000890,factura,False,False,2026-05-15,True,Documento pendiente de revisión
+DOC-SIN-000892-01,SIN-000892,denuncia,True,True,2024-08-11,False,
+DOC-SIN-000892-02,SIN-000892,factura,True,True,2024-08-11,False,
+DOC-SIN-000892-03,SIN-000892,informe_tecnico,True,True,2024-08-11,False,
+DOC-SIN-000899-01,SIN-000899,denuncia,True,True,2024-10-07,False,
+DOC-SIN-000899-02,SIN-000899,factura,True,True,2024-10-07,False,
+DOC-SIN-000899-03,SIN-000899,informe_tecnico,True,True,2024-10-07,False,
+DOC-SIN-000902-01,SIN-000902,denuncia,True,True,2019-04-15,False,
+DOC-SIN-000902-02,SIN-000902,factura,True,True,2019-04-15,False,
+DOC-SIN-000902-03,SIN-000902,informe_tecnico,True,True,2019-04-15,False,
+DOC-SIN-000906-01,SIN-000906,denuncia,True,False,2020-10-02,False,Documento pendiente de revisión
+DOC-SIN-000906-02,SIN-000906,factura,False,False,2020-10-02,True,Documento pendiente de revisión
+DOC-SIN-000907-01,SIN-000907,denuncia,True,True,2023-02-03,False,
+DOC-SIN-000907-02,SIN-000907,factura,True,True,2023-02-03,False,
+DOC-SIN-000907-03,SIN-000907,informe_tecnico,True,True,2023-02-03,False,
+DOC-SIN-000910-01,SIN-000910,denuncia,True,False,2026-01-09,False,Documento pendiente de revisión
+DOC-SIN-000910-02,SIN-000910,factura,False,False,2026-01-09,True,Documento pendiente de revisión
+DOC-SIN-000911-01,SIN-000911,denuncia,True,False,2021-01-19,False,Documento pendiente de revisión
+DOC-SIN-000911-02,SIN-000911,factura,False,False,2021-01-19,True,Documento pendiente de revisión
+DOC-SIN-000916-01,SIN-000916,denuncia,True,True,2024-09-29,False,
+DOC-SIN-000916-02,SIN-000916,factura,True,True,2024-09-29,False,
+DOC-SIN-000916-03,SIN-000916,informe_tecnico,True,True,2024-09-29,False,
+DOC-SIN-000923-01,SIN-000923,denuncia,True,True,2023-02-22,False,
+DOC-SIN-000923-02,SIN-000923,factura,True,True,2023-02-22,False,
+DOC-SIN-000923-03,SIN-000923,informe_tecnico,True,True,2023-02-22,False,
+DOC-SIN-000932-01,SIN-000932,denuncia,True,True,2022-01-21,False,
+DOC-SIN-000932-02,SIN-000932,factura,True,True,2022-01-21,False,
+DOC-SIN-000932-03,SIN-000932,informe_tecnico,True,True,2022-01-21,False,
+DOC-SIN-000936-01,SIN-000936,denuncia,True,False,2019-03-15,False,Documento pendiente de revisión
+DOC-SIN-000936-02,SIN-000936,factura,False,False,2019-03-15,True,Documento pendiente de revisión
+DOC-SIN-000938-01,SIN-000938,denuncia,True,False,2020-03-24,False,Documento pendiente de revisión
+DOC-SIN-000938-02,SIN-000938,factura,False,False,2020-03-24,True,Documento pendiente de revisión
+DOC-SIN-000943-01,SIN-000943,denuncia,True,True,2020-06-25,False,
+DOC-SIN-000943-02,SIN-000943,factura,True,True,2020-06-25,False,
+DOC-SIN-000943-03,SIN-000943,informe_tecnico,True,True,2020-06-25,False,
+DOC-SIN-000948-01,SIN-000948,denuncia,True,True,2023-01-04,False,
+DOC-SIN-000948-02,SIN-000948,factura,True,True,2023-01-04,False,
+DOC-SIN-000948-03,SIN-000948,informe_tecnico,True,True,2023-01-04,False,
+DOC-SIN-000954-01,SIN-000954,denuncia,True,True,2019-06-17,False,
+DOC-SIN-000954-02,SIN-000954,factura,True,True,2019-06-17,False,
+DOC-SIN-000954-03,SIN-000954,informe_tecnico,True,True,2019-06-17,False,
+DOC-SIN-000955-01,SIN-000955,denuncia,True,True,2025-10-23,False,
+DOC-SIN-000955-02,SIN-000955,factura,True,True,2025-10-23,False,
+DOC-SIN-000955-03,SIN-000955,informe_tecnico,True,True,2025-10-23,False,
+DOC-SIN-000959-01,SIN-000959,denuncia,True,False,2023-06-30,False,Documento pendiente de revisión
+DOC-SIN-000959-02,SIN-000959,factura,False,False,2023-06-30,True,Documento pendiente de revisión
+DOC-SIN-000960-01,SIN-000960,denuncia,True,True,2026-09-02,False,
+DOC-SIN-000960-02,SIN-000960,factura,True,True,2026-09-02,False,
+DOC-SIN-000960-03,SIN-000960,informe_tecnico,True,True,2026-09-02,False,
+DOC-SIN-000962-01,SIN-000962,denuncia,True,True,2023-08-01,False,
+DOC-SIN-000962-02,SIN-000962,factura,True,True,2023-08-01,False,
+DOC-SIN-000962-03,SIN-000962,informe_tecnico,True,True,2023-08-01,False,
+DOC-SIN-000970-01,SIN-000970,denuncia,True,True,2023-11-23,False,
+DOC-SIN-000970-02,SIN-000970,factura,True,True,2023-11-23,False,
+DOC-SIN-000970-03,SIN-000970,informe_tecnico,True,True,2023-11-23,False,
+DOC-SIN-000975-01,SIN-000975,denuncia,True,True,2023-11-08,False,
+DOC-SIN-000975-02,SIN-000975,factura,True,True,2023-11-08,False,
+DOC-SIN-000975-03,SIN-000975,informe_tecnico,True,True,2023-11-08,False,
+DOC-SIN-000979-01,SIN-000979,denuncia,True,True,2024-10-30,False,
+DOC-SIN-000979-02,SIN-000979,factura,True,True,2024-10-30,False,
+DOC-SIN-000979-03,SIN-000979,informe_tecnico,True,True,2024-10-30,False,
+DOC-SIN-000980-01,SIN-000980,denuncia,True,True,2023-02-06,False,
+DOC-SIN-000980-02,SIN-000980,factura,True,True,2023-02-06,False,
+DOC-SIN-000980-03,SIN-000980,informe_tecnico,True,True,2023-02-06,False,
+DOC-SIN-000982-01,SIN-000982,denuncia,True,True,2021-03-23,False,
+DOC-SIN-000982-02,SIN-000982,factura,True,True,2021-03-23,False,
+DOC-SIN-000982-03,SIN-000982,informe_tecnico,True,True,2021-03-23,False,
+DOC-SIN-000983-01,SIN-000983,denuncia,True,True,2022-03-28,False,
+DOC-SIN-000983-02,SIN-000983,factura,True,True,2022-03-28,False,
+DOC-SIN-000983-03,SIN-000983,informe_tecnico,True,True,2022-03-28,False,
+DOC-SIN-000985-01,SIN-000985,denuncia,True,False,2021-06-13,False,Documento pendiente de revisión
+DOC-SIN-000985-02,SIN-000985,factura,False,False,2021-06-13,True,Documento pendiente de revisión
+DOC-SIN-000988-01,SIN-000988,denuncia,True,True,2023-04-10,False,
+DOC-SIN-000988-02,SIN-000988,factura,True,True,2023-04-10,False,
+DOC-SIN-000988-03,SIN-000988,informe_tecnico,True,True,2023-04-10,False,
+DOC-SIN-000990-01,SIN-000990,denuncia,True,True,2025-06-06,False,
+DOC-SIN-000990-02,SIN-000990,factura,True,True,2025-06-06,False,
+DOC-SIN-000990-03,SIN-000990,informe_tecnico,True,True,2025-06-06,False,
+DOC-SIN-001006-01,SIN-001006,denuncia,True,True,2019-06-15,False,
+DOC-SIN-001006-02,SIN-001006,factura,True,True,2019-06-15,False,
+DOC-SIN-001006-03,SIN-001006,informe_tecnico,True,True,2019-06-15,False,
+DOC-SIN-001007-01,SIN-001007,denuncia,True,True,2024-07-19,False,
+DOC-SIN-001007-02,SIN-001007,factura,True,True,2024-07-19,False,
+DOC-SIN-001007-03,SIN-001007,informe_tecnico,True,True,2024-07-19,False,
+DOC-SIN-001008-01,SIN-001008,denuncia,True,True,2027-01-04,False,
+DOC-SIN-001008-02,SIN-001008,factura,True,True,2027-01-04,False,
+DOC-SIN-001008-03,SIN-001008,informe_tecnico,True,True,2027-01-04,False,
+DOC-SIN-001013-01,SIN-001013,denuncia,True,True,2023-03-22,False,
+DOC-SIN-001013-02,SIN-001013,factura,True,True,2023-03-22,False,
+DOC-SIN-001013-03,SIN-001013,informe_tecnico,True,True,2023-03-22,False,
+DOC-SIN-001015-01,SIN-001015,denuncia,True,False,2020-01-26,False,Documento pendiente de revisión
+DOC-SIN-001015-02,SIN-001015,factura,False,False,2020-01-26,True,Documento pendiente de revisión
+DOC-SIN-001019-01,SIN-001019,denuncia,True,True,2019-09-05,False,
+DOC-SIN-001019-02,SIN-001019,factura,True,True,2019-09-05,False,
+DOC-SIN-001019-03,SIN-001019,informe_tecnico,True,True,2019-09-05,False,
+DOC-SIN-001020-01,SIN-001020,denuncia,True,True,2025-05-23,False,
+DOC-SIN-001020-02,SIN-001020,factura,True,True,2025-05-23,False,
+DOC-SIN-001020-03,SIN-001020,informe_tecnico,True,True,2025-05-23,False,
+DOC-SIN-001021-01,SIN-001021,denuncia,True,True,2020-12-09,False,
+DOC-SIN-001021-02,SIN-001021,factura,True,True,2020-12-09,False,
+DOC-SIN-001021-03,SIN-001021,informe_tecnico,True,True,2020-12-09,False,
+DOC-SIN-001034-01,SIN-001034,denuncia,True,True,2024-10-04,False,
+DOC-SIN-001034-02,SIN-001034,factura,True,True,2024-10-04,False,
+DOC-SIN-001034-03,SIN-001034,informe_tecnico,True,True,2024-10-04,False,
+DOC-SIN-001039-01,SIN-001039,denuncia,True,False,2022-03-02,False,Documento pendiente de revisión
+DOC-SIN-001039-02,SIN-001039,factura,False,False,2022-03-02,True,Documento pendiente de revisión
+DOC-SIN-001043-01,SIN-001043,denuncia,True,False,2026-07-02,False,Documento pendiente de revisión
+DOC-SIN-001043-02,SIN-001043,factura,False,False,2026-07-02,True,Documento pendiente de revisión
+DOC-SIN-001045-01,SIN-001045,denuncia,True,True,2024-03-02,False,
+DOC-SIN-001045-02,SIN-001045,factura,True,True,2024-03-02,False,
+DOC-SIN-001045-03,SIN-001045,informe_tecnico,True,True,2024-03-02,False,
+DOC-SIN-001046-01,SIN-001046,denuncia,True,False,2021-08-20,False,Documento pendiente de revisión
+DOC-SIN-001046-02,SIN-001046,factura,False,False,2021-08-20,True,Documento pendiente de revisión
+DOC-SIN-001048-01,SIN-001048,denuncia,True,False,2021-04-14,False,Documento pendiente de revisión
+DOC-SIN-001048-02,SIN-001048,factura,False,False,2021-04-14,True,Documento pendiente de revisión
+DOC-SIN-001050-01,SIN-001050,denuncia,True,True,2020-08-20,False,
+DOC-SIN-001050-02,SIN-001050,factura,True,True,2020-08-20,False,
+DOC-SIN-001050-03,SIN-001050,informe_tecnico,True,True,2020-08-20,False,
+DOC-SIN-001054-01,SIN-001054,denuncia,True,False,2023-06-06,False,Documento pendiente de revisión
+DOC-SIN-001054-02,SIN-001054,factura,False,False,2023-06-06,True,Documento pendiente de revisión
+DOC-SIN-001055-01,SIN-001055,denuncia,True,True,2021-02-12,False,
+DOC-SIN-001055-02,SIN-001055,factura,True,True,2021-02-12,False,
+DOC-SIN-001055-03,SIN-001055,informe_tecnico,True,True,2021-02-12,False,
+DOC-SIN-001064-01,SIN-001064,denuncia,True,False,2023-11-30,False,Documento pendiente de revisión
+DOC-SIN-001064-02,SIN-001064,factura,False,False,2023-11-30,True,Documento pendiente de revisión
+DOC-SIN-001067-01,SIN-001067,denuncia,True,True,2019-06-17,False,
+DOC-SIN-001067-02,SIN-001067,factura,True,True,2019-06-17,False,
+DOC-SIN-001067-03,SIN-001067,informe_tecnico,True,True,2019-06-17,False,
+DOC-SIN-001081-01,SIN-001081,denuncia,True,True,2025-03-15,False,
+DOC-SIN-001081-02,SIN-001081,factura,True,True,2025-03-15,False,
+DOC-SIN-001081-03,SIN-001081,informe_tecnico,True,True,2025-03-15,False,
+DOC-SIN-001086-01,SIN-001086,denuncia,True,False,2024-04-14,False,Documento pendiente de revisión
+DOC-SIN-001086-02,SIN-001086,factura,False,False,2024-04-14,True,Documento pendiente de revisión
+DOC-SIN-001089-01,SIN-001089,denuncia,True,False,2020-08-11,False,Documento pendiente de revisión
+DOC-SIN-001089-02,SIN-001089,factura,False,False,2020-08-11,True,Documento pendiente de revisión
+DOC-SIN-001090-01,SIN-001090,denuncia,True,False,2024-04-14,False,Documento pendiente de revisión
+DOC-SIN-001090-02,SIN-001090,factura,False,False,2024-04-14,True,Documento pendiente de revisión
+DOC-SIN-001097-01,SIN-001097,denuncia,True,False,2023-06-24,False,Documento pendiente de revisión
+DOC-SIN-001097-02,SIN-001097,factura,False,False,2023-06-24,True,Documento pendiente de revisión
+DOC-SIN-001101-01,SIN-001101,denuncia,True,False,2023-12-11,False,Documento pendiente de revisión
+DOC-SIN-001101-02,SIN-001101,factura,False,False,2023-12-11,True,Documento pendiente de revisión
+DOC-SIN-001102-01,SIN-001102,denuncia,True,False,2021-03-05,False,Documento pendiente de revisión
+DOC-SIN-001102-02,SIN-001102,factura,False,False,2021-03-05,True,Documento pendiente de revisión
+DOC-SIN-001111-01,SIN-001111,denuncia,True,True,2022-10-05,False,
+DOC-SIN-001111-02,SIN-001111,factura,True,True,2022-10-05,False,
+DOC-SIN-001111-03,SIN-001111,informe_tecnico,True,True,2022-10-05,False,
+DOC-SIN-001118-01,SIN-001118,denuncia,True,False,2020-08-13,False,Documento pendiente de revisión
+DOC-SIN-001118-02,SIN-001118,factura,False,False,2020-08-13,True,Documento pendiente de revisión
+DOC-SIN-001126-01,SIN-001126,denuncia,True,False,2025-02-07,False,Documento pendiente de revisión
+DOC-SIN-001126-02,SIN-001126,factura,False,False,2025-02-07,True,Documento pendiente de revisión
+DOC-SIN-001131-01,SIN-001131,denuncia,True,False,2025-05-27,False,Documento pendiente de revisión
+DOC-SIN-001131-02,SIN-001131,factura,False,False,2025-05-27,True,Documento pendiente de revisión
+DOC-SIN-001132-01,SIN-001132,denuncia,True,False,2020-04-22,False,Documento pendiente de revisión
+DOC-SIN-001132-02,SIN-001132,factura,False,False,2020-04-22,True,Documento pendiente de revisión
+DOC-SIN-001134-01,SIN-001134,denuncia,True,True,2024-08-12,False,
+DOC-SIN-001134-02,SIN-001134,factura,True,True,2024-08-12,False,
+DOC-SIN-001134-03,SIN-001134,informe_tecnico,True,True,2024-08-12,False,
+DOC-SIN-001137-01,SIN-001137,denuncia,True,True,2022-10-01,False,
+DOC-SIN-001137-02,SIN-001137,factura,True,True,2022-10-01,False,
+DOC-SIN-001137-03,SIN-001137,informe_tecnico,True,True,2022-10-01,False,
+DOC-SIN-001146-01,SIN-001146,denuncia,True,True,2024-02-13,False,
+DOC-SIN-001146-02,SIN-001146,factura,True,True,2024-02-13,False,
+DOC-SIN-001146-03,SIN-001146,informe_tecnico,True,True,2024-02-13,False,
+DOC-SIN-001148-01,SIN-001148,denuncia,True,True,2019-04-05,False,
+DOC-SIN-001148-02,SIN-001148,factura,True,True,2019-04-05,False,
+DOC-SIN-001148-03,SIN-001148,informe_tecnico,True,True,2019-04-05,False,
+DOC-SIN-001152-01,SIN-001152,denuncia,True,True,2020-07-25,False,
+DOC-SIN-001152-02,SIN-001152,factura,True,True,2020-07-25,False,
+DOC-SIN-001152-03,SIN-001152,informe_tecnico,True,True,2020-07-25,False,
+DOC-SIN-001163-01,SIN-001163,denuncia,True,True,2025-02-12,False,
+DOC-SIN-001163-02,SIN-001163,factura,True,True,2025-02-12,False,
+DOC-SIN-001163-03,SIN-001163,informe_tecnico,True,True,2025-02-12,False,
+DOC-SIN-001164-01,SIN-001164,denuncia,True,False,2021-07-02,False,Documento pendiente de revisión
+DOC-SIN-001164-02,SIN-001164,factura,False,False,2021-07-02,True,Documento pendiente de revisión
+DOC-SIN-001165-01,SIN-001165,denuncia,True,True,2022-10-30,False,
+DOC-SIN-001165-02,SIN-001165,factura,True,True,2022-10-30,False,
+DOC-SIN-001165-03,SIN-001165,informe_tecnico,True,True,2022-10-30,False,
+DOC-SIN-001168-01,SIN-001168,denuncia,True,False,2024-07-12,False,Documento pendiente de revisión
+DOC-SIN-001168-02,SIN-001168,factura,False,False,2024-07-12,True,Documento pendiente de revisión
+DOC-SIN-001177-01,SIN-001177,denuncia,True,False,2023-08-20,False,Documento pendiente de revisión
+DOC-SIN-001177-02,SIN-001177,factura,False,False,2023-08-20,True,Documento pendiente de revisión
+DOC-SIN-001178-01,SIN-001178,denuncia,True,False,2022-02-06,False,Documento pendiente de revisión
+DOC-SIN-001178-02,SIN-001178,factura,False,False,2022-02-06,True,Documento pendiente de revisión
+DOC-SIN-001184-01,SIN-001184,denuncia,True,False,2025-12-30,False,Documento pendiente de revisión
+DOC-SIN-001184-02,SIN-001184,factura,False,False,2025-12-30,True,Documento pendiente de revisión
+DOC-SIN-001185-01,SIN-001185,denuncia,True,True,2022-03-28,False,
+DOC-SIN-001185-02,SIN-001185,factura,True,True,2022-03-28,False,
+DOC-SIN-001185-03,SIN-001185,informe_tecnico,True,True,2022-03-28,False,
+DOC-SIN-001186-01,SIN-001186,denuncia,True,False,2024-09-02,False,Documento pendiente de revisión
+DOC-SIN-001186-02,SIN-001186,factura,False,False,2024-09-02,True,Documento pendiente de revisión
+DOC-SIN-001193-01,SIN-001193,denuncia,True,True,2025-07-09,False,
+DOC-SIN-001193-02,SIN-001193,factura,True,True,2025-07-09,False,
+DOC-SIN-001193-03,SIN-001193,informe_tecnico,True,True,2025-07-09,False,
+DOC-SIN-001199-01,SIN-001199,denuncia,True,False,2022-03-23,False,Documento pendiente de revisión
+DOC-SIN-001199-02,SIN-001199,factura,False,False,2022-03-23,True,Documento pendiente de revisión
+DOC-SIN-001204-01,SIN-001204,denuncia,True,True,2019-08-27,False,
+DOC-SIN-001204-02,SIN-001204,factura,True,True,2019-08-27,False,
+DOC-SIN-001204-03,SIN-001204,informe_tecnico,True,True,2019-08-27,False,
+DOC-SIN-001206-01,SIN-001206,denuncia,True,False,2024-01-31,False,Documento pendiente de revisión
+DOC-SIN-001206-02,SIN-001206,factura,False,False,2024-01-31,True,Documento pendiente de revisión
+DOC-SIN-001207-01,SIN-001207,denuncia,True,True,2024-05-13,False,
+DOC-SIN-001207-02,SIN-001207,factura,True,True,2024-05-13,False,
+DOC-SIN-001207-03,SIN-001207,informe_tecnico,True,True,2024-05-13,False,
+DOC-SIN-001212-01,SIN-001212,denuncia,True,False,2020-04-12,False,Documento pendiente de revisión
+DOC-SIN-001212-02,SIN-001212,factura,False,False,2020-04-12,True,Documento pendiente de revisión
+DOC-SIN-001216-01,SIN-001216,denuncia,True,False,2023-07-30,False,Documento pendiente de revisión
+DOC-SIN-001216-02,SIN-001216,factura,False,False,2023-07-30,True,Documento pendiente de revisión
+DOC-SIN-001217-01,SIN-001217,denuncia,True,False,2022-09-08,False,Documento pendiente de revisión
+DOC-SIN-001217-02,SIN-001217,factura,False,False,2022-09-08,True,Documento pendiente de revisión
+DOC-SIN-001221-01,SIN-001221,denuncia,True,True,2026-01-29,False,
+DOC-SIN-001221-02,SIN-001221,factura,True,True,2026-01-29,False,
+DOC-SIN-001221-03,SIN-001221,informe_tecnico,True,True,2026-01-29,False,
+DOC-SIN-001225-01,SIN-001225,denuncia,True,True,2023-02-28,False,
+DOC-SIN-001225-02,SIN-001225,factura,True,True,2023-02-28,False,
+DOC-SIN-001225-03,SIN-001225,informe_tecnico,True,True,2023-02-28,False,
+DOC-SIN-001228-01,SIN-001228,denuncia,True,True,2021-12-15,False,
+DOC-SIN-001228-02,SIN-001228,factura,True,True,2021-12-15,False,
+DOC-SIN-001228-03,SIN-001228,informe_tecnico,True,True,2021-12-15,False,
+DOC-SIN-001229-01,SIN-001229,denuncia,True,False,2025-08-16,False,Documento pendiente de revisión
+DOC-SIN-001229-02,SIN-001229,factura,False,False,2025-08-16,True,Documento pendiente de revisión
+DOC-SIN-001233-01,SIN-001233,denuncia,True,False,2020-12-11,False,Documento pendiente de revisión
+DOC-SIN-001233-02,SIN-001233,factura,False,False,2020-12-11,True,Documento pendiente de revisión
+DOC-SIN-001239-01,SIN-001239,denuncia,True,False,2023-03-06,False,Documento pendiente de revisión
+DOC-SIN-001239-02,SIN-001239,factura,False,False,2023-03-06,True,Documento pendiente de revisión
+DOC-SIN-001240-01,SIN-001240,denuncia,True,False,2022-08-20,False,Documento pendiente de revisión
+DOC-SIN-001240-02,SIN-001240,factura,False,False,2022-08-20,True,Documento pendiente de revisión
+DOC-SIN-001242-01,SIN-001242,denuncia,True,False,2023-02-19,False,Documento pendiente de revisión
+DOC-SIN-001242-02,SIN-001242,factura,False,False,2023-02-19,True,Documento pendiente de revisión
+DOC-SIN-001244-01,SIN-001244,denuncia,True,False,2021-04-15,False,Documento pendiente de revisión
+DOC-SIN-001244-02,SIN-001244,factura,False,False,2021-04-15,True,Documento pendiente de revisión
+DOC-SIN-001247-01,SIN-001247,denuncia,True,True,2021-01-02,False,
+DOC-SIN-001247-02,SIN-001247,factura,True,True,2021-01-02,False,
+DOC-SIN-001247-03,SIN-001247,informe_tecnico,True,True,2021-01-02,False,
+DOC-SIN-001250-01,SIN-001250,denuncia,True,True,2024-07-24,False,
+DOC-SIN-001250-02,SIN-001250,factura,True,True,2024-07-24,False,
+DOC-SIN-001250-03,SIN-001250,informe_tecnico,True,True,2024-07-24,False,
+DOC-SIN-001255-01,SIN-001255,denuncia,True,True,2023-06-18,False,
+DOC-SIN-001255-02,SIN-001255,factura,True,True,2023-06-18,False,
+DOC-SIN-001255-03,SIN-001255,informe_tecnico,True,True,2023-06-18,False,
+DOC-SIN-001256-01,SIN-001256,denuncia,True,True,2024-03-06,False,
+DOC-SIN-001256-02,SIN-001256,factura,True,True,2024-03-06,False,
+DOC-SIN-001256-03,SIN-001256,informe_tecnico,True,True,2024-03-06,False,
+DOC-SIN-001258-01,SIN-001258,denuncia,True,True,2024-08-17,False,
+DOC-SIN-001258-02,SIN-001258,factura,True,True,2024-08-17,False,
+DOC-SIN-001258-03,SIN-001258,informe_tecnico,True,True,2024-08-17,False,
+DOC-SIN-001259-01,SIN-001259,denuncia,True,False,2026-06-03,False,Documento pendiente de revisión
+DOC-SIN-001259-02,SIN-001259,factura,False,False,2026-06-03,True,Documento pendiente de revisión
+DOC-SIN-001260-01,SIN-001260,denuncia,True,False,2026-06-09,False,Documento pendiente de revisión
+DOC-SIN-001260-02,SIN-001260,factura,False,False,2026-06-09,True,Documento pendiente de revisión
+DOC-SIN-001261-01,SIN-001261,denuncia,True,False,2019-02-25,False,Documento pendiente de revisión
+DOC-SIN-001261-02,SIN-001261,factura,False,False,2019-02-25,True,Documento pendiente de revisión
+DOC-SIN-001262-01,SIN-001262,denuncia,True,False,2022-10-25,False,Documento pendiente de revisión
+DOC-SIN-001262-02,SIN-001262,factura,False,False,2022-10-25,True,Documento pendiente de revisión
+DOC-SIN-001269-01,SIN-001269,denuncia,True,False,2022-11-26,False,Documento pendiente de revisión
+DOC-SIN-001269-02,SIN-001269,factura,False,False,2022-11-26,True,Documento pendiente de revisión
+DOC-SIN-001278-01,SIN-001278,denuncia,True,True,2019-06-24,False,
+DOC-SIN-001278-02,SIN-001278,factura,True,True,2019-06-24,False,
+DOC-SIN-001278-03,SIN-001278,informe_tecnico,True,True,2019-06-24,False,
+DOC-SIN-001279-01,SIN-001279,denuncia,True,True,2026-04-19,False,
+DOC-SIN-001279-02,SIN-001279,factura,True,True,2026-04-19,False,
+DOC-SIN-001279-03,SIN-001279,informe_tecnico,True,True,2026-04-19,False,
+DOC-SIN-001295-01,SIN-001295,denuncia,True,False,2020-03-23,False,Documento pendiente de revisión
+DOC-SIN-001295-02,SIN-001295,factura,False,False,2020-03-23,True,Documento pendiente de revisión
+DOC-SIN-001301-01,SIN-001301,denuncia,True,False,2020-07-09,False,Documento pendiente de revisión
+DOC-SIN-001301-02,SIN-001301,factura,False,False,2020-07-09,True,Documento pendiente de revisión
+DOC-SIN-001302-01,SIN-001302,denuncia,True,False,2019-09-29,False,Documento pendiente de revisión
+DOC-SIN-001302-02,SIN-001302,factura,False,False,2019-09-29,True,Documento pendiente de revisión
+DOC-SIN-001307-01,SIN-001307,denuncia,True,True,2022-04-09,False,
+DOC-SIN-001307-02,SIN-001307,factura,True,True,2022-04-09,False,
+DOC-SIN-001307-03,SIN-001307,informe_tecnico,True,True,2022-04-09,False,
+DOC-SIN-001309-01,SIN-001309,denuncia,True,False,2020-03-01,False,Documento pendiente de revisión
+DOC-SIN-001309-02,SIN-001309,factura,False,False,2020-03-01,True,Documento pendiente de revisión
+DOC-SIN-001314-01,SIN-001314,denuncia,True,True,2026-05-06,False,
+DOC-SIN-001314-02,SIN-001314,factura,True,True,2026-05-06,False,
+DOC-SIN-001314-03,SIN-001314,informe_tecnico,True,True,2026-05-06,False,
+DOC-SIN-001317-01,SIN-001317,denuncia,True,False,2025-02-16,False,Documento pendiente de revisión
+DOC-SIN-001317-02,SIN-001317,factura,False,False,2025-02-16,True,Documento pendiente de revisión
+DOC-SIN-001320-01,SIN-001320,denuncia,True,True,2024-12-25,False,
+DOC-SIN-001320-02,SIN-001320,factura,True,True,2024-12-25,False,
+DOC-SIN-001320-03,SIN-001320,informe_tecnico,True,True,2024-12-25,False,
+DOC-SIN-001329-01,SIN-001329,denuncia,True,True,2019-06-06,False,
+DOC-SIN-001329-02,SIN-001329,factura,True,True,2019-06-06,False,
+DOC-SIN-001329-03,SIN-001329,informe_tecnico,True,True,2019-06-06,False,
+DOC-SIN-001330-01,SIN-001330,denuncia,True,False,2019-11-07,False,Documento pendiente de revisión
+DOC-SIN-001330-02,SIN-001330,factura,False,False,2019-11-07,True,Documento pendiente de revisión
+DOC-SIN-001335-01,SIN-001335,denuncia,True,False,2020-01-05,False,Documento pendiente de revisión
+DOC-SIN-001335-02,SIN-001335,factura,False,False,2020-01-05,True,Documento pendiente de revisión
+DOC-SIN-001342-01,SIN-001342,denuncia,True,True,2024-10-30,False,
+DOC-SIN-001342-02,SIN-001342,factura,True,True,2024-10-30,False,
+DOC-SIN-001342-03,SIN-001342,informe_tecnico,True,True,2024-10-30,False,
+DOC-SIN-001345-01,SIN-001345,denuncia,True,True,2026-09-07,False,
+DOC-SIN-001345-02,SIN-001345,factura,True,True,2026-09-07,False,
+DOC-SIN-001345-03,SIN-001345,informe_tecnico,True,True,2026-09-07,False,
+DOC-SIN-001351-01,SIN-001351,denuncia,True,True,2022-09-18,False,
+DOC-SIN-001351-02,SIN-001351,factura,True,True,2022-09-18,False,
+DOC-SIN-001351-03,SIN-001351,informe_tecnico,True,True,2022-09-18,False,
+DOC-SIN-001352-01,SIN-001352,denuncia,True,True,2019-02-20,False,
+DOC-SIN-001352-02,SIN-001352,factura,True,True,2019-02-20,False,
+DOC-SIN-001352-03,SIN-001352,informe_tecnico,True,True,2019-02-20,False,
+DOC-SIN-001356-01,SIN-001356,denuncia,True,True,2022-10-16,False,
+DOC-SIN-001356-02,SIN-001356,factura,True,True,2022-10-16,False,
+DOC-SIN-001356-03,SIN-001356,informe_tecnico,True,True,2022-10-16,False,
+DOC-SIN-001357-01,SIN-001357,denuncia,True,True,2024-07-19,False,
+DOC-SIN-001357-02,SIN-001357,factura,True,True,2024-07-19,False,
+DOC-SIN-001357-03,SIN-001357,informe_tecnico,True,True,2024-07-19,False,
+DOC-SIN-001358-01,SIN-001358,denuncia,True,False,2019-10-03,False,Documento pendiente de revisión
+DOC-SIN-001358-02,SIN-001358,factura,False,False,2019-10-03,True,Documento pendiente de revisión
+DOC-SIN-001361-01,SIN-001361,denuncia,True,True,2019-10-28,False,
+DOC-SIN-001361-02,SIN-001361,factura,True,True,2019-10-28,False,
+DOC-SIN-001361-03,SIN-001361,informe_tecnico,True,True,2019-10-28,False,
+DOC-SIN-001364-01,SIN-001364,denuncia,True,True,2021-06-02,False,
+DOC-SIN-001364-02,SIN-001364,factura,True,True,2021-06-02,False,
+DOC-SIN-001364-03,SIN-001364,informe_tecnico,True,True,2021-06-02,False,
+DOC-SIN-001365-01,SIN-001365,denuncia,True,True,2026-11-22,False,
+DOC-SIN-001365-02,SIN-001365,factura,True,True,2026-11-22,False,
+DOC-SIN-001365-03,SIN-001365,informe_tecnico,True,True,2026-11-22,False,
+DOC-SIN-001369-01,SIN-001369,denuncia,True,True,2026-10-22,False,
+DOC-SIN-001369-02,SIN-001369,factura,True,True,2026-10-22,False,
+DOC-SIN-001369-03,SIN-001369,informe_tecnico,True,True,2026-10-22,False,
+DOC-SIN-001374-01,SIN-001374,denuncia,True,True,2026-05-18,False,
+DOC-SIN-001374-02,SIN-001374,factura,True,True,2026-05-18,False,
+DOC-SIN-001374-03,SIN-001374,informe_tecnico,True,True,2026-05-18,False,
+DOC-SIN-001375-01,SIN-001375,denuncia,True,True,2021-08-08,False,
+DOC-SIN-001375-02,SIN-001375,factura,True,True,2021-08-08,False,
+DOC-SIN-001375-03,SIN-001375,informe_tecnico,True,True,2021-08-08,False,
+DOC-SIN-001377-01,SIN-001377,denuncia,True,True,2026-11-01,False,
+DOC-SIN-001377-02,SIN-001377,factura,True,True,2026-11-01,False,
+DOC-SIN-001377-03,SIN-001377,informe_tecnico,True,True,2026-11-01,False,
+DOC-SIN-001385-01,SIN-001385,denuncia,True,False,2022-11-20,False,Documento pendiente de revisión
+DOC-SIN-001385-02,SIN-001385,factura,False,False,2022-11-20,True,Documento pendiente de revisión
+DOC-SIN-001387-01,SIN-001387,denuncia,True,False,2022-10-28,False,Documento pendiente de revisión
+DOC-SIN-001387-02,SIN-001387,factura,False,False,2022-10-28,True,Documento pendiente de revisión
+DOC-SIN-001388-01,SIN-001388,denuncia,True,False,2019-05-27,False,Documento pendiente de revisión
+DOC-SIN-001388-02,SIN-001388,factura,False,False,2019-05-27,True,Documento pendiente de revisión
+DOC-SIN-001391-01,SIN-001391,denuncia,True,True,2020-06-11,False,
+DOC-SIN-001391-02,SIN-001391,factura,True,True,2020-06-11,False,
+DOC-SIN-001391-03,SIN-001391,informe_tecnico,True,True,2020-06-11,False,
+DOC-SIN-001392-01,SIN-001392,denuncia,True,True,2025-09-20,False,
+DOC-SIN-001392-02,SIN-001392,factura,True,True,2025-09-20,False,
+DOC-SIN-001392-03,SIN-001392,informe_tecnico,True,True,2025-09-20,False,
+DOC-SIN-001394-01,SIN-001394,denuncia,True,True,2020-05-16,False,
+DOC-SIN-001394-02,SIN-001394,factura,True,True,2020-05-16,False,
+DOC-SIN-001394-03,SIN-001394,informe_tecnico,True,True,2020-05-16,False,
+DOC-SIN-001396-01,SIN-001396,denuncia,True,True,2021-05-13,False,
+DOC-SIN-001396-02,SIN-001396,factura,True,True,2021-05-13,False,
+DOC-SIN-001396-03,SIN-001396,informe_tecnico,True,True,2021-05-13,False,
+DOC-SIN-001398-01,SIN-001398,denuncia,True,False,2025-06-22,False,Documento pendiente de revisión
+DOC-SIN-001398-02,SIN-001398,factura,False,False,2025-06-22,True,Documento pendiente de revisión
+DOC-SIN-001399-01,SIN-001399,denuncia,True,True,2025-01-25,False,
+DOC-SIN-001399-02,SIN-001399,factura,True,True,2025-01-25,False,
+DOC-SIN-001399-03,SIN-001399,informe_tecnico,True,True,2025-01-25,False,
+DOC-SIN-001402-01,SIN-001402,denuncia,True,True,2026-04-03,False,
+DOC-SIN-001402-02,SIN-001402,factura,True,True,2026-04-03,False,
+DOC-SIN-001402-03,SIN-001402,informe_tecnico,True,True,2026-04-03,False,
+DOC-SIN-001404-01,SIN-001404,denuncia,True,True,2021-07-14,False,
+DOC-SIN-001404-02,SIN-001404,factura,True,True,2021-07-14,False,
+DOC-SIN-001404-03,SIN-001404,informe_tecnico,True,True,2021-07-14,False,
+DOC-SIN-001408-01,SIN-001408,denuncia,True,True,2022-04-15,False,
+DOC-SIN-001408-02,SIN-001408,factura,True,True,2022-04-15,False,
+DOC-SIN-001408-03,SIN-001408,informe_tecnico,True,True,2022-04-15,False,
+DOC-SIN-001410-01,SIN-001410,denuncia,True,False,2021-10-05,False,Documento pendiente de revisión
+DOC-SIN-001410-02,SIN-001410,factura,False,False,2021-10-05,True,Documento pendiente de revisión
+DOC-SIN-001411-01,SIN-001411,denuncia,True,True,2025-04-22,False,
+DOC-SIN-001411-02,SIN-001411,factura,True,True,2025-04-22,False,
+DOC-SIN-001411-03,SIN-001411,informe_tecnico,True,True,2025-04-22,False,
+DOC-SIN-001412-01,SIN-001412,denuncia,True,True,2024-05-02,False,
+DOC-SIN-001412-02,SIN-001412,factura,True,True,2024-05-02,False,
+DOC-SIN-001412-03,SIN-001412,informe_tecnico,True,True,2024-05-02,False,
+DOC-SIN-001414-01,SIN-001414,denuncia,True,True,2021-05-25,False,
+DOC-SIN-001414-02,SIN-001414,factura,True,True,2021-05-25,False,
+DOC-SIN-001414-03,SIN-001414,informe_tecnico,True,True,2021-05-25,False,
+DOC-SIN-001416-01,SIN-001416,denuncia,True,True,2025-05-27,False,
+DOC-SIN-001416-02,SIN-001416,factura,True,True,2025-05-27,False,
+DOC-SIN-001416-03,SIN-001416,informe_tecnico,True,True,2025-05-27,False,
+DOC-SIN-001421-01,SIN-001421,denuncia,True,True,2025-02-10,False,
+DOC-SIN-001421-02,SIN-001421,factura,True,True,2025-02-10,False,
+DOC-SIN-001421-03,SIN-001421,informe_tecnico,True,True,2025-02-10,False,
+DOC-SIN-001423-01,SIN-001423,denuncia,True,True,2023-12-28,False,
+DOC-SIN-001423-02,SIN-001423,factura,True,True,2023-12-28,False,
+DOC-SIN-001423-03,SIN-001423,informe_tecnico,True,True,2023-12-28,False,
+DOC-SIN-001430-01,SIN-001430,denuncia,True,True,2025-08-11,False,
+DOC-SIN-001430-02,SIN-001430,factura,True,True,2025-08-11,False,
+DOC-SIN-001430-03,SIN-001430,informe_tecnico,True,True,2025-08-11,False,
+DOC-SIN-001432-01,SIN-001432,denuncia,True,True,2021-03-01,False,
+DOC-SIN-001432-02,SIN-001432,factura,True,True,2021-03-01,False,
+DOC-SIN-001432-03,SIN-001432,informe_tecnico,True,True,2021-03-01,False,
+DOC-SIN-001433-01,SIN-001433,denuncia,True,False,2023-01-17,False,Documento pendiente de revisión
+DOC-SIN-001433-02,SIN-001433,factura,False,False,2023-01-17,True,Documento pendiente de revisión
+DOC-SIN-001436-01,SIN-001436,denuncia,True,True,2022-02-23,False,
+DOC-SIN-001436-02,SIN-001436,factura,True,True,2022-02-23,False,
+DOC-SIN-001436-03,SIN-001436,informe_tecnico,True,True,2022-02-23,False,
+DOC-SIN-001439-01,SIN-001439,denuncia,True,True,2020-07-05,False,
+DOC-SIN-001439-02,SIN-001439,factura,True,True,2020-07-05,False,
+DOC-SIN-001439-03,SIN-001439,informe_tecnico,True,True,2020-07-05,False,
+DOC-SIN-001441-01,SIN-001441,denuncia,True,True,2019-08-29,False,
+DOC-SIN-001441-02,SIN-001441,factura,True,True,2019-08-29,False,
+DOC-SIN-001441-03,SIN-001441,informe_tecnico,True,True,2019-08-29,False,
+DOC-SIN-001450-01,SIN-001450,denuncia,True,True,2021-10-20,False,
+DOC-SIN-001450-02,SIN-001450,factura,True,True,2021-10-20,False,
+DOC-SIN-001450-03,SIN-001450,informe_tecnico,True,True,2021-10-20,False,
+DOC-SIN-001454-01,SIN-001454,denuncia,True,True,2024-08-09,False,
+DOC-SIN-001454-02,SIN-001454,factura,True,True,2024-08-09,False,
+DOC-SIN-001454-03,SIN-001454,informe_tecnico,True,True,2024-08-09,False,
+DOC-SIN-001456-01,SIN-001456,denuncia,True,True,2022-08-01,False,
+DOC-SIN-001456-02,SIN-001456,factura,True,True,2022-08-01,False,
+DOC-SIN-001456-03,SIN-001456,informe_tecnico,True,True,2022-08-01,False,
+DOC-SIN-001458-01,SIN-001458,denuncia,True,False,2019-06-19,False,Documento pendiente de revisión
+DOC-SIN-001458-02,SIN-001458,factura,False,False,2019-06-19,True,Documento pendiente de revisión
+DOC-SIN-001469-01,SIN-001469,denuncia,True,True,2024-06-04,False,
+DOC-SIN-001469-02,SIN-001469,factura,True,True,2024-06-04,False,
+DOC-SIN-001469-03,SIN-001469,informe_tecnico,True,True,2024-06-04,False,
+DOC-SIN-001476-01,SIN-001476,denuncia,True,False,2026-07-23,False,Documento pendiente de revisión
+DOC-SIN-001476-02,SIN-001476,factura,False,False,2026-07-23,True,Documento pendiente de revisión
+DOC-SIN-001480-01,SIN-001480,denuncia,True,False,2019-02-12,False,Documento pendiente de revisión
+DOC-SIN-001480-02,SIN-001480,factura,False,False,2019-02-12,True,Documento pendiente de revisión
+DOC-SIN-001483-01,SIN-001483,denuncia,True,True,2021-09-13,False,
+DOC-SIN-001483-02,SIN-001483,factura,True,True,2021-09-13,False,
+DOC-SIN-001483-03,SIN-001483,informe_tecnico,True,True,2021-09-13,False,
+DOC-SIN-001485-01,SIN-001485,denuncia,True,False,2026-07-01,False,Documento pendiente de revisión
+DOC-SIN-001485-02,SIN-001485,factura,False,False,2026-07-01,True,Documento pendiente de revisión
+DOC-SIN-001487-01,SIN-001487,denuncia,True,True,2025-09-14,False,
+DOC-SIN-001487-02,SIN-001487,factura,True,True,2025-09-14,False,
+DOC-SIN-001487-03,SIN-001487,informe_tecnico,True,True,2025-09-14,False,
+DOC-SIN-001490-01,SIN-001490,denuncia,True,False,2022-09-03,False,Documento pendiente de revisión
+DOC-SIN-001490-02,SIN-001490,factura,False,False,2022-09-03,True,Documento pendiente de revisión
+DOC-SIN-001492-01,SIN-001492,denuncia,True,True,2026-03-13,False,
+DOC-SIN-001492-02,SIN-001492,factura,True,True,2026-03-13,False,
+DOC-SIN-001492-03,SIN-001492,informe_tecnico,True,True,2026-03-13,False,
+DOC-SIN-001494-01,SIN-001494,denuncia,True,False,2024-01-12,False,Documento pendiente de revisión
+DOC-SIN-001494-02,SIN-001494,factura,False,False,2024-01-12,True,Documento pendiente de revisión
+DOC-SIN-001497-01,SIN-001497,denuncia,True,False,2021-06-10,False,Documento pendiente de revisión
+DOC-SIN-001497-02,SIN-001497,factura,False,False,2021-06-10,True,Documento pendiente de revisión
+DOC-SIN-001498-01,SIN-001498,denuncia,True,True,2025-03-30,False,
+DOC-SIN-001498-02,SIN-001498,factura,True,True,2025-03-30,False,
+DOC-SIN-001498-03,SIN-001498,informe_tecnico,True,True,2025-03-30,False,
+DOC-SIN-001500-01,SIN-001500,denuncia,True,True,2021-02-09,False,
+DOC-SIN-001500-02,SIN-001500,factura,True,True,2021-02-09,False,
+DOC-SIN-001500-03,SIN-001500,informe_tecnico,True,True,2021-02-09,False,
+DOC-SIN-001501-01,SIN-001501,denuncia,True,True,2023-06-21,False,
+DOC-SIN-001501-02,SIN-001501,factura,True,True,2023-06-21,False,
+DOC-SIN-001501-03,SIN-001501,informe_tecnico,True,True,2023-06-21,False,
+DOC-SIN-001502-01,SIN-001502,denuncia,True,False,2025-03-23,False,Documento pendiente de revisión
+DOC-SIN-001502-02,SIN-001502,factura,False,False,2025-03-23,True,Documento pendiente de revisión
+DOC-SIN-001504-01,SIN-001504,denuncia,True,True,2023-12-04,False,
+DOC-SIN-001504-02,SIN-001504,factura,True,True,2023-12-04,False,
+DOC-SIN-001504-03,SIN-001504,informe_tecnico,True,True,2023-12-04,False,
+DOC-SIN-001505-01,SIN-001505,denuncia,True,False,2025-08-31,False,Documento pendiente de revisión
+DOC-SIN-001505-02,SIN-001505,factura,False,False,2025-08-31,True,Documento pendiente de revisión
+DOC-SIN-001509-01,SIN-001509,denuncia,True,True,2020-11-22,False,
+DOC-SIN-001509-02,SIN-001509,factura,True,True,2020-11-22,False,
+DOC-SIN-001509-03,SIN-001509,informe_tecnico,True,True,2020-11-22,False,
+DOC-SIN-001511-01,SIN-001511,denuncia,True,True,2020-05-14,False,
+DOC-SIN-001511-02,SIN-001511,factura,True,True,2020-05-14,False,
+DOC-SIN-001511-03,SIN-001511,informe_tecnico,True,True,2020-05-14,False,
+DOC-SIN-001513-01,SIN-001513,denuncia,True,False,2023-07-08,False,Documento pendiente de revisión
+DOC-SIN-001513-02,SIN-001513,factura,False,False,2023-07-08,True,Documento pendiente de revisión
+DOC-SIN-001517-01,SIN-001517,denuncia,True,False,2019-01-22,False,Documento pendiente de revisión
+DOC-SIN-001517-02,SIN-001517,factura,False,False,2019-01-22,True,Documento pendiente de revisión
+DOC-SIN-001518-01,SIN-001518,denuncia,True,False,2022-08-25,False,Documento pendiente de revisión
+DOC-SIN-001518-02,SIN-001518,factura,False,False,2022-08-25,True,Documento pendiente de revisión
+DOC-SIN-001519-01,SIN-001519,denuncia,True,False,2019-01-22,False,Documento pendiente de revisión
+DOC-SIN-001519-02,SIN-001519,factura,False,False,2019-01-22,True,Documento pendiente de revisión
+DOC-SIN-001525-01,SIN-001525,denuncia,True,False,2020-01-27,False,Documento pendiente de revisión
+DOC-SIN-001525-02,SIN-001525,factura,False,False,2020-01-27,True,Documento pendiente de revisión
+DOC-SIN-001531-01,SIN-001531,denuncia,True,True,2024-05-11,False,
+DOC-SIN-001531-02,SIN-001531,factura,True,True,2024-05-11,False,
+DOC-SIN-001531-03,SIN-001531,informe_tecnico,True,True,2024-05-11,False,
+DOC-SIN-001532-01,SIN-001532,denuncia,True,False,2021-03-19,False,Documento pendiente de revisión
+DOC-SIN-001532-02,SIN-001532,factura,False,False,2021-03-19,True,Documento pendiente de revisión
+DOC-SIN-001534-01,SIN-001534,denuncia,True,False,2025-05-11,False,Documento pendiente de revisión
+DOC-SIN-001534-02,SIN-001534,factura,False,False,2025-05-11,True,Documento pendiente de revisión
+DOC-SIN-001539-01,SIN-001539,denuncia,True,False,2022-12-13,False,Documento pendiente de revisión
+DOC-SIN-001539-02,SIN-001539,factura,False,False,2022-12-13,True,Documento pendiente de revisión
+DOC-SIN-001540-01,SIN-001540,denuncia,True,True,2026-11-21,False,
+DOC-SIN-001540-02,SIN-001540,factura,True,True,2026-11-21,False,
+DOC-SIN-001540-03,SIN-001540,informe_tecnico,True,True,2026-11-21,False,
+DOC-SIN-001541-01,SIN-001541,denuncia,True,True,2019-09-08,False,
+DOC-SIN-001541-02,SIN-001541,factura,True,True,2019-09-08,False,
+DOC-SIN-001541-03,SIN-001541,informe_tecnico,True,True,2019-09-08,False,
+DOC-SIN-001543-01,SIN-001543,denuncia,True,False,2021-03-27,False,Documento pendiente de revisión
+DOC-SIN-001543-02,SIN-001543,factura,False,False,2021-03-27,True,Documento pendiente de revisión
+DOC-SIN-001549-01,SIN-001549,denuncia,True,False,2025-08-11,False,Documento pendiente de revisión
+DOC-SIN-001549-02,SIN-001549,factura,False,False,2025-08-11,True,Documento pendiente de revisión
+DOC-SIN-001550-01,SIN-001550,denuncia,True,True,2023-02-21,False,
+DOC-SIN-001550-02,SIN-001550,factura,True,True,2023-02-21,False,
+DOC-SIN-001550-03,SIN-001550,informe_tecnico,True,True,2023-02-21,False,
+DOC-SIN-001552-01,SIN-001552,denuncia,True,True,2019-08-10,False,
+DOC-SIN-001552-02,SIN-001552,factura,True,True,2019-08-10,False,
+DOC-SIN-001552-03,SIN-001552,informe_tecnico,True,True,2019-08-10,False,
+DOC-SIN-001553-01,SIN-001553,denuncia,True,True,2024-10-03,False,
+DOC-SIN-001553-02,SIN-001553,factura,True,True,2024-10-03,False,
+DOC-SIN-001553-03,SIN-001553,informe_tecnico,True,True,2024-10-03,False,
+DOC-SIN-001554-01,SIN-001554,denuncia,True,False,2023-01-14,False,Documento pendiente de revisión
+DOC-SIN-001554-02,SIN-001554,factura,False,False,2023-01-14,True,Documento pendiente de revisión
+DOC-SIN-001555-01,SIN-001555,denuncia,True,True,2025-04-24,False,
+DOC-SIN-001555-02,SIN-001555,factura,True,True,2025-04-24,False,
+DOC-SIN-001555-03,SIN-001555,informe_tecnico,True,True,2025-04-24,False,
+DOC-SIN-001556-01,SIN-001556,denuncia,True,False,2023-06-18,False,Documento pendiente de revisión
+DOC-SIN-001556-02,SIN-001556,factura,False,False,2023-06-18,True,Documento pendiente de revisión
+DOC-SIN-001559-01,SIN-001559,denuncia,True,True,2019-07-18,False,
+DOC-SIN-001559-02,SIN-001559,factura,True,True,2019-07-18,False,
+DOC-SIN-001559-03,SIN-001559,informe_tecnico,True,True,2019-07-18,False,
+DOC-SIN-001561-01,SIN-001561,denuncia,True,True,2023-08-07,False,
+DOC-SIN-001561-02,SIN-001561,factura,True,True,2023-08-07,False,
+DOC-SIN-001561-03,SIN-001561,informe_tecnico,True,True,2023-08-07,False,
+DOC-SIN-001568-01,SIN-001568,denuncia,True,True,2023-09-16,False,
+DOC-SIN-001568-02,SIN-001568,factura,True,True,2023-09-16,False,
+DOC-SIN-001568-03,SIN-001568,informe_tecnico,True,True,2023-09-16,False,
+DOC-SIN-001571-01,SIN-001571,denuncia,True,False,2025-12-26,False,Documento pendiente de revisión
+DOC-SIN-001571-02,SIN-001571,factura,False,False,2025-12-26,True,Documento pendiente de revisión
+DOC-SIN-001574-01,SIN-001574,denuncia,True,True,2023-12-19,False,
+DOC-SIN-001574-02,SIN-001574,factura,True,True,2023-12-19,False,
+DOC-SIN-001574-03,SIN-001574,informe_tecnico,True,True,2023-12-19,False,
+DOC-SIN-001577-01,SIN-001577,denuncia,True,True,2023-09-16,False,
+DOC-SIN-001577-02,SIN-001577,factura,True,True,2023-09-16,False,
+DOC-SIN-001577-03,SIN-001577,informe_tecnico,True,True,2023-09-16,False,
+DOC-SIN-001579-01,SIN-001579,denuncia,True,True,2023-04-16,False,
+DOC-SIN-001579-02,SIN-001579,factura,True,True,2023-04-16,False,
+DOC-SIN-001579-03,SIN-001579,informe_tecnico,True,True,2023-04-16,False,
+DOC-SIN-001580-01,SIN-001580,denuncia,True,False,2020-08-04,False,Documento pendiente de revisión
+DOC-SIN-001580-02,SIN-001580,factura,False,False,2020-08-04,True,Documento pendiente de revisión
+DOC-SIN-001582-01,SIN-001582,denuncia,True,False,2022-04-14,False,Documento pendiente de revisión
+DOC-SIN-001582-02,SIN-001582,factura,False,False,2022-04-14,True,Documento pendiente de revisión
+DOC-SIN-001583-01,SIN-001583,denuncia,True,True,2023-02-26,False,
+DOC-SIN-001583-02,SIN-001583,factura,True,True,2023-02-26,False,
+DOC-SIN-001583-03,SIN-001583,informe_tecnico,True,True,2023-02-26,False,
+DOC-SIN-001585-01,SIN-001585,denuncia,True,True,2020-05-18,False,
+DOC-SIN-001585-02,SIN-001585,factura,True,True,2020-05-18,False,
+DOC-SIN-001585-03,SIN-001585,informe_tecnico,True,True,2020-05-18,False,
+DOC-SIN-001587-01,SIN-001587,denuncia,True,False,2019-03-30,False,Documento pendiente de revisión
+DOC-SIN-001587-02,SIN-001587,factura,False,False,2019-03-30,True,Documento pendiente de revisión
+DOC-SIN-001600-01,SIN-001600,denuncia,True,False,2022-01-01,False,Documento pendiente de revisión
+DOC-SIN-001600-02,SIN-001600,factura,False,False,2022-01-01,True,Documento pendiente de revisión
+DOC-SIN-001605-01,SIN-001605,denuncia,True,True,2019-09-10,False,
+DOC-SIN-001605-02,SIN-001605,factura,True,True,2019-09-10,False,
+DOC-SIN-001605-03,SIN-001605,informe_tecnico,True,True,2019-09-10,False,
+DOC-SIN-001606-01,SIN-001606,denuncia,True,False,2026-01-25,False,Documento pendiente de revisión
+DOC-SIN-001606-02,SIN-001606,factura,False,False,2026-01-25,True,Documento pendiente de revisión
+DOC-SIN-001608-01,SIN-001608,denuncia,True,False,2025-06-04,False,Documento pendiente de revisión
+DOC-SIN-001608-02,SIN-001608,factura,False,False,2025-06-04,True,Documento pendiente de revisión
+DOC-SIN-001613-01,SIN-001613,denuncia,True,False,2019-11-05,False,Documento pendiente de revisión
+DOC-SIN-001613-02,SIN-001613,factura,False,False,2019-11-05,True,Documento pendiente de revisión
+DOC-SIN-001629-01,SIN-001629,denuncia,True,True,2023-11-30,False,
+DOC-SIN-001629-02,SIN-001629,factura,True,True,2023-11-30,False,
+DOC-SIN-001629-03,SIN-001629,informe_tecnico,True,True,2023-11-30,False,
+DOC-SIN-001630-01,SIN-001630,denuncia,True,False,2026-05-28,False,Documento pendiente de revisión
+DOC-SIN-001630-02,SIN-001630,factura,False,False,2026-05-28,True,Documento pendiente de revisión
+DOC-SIN-001635-01,SIN-001635,denuncia,True,False,2019-02-25,False,Documento pendiente de revisión
+DOC-SIN-001635-02,SIN-001635,factura,False,False,2019-02-25,True,Documento pendiente de revisión
+DOC-SIN-001637-01,SIN-001637,denuncia,True,True,2022-01-09,False,
+DOC-SIN-001637-02,SIN-001637,factura,True,True,2022-01-09,False,
+DOC-SIN-001637-03,SIN-001637,informe_tecnico,True,True,2022-01-09,False,
+DOC-SIN-001640-01,SIN-001640,denuncia,True,False,2022-05-01,False,Documento pendiente de revisión
+DOC-SIN-001640-02,SIN-001640,factura,False,False,2022-05-01,True,Documento pendiente de revisión
+DOC-SIN-001653-01,SIN-001653,denuncia,True,False,2025-01-25,False,Documento pendiente de revisión
+DOC-SIN-001653-02,SIN-001653,factura,False,False,2025-01-25,True,Documento pendiente de revisión
+DOC-SIN-001654-01,SIN-001654,denuncia,True,True,2019-08-04,False,
+DOC-SIN-001654-02,SIN-001654,factura,True,True,2019-08-04,False,
+DOC-SIN-001654-03,SIN-001654,informe_tecnico,True,True,2019-08-04,False,
+DOC-SIN-001660-01,SIN-001660,denuncia,True,False,2021-02-09,False,Documento pendiente de revisión
+DOC-SIN-001660-02,SIN-001660,factura,False,False,2021-02-09,True,Documento pendiente de revisión
+DOC-SIN-001661-01,SIN-001661,denuncia,True,True,2020-10-27,False,
+DOC-SIN-001661-02,SIN-001661,factura,True,True,2020-10-27,False,
+DOC-SIN-001661-03,SIN-001661,informe_tecnico,True,True,2020-10-27,False,
+DOC-SIN-001664-01,SIN-001664,denuncia,True,True,2020-05-16,False,
+DOC-SIN-001664-02,SIN-001664,factura,True,True,2020-05-16,False,
+DOC-SIN-001664-03,SIN-001664,informe_tecnico,True,True,2020-05-16,False,
+DOC-SIN-001666-01,SIN-001666,denuncia,True,False,2019-08-02,False,Documento pendiente de revisión
+DOC-SIN-001666-02,SIN-001666,factura,False,False,2019-08-02,True,Documento pendiente de revisión
+DOC-SIN-001669-01,SIN-001669,denuncia,True,True,2020-12-26,False,
+DOC-SIN-001669-02,SIN-001669,factura,True,True,2020-12-26,False,
+DOC-SIN-001669-03,SIN-001669,informe_tecnico,True,True,2020-12-26,False,
+DOC-SIN-001671-01,SIN-001671,denuncia,True,False,2019-10-12,False,Documento pendiente de revisión
+DOC-SIN-001671-02,SIN-001671,factura,False,False,2019-10-12,True,Documento pendiente de revisión
+DOC-SIN-001673-01,SIN-001673,denuncia,True,True,2026-11-09,False,
+DOC-SIN-001673-02,SIN-001673,factura,True,True,2026-11-09,False,
+DOC-SIN-001673-03,SIN-001673,informe_tecnico,True,True,2026-11-09,False,
+DOC-SIN-001679-01,SIN-001679,denuncia,True,True,2024-03-06,False,
+DOC-SIN-001679-02,SIN-001679,factura,True,True,2024-03-06,False,
+DOC-SIN-001679-03,SIN-001679,informe_tecnico,True,True,2024-03-06,False,
+DOC-SIN-001682-01,SIN-001682,denuncia,True,False,2019-11-08,False,Documento pendiente de revisión
+DOC-SIN-001682-02,SIN-001682,factura,False,False,2019-11-08,True,Documento pendiente de revisión
+DOC-SIN-001689-01,SIN-001689,denuncia,True,True,2025-02-03,False,
+DOC-SIN-001689-02,SIN-001689,factura,True,True,2025-02-03,False,
+DOC-SIN-001689-03,SIN-001689,informe_tecnico,True,True,2025-02-03,False,
+DOC-SIN-001690-01,SIN-001690,denuncia,True,False,2022-02-12,False,Documento pendiente de revisión
+DOC-SIN-001690-02,SIN-001690,factura,False,False,2022-02-12,True,Documento pendiente de revisión
+DOC-SIN-001692-01,SIN-001692,denuncia,True,False,2026-10-30,False,Documento pendiente de revisión
+DOC-SIN-001692-02,SIN-001692,factura,False,False,2026-10-30,True,Documento pendiente de revisión
+DOC-SIN-001698-01,SIN-001698,denuncia,True,True,2025-09-21,False,
+DOC-SIN-001698-02,SIN-001698,factura,True,True,2025-09-21,False,
+DOC-SIN-001698-03,SIN-001698,informe_tecnico,True,True,2025-09-21,False,
+DOC-SIN-001701-01,SIN-001701,denuncia,True,True,2023-06-27,False,
+DOC-SIN-001701-02,SIN-001701,factura,True,True,2023-06-27,False,
+DOC-SIN-001701-03,SIN-001701,informe_tecnico,True,True,2023-06-27,False,
+DOC-SIN-001702-01,SIN-001702,denuncia,True,True,2023-08-10,False,
+DOC-SIN-001702-02,SIN-001702,factura,True,True,2023-08-10,False,
+DOC-SIN-001702-03,SIN-001702,informe_tecnico,True,True,2023-08-10,False,
+DOC-SIN-001703-01,SIN-001703,denuncia,True,False,2023-07-30,False,Documento pendiente de revisión
+DOC-SIN-001703-02,SIN-001703,factura,False,False,2023-07-30,True,Documento pendiente de revisión
+DOC-SIN-001711-01,SIN-001711,denuncia,True,False,2021-12-01,False,Documento pendiente de revisión
+DOC-SIN-001711-02,SIN-001711,factura,False,False,2021-12-01,True,Documento pendiente de revisión
+DOC-SIN-001717-01,SIN-001717,denuncia,True,True,2020-11-25,False,
+DOC-SIN-001717-02,SIN-001717,factura,True,True,2020-11-25,False,
+DOC-SIN-001717-03,SIN-001717,informe_tecnico,True,True,2020-11-25,False,
+DOC-SIN-001718-01,SIN-001718,denuncia,True,False,2024-04-28,False,Documento pendiente de revisión
+DOC-SIN-001718-02,SIN-001718,factura,False,False,2024-04-28,True,Documento pendiente de revisión
+DOC-SIN-001722-01,SIN-001722,denuncia,True,True,2026-06-11,False,
+DOC-SIN-001722-02,SIN-001722,factura,True,True,2026-06-11,False,
+DOC-SIN-001722-03,SIN-001722,informe_tecnico,True,True,2026-06-11,False,
+DOC-SIN-001725-01,SIN-001725,denuncia,True,True,2026-03-02,False,
+DOC-SIN-001725-02,SIN-001725,factura,True,True,2026-03-02,False,
+DOC-SIN-001725-03,SIN-001725,informe_tecnico,True,True,2026-03-02,False,
+DOC-SIN-001726-01,SIN-001726,denuncia,True,False,2025-02-14,False,Documento pendiente de revisión
+DOC-SIN-001726-02,SIN-001726,factura,False,False,2025-02-14,True,Documento pendiente de revisión
+DOC-SIN-001727-01,SIN-001727,denuncia,True,False,2021-11-12,False,Documento pendiente de revisión
+DOC-SIN-001727-02,SIN-001727,factura,False,False,2021-11-12,True,Documento pendiente de revisión
+DOC-SIN-001733-01,SIN-001733,denuncia,True,False,2023-08-16,False,Documento pendiente de revisión
+DOC-SIN-001733-02,SIN-001733,factura,False,False,2023-08-16,True,Documento pendiente de revisión
+DOC-SIN-001739-01,SIN-001739,denuncia,True,True,2019-07-11,False,
+DOC-SIN-001739-02,SIN-001739,factura,True,True,2019-07-11,False,
+DOC-SIN-001739-03,SIN-001739,informe_tecnico,True,True,2019-07-11,False,
+DOC-SIN-001740-01,SIN-001740,denuncia,True,False,2023-12-11,False,Documento pendiente de revisión
+DOC-SIN-001740-02,SIN-001740,factura,False,False,2023-12-11,True,Documento pendiente de revisión
+DOC-SIN-001742-01,SIN-001742,denuncia,True,True,2021-07-01,False,
+DOC-SIN-001742-02,SIN-001742,factura,True,True,2021-07-01,False,
+DOC-SIN-001742-03,SIN-001742,informe_tecnico,True,True,2021-07-01,False,
+DOC-SIN-001747-01,SIN-001747,denuncia,True,True,2025-03-14,False,
+DOC-SIN-001747-02,SIN-001747,factura,True,True,2025-03-14,False,
+DOC-SIN-001747-03,SIN-001747,informe_tecnico,True,True,2025-03-14,False,
+DOC-SIN-001755-01,SIN-001755,denuncia,True,False,2026-05-27,False,Documento pendiente de revisión
+DOC-SIN-001755-02,SIN-001755,factura,False,False,2026-05-27,True,Documento pendiente de revisión
+DOC-SIN-001767-01,SIN-001767,denuncia,True,True,2025-08-28,False,
+DOC-SIN-001767-02,SIN-001767,factura,True,True,2025-08-28,False,
+DOC-SIN-001767-03,SIN-001767,informe_tecnico,True,True,2025-08-28,False,
+DOC-SIN-001769-01,SIN-001769,denuncia,True,True,2019-12-11,False,
+DOC-SIN-001769-02,SIN-001769,factura,True,True,2019-12-11,False,
+DOC-SIN-001769-03,SIN-001769,informe_tecnico,True,True,2019-12-11,False,
+DOC-SIN-001771-01,SIN-001771,denuncia,True,True,2024-05-06,False,
+DOC-SIN-001771-02,SIN-001771,factura,True,True,2024-05-06,False,
+DOC-SIN-001771-03,SIN-001771,informe_tecnico,True,True,2024-05-06,False,
+DOC-SIN-001775-01,SIN-001775,denuncia,True,True,2021-05-13,False,
+DOC-SIN-001775-02,SIN-001775,factura,True,True,2021-05-13,False,
+DOC-SIN-001775-03,SIN-001775,informe_tecnico,True,True,2021-05-13,False,
+DOC-SIN-001779-01,SIN-001779,denuncia,True,True,2025-01-04,False,
+DOC-SIN-001779-02,SIN-001779,factura,True,True,2025-01-04,False,
+DOC-SIN-001779-03,SIN-001779,informe_tecnico,True,True,2025-01-04,False,
+DOC-SIN-001781-01,SIN-001781,denuncia,True,True,2024-02-12,False,
+DOC-SIN-001781-02,SIN-001781,factura,True,True,2024-02-12,False,
+DOC-SIN-001781-03,SIN-001781,informe_tecnico,True,True,2024-02-12,False,
+DOC-SIN-001783-01,SIN-001783,denuncia,True,True,2020-07-28,False,
+DOC-SIN-001783-02,SIN-001783,factura,True,True,2020-07-28,False,
+DOC-SIN-001783-03,SIN-001783,informe_tecnico,True,True,2020-07-28,False,
+DOC-SIN-001793-01,SIN-001793,denuncia,True,True,2020-09-12,False,
+DOC-SIN-001793-02,SIN-001793,factura,True,True,2020-09-12,False,
+DOC-SIN-001793-03,SIN-001793,informe_tecnico,True,True,2020-09-12,False,
+DOC-SIN-001794-01,SIN-001794,denuncia,True,True,2025-02-24,False,
+DOC-SIN-001794-02,SIN-001794,factura,True,True,2025-02-24,False,
+DOC-SIN-001794-03,SIN-001794,informe_tecnico,True,True,2025-02-24,False,
+DOC-SIN-001795-01,SIN-001795,denuncia,True,False,2025-11-27,False,Documento pendiente de revisión
+DOC-SIN-001795-02,SIN-001795,factura,False,False,2025-11-27,True,Documento pendiente de revisión
+DOC-SIN-001796-01,SIN-001796,denuncia,True,True,2019-05-08,False,
+DOC-SIN-001796-02,SIN-001796,factura,True,True,2019-05-08,False,
+DOC-SIN-001796-03,SIN-001796,informe_tecnico,True,True,2019-05-08,False,
+DOC-SIN-001801-01,SIN-001801,denuncia,True,True,2026-09-02,False,
+DOC-SIN-001801-02,SIN-001801,factura,True,True,2026-09-02,False,
+DOC-SIN-001801-03,SIN-001801,informe_tecnico,True,True,2026-09-02,False,
+DOC-SIN-001803-01,SIN-001803,denuncia,True,False,2026-05-23,False,Documento pendiente de revisión
+DOC-SIN-001803-02,SIN-001803,factura,False,False,2026-05-23,True,Documento pendiente de revisión
+DOC-SIN-001807-01,SIN-001807,denuncia,True,True,2021-05-12,False,
+DOC-SIN-001807-02,SIN-001807,factura,True,True,2021-05-12,False,
+DOC-SIN-001807-03,SIN-001807,informe_tecnico,True,True,2021-05-12,False,

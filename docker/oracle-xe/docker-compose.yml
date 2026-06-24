@@ -1,0 +1,17 @@
+services:
+  oracle-xe:
+    image: gvenzl/oracle-xe:21-slim
+    container_name: rastoseguro-oracle-xe
+    ports:
+      - "1521:1521"
+    environment:
+      ORACLE_PASSWORD: rastro_dev
+      APP_USER: rastro
+      APP_USER_PASSWORD: rastro
+    volumes:
+      - ./init:/container-entrypoint-initdb.d
+    healthcheck:
+      test: ["CMD", "healthcheck.sh"]
+      interval: 30s
+      timeout: 10s
+      retries: 10

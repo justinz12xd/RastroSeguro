@@ -1,0 +1,7 @@
+id_siniestro,ramo,cobertura,ciudad,id_proveedor,monto_reclamado,suma_asegurada,score_reglas,score_modelo,score_anomalia,score_nlp,score_grafo,score_categorico,score_final,nivel_riesgo,alertas_activadas,explicacion,accion_sugerida
+SIN-0045,vehiculos,robo,Guayaquil,PROV-12,18500,19000,92,88,80,91,75,70,87,Rojo,Inicio póliza|Monto alto|Proveedor recurrente|Narrativa similar,"Siniestro 2 días después del inicio de póliza, monto al 97% de suma asegurada.",Escalar a revisión antifraude especializada.
+SIN-0112,vehiculos,choque,Quito,PROV-03,4200,12000,35,78,82,74,68,55,62,Amarillo,Anomalía detectada|Proveedor en red,"Pocas reglas activas, pero anomalía y grafo sugieren revisión.",Revisión documental.
+SIN-0201,salud,atencion_medica,Cuenca,PROV-21,890,5000,18,22,15,10,12,8,16,Verde,,Sin señales relevantes de riesgo.,Continuar flujo normal.
+SIN-0330,hogar,incendio,Manta,PROV-08,9800,10000,70,65,58,62,55,60,64,Amarillo,Reporte tardío|Monto cercano a suma asegurada,Señales moderadas; revisar documentación de inspección.,Revisión documental.
+SIN-0418,vehiculos,choque,Guayaquil,PROV-12,5100,15000,55,72,68,88,70,50,68,Amarillo,Narrativa clonada|Proveedor recurrente,Narrativa similar a otros reclamos del mismo proveedor.,Revisión documental.
+SIN-0502,vida,fallecimiento,Quito,PROV-30,45000,50000,85,79,70,40,65,72,78,Rojo,Beneficiario recurrente|Documentos inconsistentes,Beneficiario aparece en varios casos observados.,Escalar a revisión antifraude especializada.

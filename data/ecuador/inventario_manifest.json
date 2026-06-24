@@ -1,0 +1,438 @@
+{
+  "generated_at": "2026-05-27T07:20:59.709612+00:00",
+  "year_start": 2021,
+  "year_end": 2026,
+  "confirmed_block": [
+    "ckan",
+    "inec",
+    "sercop_ocds"
+  ],
+  "sources": {
+    "ckan_ecu911": {
+      "skipped": true
+    },
+    "ckan_ant_packages": [
+      {
+        "name": "licencias-de-conducir-profesionales-y-no-prefesionales-emitidas-mensualmente-a-escala-nacional",
+        "title": "Licencias de conducir profesionales y no prefesionales emitidas mensualmente a escala nacional",
+        "metadata_modified": "2022-06-22T15:17:46.776224",
+        "tags": [
+          "estadisticas",
+          "licencias",
+          "licencias no profesionales",
+          "licencias profesionales",
+          "transporte"
+        ],
+        "resource_formats": [
+          "ODS",
+          "XLSX"
+        ]
+      },
+      {
+        "name": "licencias-de-conducir-emitidas-mensualmente-profesionales-y-no-profesionales-a-escala-nacional",
+        "title": "Licencias de conducir emitidas mensualmente profesionales y no profesionales a escala nacional",
+        "metadata_modified": "2022-06-21T19:56:14.944414",
+        "tags": [
+          "licencias",
+          "movilidad",
+          "transporte"
+        ],
+        "resource_formats": [
+          "ODS",
+          "XLSX"
+        ]
+      },
+      {
+        "name": "excesos-de-velocidad-de-las-unidades-de-transporte-intraprovincial-publico-y-comercial",
+        "title": "Excesos de velocidad de las unidades de transporte intraprovincial público y comercial",
+        "metadata_modified": "2022-05-12T15:40:57.142495",
+        "tags": [
+          "exceso",
+          "pasajetos",
+          "transporte",
+          "velocidad"
+        ],
+        "resource_formats": [
+          "CSV",
+          "ODS"
+        ]
+      },
+      {
+        "name": "excesos-de-velocidad-de-transporte-publico-y-comercial",
+        "title": "Excesos de velocidad de Transporte Público y Comercial",
+        "metadata_modified": "2022-05-12T15:34:43.102006",
+        "tags": [
+          "exceso velocidad",
+          "movilidad",
+          "pasajetos",
+          "transporte"
+        ],
+        "resource_formats": [
+          "CSV",
+          "ODS"
+        ]
+      }
+    ],
+    "inec": {
+      "output_csv": "data\\raw\\ecuador\\inec_siniestros_2021_2026.csv",
+      "rows": 95394464,
+      "pages": {
+        "anual": {
+          "page": "https://www.ecuadorencifras.gob.ec/estadisticas-siniestros-de-transito/",
+          "tables": 14,
+          "links": 9,
+          "download_data_cells": 28409
+        },
+        "trimestral": {
+          "page": "https://www.ecuadorencifras.gob.ec/siniestros-transito-trimestral/",
+          "tables": 13,
+          "links": 9,
+          "download_data_cells": 4512
+        },
+        "bases": {
+          "page": "https://www.ecuadorencifras.gob.ec/estadistica-de-transporte-bases-de-datos/",
+          "tables": 2,
+          "links": 14,
+          "download_data_cells": 95361420
+        }
+      }
+    },
+    "sercop_sanciones": {
+      "output_csv": "data\\raw\\ecuador\\sercop_sanciones_2021_2026.csv",
+      "rows": 123,
+      "yearly": {
+        "2021": {
+          "url": "https://portal.compraspublicas.gob.ec/sercop/cat_normativas/Sanciones-2021",
+          "rows": 42
+        },
+        "2022": {
+          "url": "https://portal.compraspublicas.gob.ec/sercop/cat_normativas/Sanciones-2022",
+          "rows": 80
+        },
+        "2023": {
+          "url": "https://portal.compraspublicas.gob.ec/sercop/cat_normativas/Sanciones-2023",
+          "rows": 98
+        },
+        "2024": {
+          "url": "https://portal.compraspublicas.gob.ec/sercop/cat_normativas/Sanciones2024",
+          "rows": 18
+        },
+        "2025": {
+          "error": "No disponible"
+        },
+        "2026": {
+          "error": "No disponible"
+        }
+      },
+      "ruc_valid_13": 109,
+      "unique_ruc_count": 105,
+      "unique_rucs": [
+        "0101943645001",
+        "0102720430001",
+        "0102797966001",
+        "0103892899001",
+        "0106025059001",
+        "0190418634001",
+        "0291518281001",
+        "0502315153001",
+        "0502621618001",
+        "0503988719001",
+        "0591743767001",
+        "0591744615001",
+        "0591755730001",
+        "0601950868001",
+        "0602460743001",
+        "0602792442001",
+        "0604241091001",
+        "0691739228001",
+        "0691762432001",
+        "0704581263001",
+        "0705047686001",
+        "0705278828001",
+        "0791719178001",
+        "0890045979001",
+        "0911016376001",
+        "0924458128001",
+        "0925195711001",
+        "0928606870001",
+        "0964773022001",
+        "0991384995001",
+        "0992284714001",
+        "0992399791001",
+        "0992482699001",
+        "0992554746001",
+        "0992638923001",
+        "0992801670001",
+        "0992812842001",
+        "0993145386001",
+        "0993291773001",
+        "0993352055001",
+        "0993368533001",
+        "1091770438001",
+        "1100597184001",
+        "1101994554001",
+        "1103821227001",
+        "1103945794001",
+        "1104707706001",
+        "1191733866001",
+        "1191746712001",
+        "1191794423001",
+        "1500771843001",
+        "1591717096001",
+        "1600461048001",
+        "1600820847001",
+        "1691712644001",
+        "1702506401001",
+        "1703709558001",
+        "1704912490001",
+        "1704930948001",
+        "1707773097001",
+        "1708897432001",
+        "1709721995001",
+        "1711362242001",
+        "1712022159001",
+        "1714255120001",
+        "1714860713001",
+        "1716989759001",
+        "1717306367001",
+        "1719052134001",
+        "1719287912001",
+        "1720037355001",
+        "1720716198001",
+        "1721856423001",
+        "1724547482001",
+        "1726957879001",
+        "1790819345001",
+        "1790965414001",
+        "1790984141001",
+        "1791217292001",
+        "1791349938001",
+        "1791986296001",
+        "1792031672001",
+        "1792136806001",
+        "1792145236001",
+        "1792192056001",
+        "1792348684001",
+        "1792370027001",
+        "1792573793001",
+        "1792669723001",
+        "1792775671001",
+        "1792806186001",
+        "1792848717001",
+        "1792910862001",
+        "1792928850001",
+        "1792967589001",
+        "1793005152001",
+        "1793174213001",
+        "1793193975001",
+        "1803699378001",
+        "1804438925001",
+        "1804447843001",
+        "1891762379001",
+        "2100056775001",
+        "2100058862001",
+        "2100412192001"
+      ]
+    },
+    "ocds": {
+      "output_csv": "data\\raw\\ecuador\\ocds_proveedores_2021_2026.csv",
+      "rows": 871,
+      "years": {
+        "2021": {
+          "sample_page_rows": 10,
+          "total_hint": 167058,
+          "supplier_queries": 0,
+          "thematic_queries": 7
+        },
+        "2022": {
+          "sample_page_rows": 10,
+          "total_hint": 212324,
+          "supplier_queries": 13,
+          "thematic_queries": 7
+        },
+        "2023": {
+          "sample_page_rows": 10,
+          "total_hint": 217914,
+          "supplier_queries": 105,
+          "thematic_queries": 7
+        },
+        "2024": {
+          "sample_page_rows": 10,
+          "total_hint": 219186,
+          "supplier_queries": 105,
+          "thematic_queries": 6
+        },
+        "2025": {
+          "sample_page_rows": 10,
+          "total_hint": 182947,
+          "supplier_queries": 105,
+          "thematic_queries": 0
+        },
+        "2026": {
+          "sample_page_rows": 10,
+          "total_hint": 37174,
+          "supplier_queries": 105,
+          "thematic_queries": 0
+        }
+      },
+      "supplier_rucs_queried": 105
+    }
+  },
+  "static_sources": [
+    {
+      "id": "ckan_ecu911",
+      "provider": "Datos Abiertos Ecuador / ECU 911",
+      "temporal": "2021-2026",
+      "endpoints": [
+        {
+          "name": "package_show",
+          "url": "https://www.datosabiertos.gob.ec/api/3/action/package_show",
+          "method": "api"
+        },
+        {
+          "name": "dataset_page",
+          "url": "https://www.datosabiertos.gob.ec/dataset/base-de-emergencias",
+          "method": "hybrid"
+        }
+      ],
+      "maps_to": [
+        "siniestros"
+      ]
+    },
+    {
+      "id": "ckan_ant",
+      "provider": "Datos Abiertos Ecuador / ANT",
+      "temporal": "2020-2026",
+      "endpoints": [
+        {
+          "name": "organization_datasets",
+          "url": "https://datosabiertos.gob.ec/dataset/?organization=antec",
+          "method": "html_scrape"
+        },
+        {
+          "name": "package_search",
+          "url": "https://www.datosabiertos.gob.ec/api/3/action/package_search",
+          "method": "api"
+        }
+      ],
+      "maps_to": [
+        "vehiculos",
+        "siniestros"
+      ]
+    },
+    {
+      "id": "ckan_transport_csv",
+      "provider": "Datos Abiertos Ecuador",
+      "temporal": "2020-2026",
+      "endpoints": [
+        {
+          "name": "csv_catalog",
+          "url": "https://www.datosabiertos.gob.ec/dataset/?res_format=CSV&groups=trans",
+          "method": "html_scrape"
+        },
+        {
+          "name": "sri_vehiculos",
+          "url": "https://www.datosabiertos.gob.ec/dataset/estadisticas-vehiculos-2024",
+          "method": "hybrid"
+        }
+      ],
+      "maps_to": [
+        "vehiculos",
+        "polizas"
+      ]
+    },
+    {
+      "id": "inec_siniestros",
+      "provider": "INEC / ESTRA (fuente ANT)",
+      "temporal": "2014-2026",
+      "endpoints": [
+        {
+          "name": "anual",
+          "url": "https://www.ecuadorencifras.gob.ec/estadisticas-siniestros-de-transito/",
+          "method": "html_scrape"
+        },
+        {
+          "name": "trimestral",
+          "url": "https://www.ecuadorencifras.gob.ec/siniestros-transito-trimestral/",
+          "method": "html_scrape"
+        },
+        {
+          "name": "bases_datos",
+          "url": "https://www.ecuadorencifras.gob.ec/estadistica-de-transporte-bases-de-datos/",
+          "method": "html_scrape"
+        }
+      ],
+      "maps_to": [
+        "siniestros"
+      ]
+    },
+    {
+      "id": "sercop_sanciones",
+      "provider": "SERCOP",
+      "temporal": "2020-2026",
+      "endpoints": [
+        {
+          "name": "sanciones_2024",
+          "url": "https://portal.compraspublicas.gob.ec/sercop/cat_normativas/Sanciones2024",
+          "method": "html_scrape"
+        },
+        {
+          "name": "sanciones_2023",
+          "url": "https://portal.compraspublicas.gob.ec/sercop/cat_normativas/Sanciones-2023",
+          "method": "html_scrape"
+        },
+        {
+          "name": "sanciones_2020",
+          "url": "https://portal.compraspublicas.gob.ec/sercop/cat_normativas/Sanciones-2020",
+          "method": "html_scrape"
+        }
+      ],
+      "maps_to": [
+        "proveedores"
+      ]
+    },
+    {
+      "id": "ocds_contratacion",
+      "provider": "Contrataciones Abiertas Ecuador / SERCOP",
+      "temporal": "2020-2026",
+      "endpoints": [
+        {
+          "name": "search_ocds",
+          "url": "https://datosabiertos.compraspublicas.gob.ec/PLATAFORMA/api/search_ocds",
+          "method": "api"
+        },
+        {
+          "name": "record_ocds",
+          "url": "https://datosabiertos.compraspublicas.gob.ec/PLATAFORMA/api/record",
+          "method": "api"
+        },
+        {
+          "name": "api_docs",
+          "url": "https://datosabiertos.compraspublicas.gob.ec/PLATAFORMA/datos-abiertos/api",
+          "method": "download"
+        }
+      ],
+      "maps_to": [
+        "proveedores"
+      ]
+    },
+    {
+      "id": "gob_ec_tramites",
+      "provider": "Gob.ec / ANT / CTE",
+      "temporal": "2021-2026",
+      "endpoints": [
+        {
+          "name": "cte_estadisticas",
+          "url": "https://www.gob.ec/cte/tramites/provision-estadisticas-siniestros-transito",
+          "method": "download"
+        },
+        {
+          "name": "ant_taller",
+          "url": "https://www.gob.ec/ant/tramites/exoneracion-multas-calendarizacion-vehiculo-se-encuentra-taller-mecanico-no-se-presenta-revision-tecnica-vehicular",
+          "method": "download"
+        }
+      ],
+      "maps_to": []
+    }
+  ]
+}

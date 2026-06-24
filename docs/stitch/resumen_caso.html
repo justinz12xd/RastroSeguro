@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>RastroSeguro - Resumen del Caso</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Montserrat:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-fixed": "#d8e2ff",
+                    "surface-container-low": "#1b1b1d",
+                    "on-tertiary-fixed-variant": "#574425",
+                    "surface-container-high": "#2a2a2b",
+                    "on-error-container": "#ffdad6",
+                    "surface-dim": "#131315",
+                    "inverse-primary": "#565e74",
+                    "surface-variant": "#353436",
+                    "on-surface": "#e4e2e4",
+                    "on-tertiary-fixed": "#271901",
+                    "on-secondary-fixed-variant": "#004395",
+                    "background": "#131315",
+                    "on-primary-fixed-variant": "#3f465c",
+                    "tertiary-fixed-dim": "#dec29a",
+                    "error": "#ffb4ab",
+                    "primary": "#bec6e0",
+                    "inverse-surface": "#e4e2e4",
+                    "on-primary": "#283044",
+                    "tertiary-fixed": "#fcdeb5",
+                    "secondary-container": "#0566d9",
+                    "on-primary-container": "#798098",
+                    "secondary": "#adc6ff",
+                    "primary-fixed": "#dae2fd",
+                    "on-secondary": "#002e6a",
+                    "tertiary-container": "#231500",
+                    "primary-container": "#0f172a",
+                    "tertiary": "#dec29a",
+                    "on-secondary-container": "#e6ecff",
+                    "secondary-fixed-dim": "#adc6ff",
+                    "surface-tint": "#bec6e0",
+                    "surface": "#131315",
+                    "surface-container": "#1f1f21",
+                    "on-background": "#e4e2e4",
+                    "surface-bright": "#39393b",
+                    "on-primary-fixed": "#131b2e",
+                    "primary-fixed-dim": "#bec6e0",
+                    "on-tertiary-container": "#957d5a",
+                    "on-secondary-fixed": "#001a42",
+                    "surface-container-highest": "#353436",
+                    "on-error": "#690005",
+                    "outline": "#909097",
+                    "on-tertiary": "#3e2d11",
+                    "inverse-on-surface": "#303032",
+                    "surface-container-lowest": "#0e0e10",
+                    "on-surface-variant": "#c6c6cd",
+                    "outline-variant": "#45464d",
+                    "error-container": "#93000a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "xl": "80px",
+                    "container-max": "1440px",
+                    "lg": "48px",
+                    "sm": "12px",
+                    "xs": "4px",
+                    "md": "24px",
+                    "gutter": "24px",
+                    "base": "8px"
+            },
+            "fontFamily": {
+                    "display-score": ["Montserrat"],
+                    "headline-lg": ["Montserrat"],
+                    "headline-lg-mobile": ["Montserrat"],
+                    "body-lg": ["Inter"],
+                    "headline-md": ["Montserrat"],
+                    "body-md": ["Inter"],
+                    "label-sm": ["Inter"]
+            },
+            "fontSize": {
+                    "display-score": ["72px", {"lineHeight": "80px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "headline-lg-mobile": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-panel {
+            background: rgba(31, 31, 33, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(69, 70, 77, 0.4);
+        }
+        .lateral-slide-entry {
+            animation: slideIn 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        @keyframes slideIn {
+            from { transform: translateX(30px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md overflow-x-hidden">
+<!-- Progress Track (Global Anchor) -->
+<div class="fixed top-0 left-0 w-full h-1 bg-surface-container z-[60]">
+<div class="h-full bg-secondary-container transition-all duration-700" style="width: 66%;"></div>
+</div>
+<!-- SideNavBar -->
+<aside class="fixed left-0 top-0 h-full w-64 bg-surface-container border-r border-outline-variant shadow-md flex flex-col p-md gap-base z-50 hidden md:flex">
+<div class="flex flex-col gap-xs mb-lg">
+<div class="font-headline-md text-headline-md text-primary">RastroSeguro</div>
+<div class="font-body-md text-body-md text-on-surface-variant">Expert Intelligence</div>
+</div>
+<nav class="flex-1 flex flex-col gap-base">
+<!-- Navigation Items Mapping -->
+<a class="flex items-center gap-sm px-md py-base text-on-surface-variant hover:bg-surface-variant rounded-lg transition-all scale-98 active:scale-95" href="#">
+<span class="material-symbols-outlined" data-icon="upload_file">upload_file</span>
+<span class="font-body-md text-body-md">Carga</span>
+</a>
+<a class="flex items-center gap-sm px-md py-base bg-secondary-container text-on-secondary-container rounded-lg font-bold transition-all scale-98 active:scale-95" href="#">
+<span class="material-symbols-outlined" data-icon="analytics">analytics</span>
+<span class="font-body-md text-body-md">Resumen</span>
+</a>
+<a class="flex items-center gap-sm px-md py-base text-on-surface-variant hover:bg-surface-variant rounded-lg transition-all scale-98 active:scale-95" href="#">
+<span class="material-symbols-outlined" data-icon="psychology">psychology</span>
+<span class="font-body-md text-body-md">Análisis IA</span>
+</a>
+</nav>
+<div class="mt-auto flex flex-col gap-base pt-md border-t border-outline-variant">
+<div class="p-sm bg-surface-container-low rounded-lg border border-outline-variant/30 mb-md">
+<p class="text-label-sm font-label-sm text-secondary italic opacity-80 leading-snug">La IA alerta y explica. No acusa ni rechaza reclamos.</p>
+</div>
+<a class="flex items-center gap-sm px-md py-base text-on-surface-variant hover:bg-surface-variant rounded-lg" href="#">
+<span class="material-symbols-outlined" data-icon="help">help</span>
+<span class="font-body-md text-body-md">Ayuda</span>
+</a>
+<a class="flex items-center gap-sm px-md py-base text-on-surface-variant hover:bg-surface-variant rounded-lg" href="#">
+<span class="material-symbols-outlined" data-icon="logout">logout</span>
+<span class="font-body-md text-body-md">Cerrar Sesión</span>
+</a>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<main class="md:ml-64 min-h-screen flex flex-col relative">
+<!-- TopAppBar -->
+<header class="fixed top-0 right-0 left-0 md:left-64 z-40 bg-background border-b border-outline-variant shadow-sm flex justify-between items-center px-gutter py-sm">
+<div class="flex items-center gap-md">
+<h1 class="font-headline-md text-headline-md font-bold text-primary">RastroSeguro</h1>
+<nav class="hidden sm:flex gap-md ml-lg">
+<span class="text-on-surface-variant font-body-md text-body-md">Paso 1: Carga</span>
+<span class="text-primary font-bold border-b-2 border-primary pb-1 font-body-md text-body-md">Paso 2: Resumen del caso</span>
+<span class="text-on-surface-variant font-body-md text-body-md">Paso 3: Análisis IA</span>
+</nav>
+</div>
+<div class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-primary cursor-pointer hover:text-primary transition-colors" data-icon="notifications">notifications</span>
+<span class="material-symbols-outlined text-primary cursor-pointer hover:text-primary transition-colors" data-icon="settings">settings</span>
+<div class="w-8 h-8 rounded-full overflow-hidden border border-outline-variant ml-sm">
+<img alt="Investigator Profile" data-alt="A professional close-up portrait of a senior insurance investigator in a dimly lit, high-tech control room environment. The lighting is cold and moody, with blue and slate tones that match a corporate security aesthetic. The investigator has a sharp, focused expression, suggesting deep analytical expertise. High-resolution digital photography with soft background bokeh showing out-of-focus analytical screens." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDS5gTKnUlkl5O12oA4tZMfWV954LX3nmIwGT2N1RTRutkDjX3asvWhSGHUyRNhw_qE9ak9uuLjKjB1yHFPe3RcrEtV-gopD98AW3S-ohuSGDpZqyvua5QLnttVUFRx0juMyfF2Lt1raGLnXkor-ECEt57UGLLCKKeP6ol_CXeSCsSc5iRCEFZE-1ENLNXGuzUfEkPvAkZTzR3VGuLjJ84YtHqE9dPJhD5sqayH0rAL7uwDDzrGPrD1dcHYnDFRjX32t2CPvXW3"/>
+</div>
+</div>
+</header>
+<!-- Page Body -->
+<div class="mt-20 px-gutter pb-32 flex-1 max-w-container-max mx-auto w-full lateral-slide-entry">
+<section class="mb-md">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-xs">Paso 2: Resumen del caso cargado</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Confirme los datos extraídos antes de proceder al análisis de riesgo neuronal.</p>
+</section>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-md">
+<!-- Main Data Card -->
+<div class="md:col-span-8 bg-surface-container rounded-xl p-md border border-outline-variant/50 shadow-sm">
+<div class="flex justify-between items-center mb-md border-b border-outline-variant pb-base">
+<div class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-secondary" data-icon="description">description</span>
+<span class="font-headline-md text-headline-md">Expediente SIN-0112</span>
+</div>
+<div class="px-md py-xs bg-secondary-container/20 text-secondary border border-secondary/30 rounded-full flex items-center gap-xs">
+<span class="material-symbols-outlined text-sm" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="text-label-sm font-label-sm">CARGA COMPLETA</span>
+</div>
+</div>
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-md mb-lg">
+<div class="flex flex-col">
+<span class="text-label-sm font-label-sm text-on-surface-variant uppercase tracking-wider">Ramo</span>
+<span class="text-body-lg font-body-lg font-semibold text-on-surface">Automóvil</span>
+</div>
+<div class="flex flex-col">
+<span class="text-label-sm font-label-sm text-on-surface-variant uppercase tracking-wider">Monto</span>
+<span class="text-body-lg font-body-lg font-semibold text-secondary">$12,500 USD</span>
+</div>
+<div class="flex flex-col">
+<span class="text-label-sm font-label-sm text-on-surface-variant uppercase tracking-wider">Cobertura</span>
+<span class="text-body-lg font-body-lg font-semibold text-on-surface">Todo Riesgo</span>
+</div>
+<div class="flex flex-col">
+<span class="text-label-sm font-label-sm text-on-surface-variant uppercase tracking-wider">Ciudad</span>
+<span class="text-body-lg font-body-lg font-semibold text-on-surface">Medellín</span>
+</div>
+</div>
+<div class="space-y-md">
+<div class="p-md bg-surface-container-low rounded-lg border border-outline-variant/30">
+<h3 class="font-body-md text-body-md font-semibold text-secondary mb-base flex items-center gap-xs">
+<span class="material-symbols-outlined text-body-md" data-icon="history_edu">history_edu</span>
+                                Narrativa del Siniestro
+                            </h3>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+                                El asegurado reporta una colisión múltiple ocurrida a las 23:45 del viernes en el sector de El Poblado. Según la declaración, un vehículo de terceros omitió un semáforo en rojo impactando lateralmente. Se adjunta informe policial y registro fotográfico de daños en el guardabarros izquierdo y sistema de iluminación frontal. La narrativa coincide preliminarmente con los registros geográficos del dispositivo telemático del vehículo.
+                            </p>
+</div>
+</div>
+</div>
+<!-- Secondary Document Status Card -->
+<div class="md:col-span-4 flex flex-col gap-md">
+<div class="bg-surface-container-high rounded-xl p-md border border-outline-variant shadow-lg">
+<h3 class="font-headline-md text-headline-md text-primary mb-md">Documentación</h3>
+<ul class="space-y-sm">
+<li class="flex items-center justify-between p-sm bg-surface-container-low rounded border border-outline-variant/20">
+<div class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-secondary" data-icon="picture_as_pdf">picture_as_pdf</span>
+<span class="text-body-md font-body-md">Declaración.pdf</span>
+</div>
+<span class="material-symbols-outlined text-secondary" data-icon="done" style="font-variation-settings: 'FILL' 1;">done</span>
+</li>
+<li class="flex items-center justify-between p-sm bg-surface-container-low rounded border border-outline-variant/20">
+<div class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-secondary" data-icon="image">image</span>
+<span class="text-body-md font-body-md">Evidencia_Daños.jpg</span>
+</div>
+<span class="material-symbols-outlined text-secondary" data-icon="done" style="font-variation-settings: 'FILL' 1;">done</span>
+</li>
+<li class="flex items-center justify-between p-sm bg-surface-container-low rounded border border-outline-variant/20">
+<div class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-secondary" data-icon="location_on">location_on</span>
+<span class="text-body-md font-body-md">Telemetría_GPS.log</span>
+</div>
+<span class="material-symbols-outlined text-secondary" data-icon="done" style="font-variation-settings: 'FILL' 1;">done</span>
+</li>
+</ul>
+</div>
+<div class="flex-1 bg-surface-container-low rounded-xl border border-outline-variant border-dashed p-md flex flex-col items-center justify-center text-center opacity-70">
+<span class="material-symbols-outlined text-secondary mb-sm" data-icon="cloud_upload" style="font-size: 32px;">cloud_upload</span>
+<p class="text-label-sm font-label-sm">Arrastre archivos adicionales aquí para enriquecer el resumen del caso.</p>
+</div>
+</div>
+</div>
+<!-- Visualization / Insight Preview Area -->
+<div class="mt-md grid grid-cols-1 md:grid-cols-2 gap-md">
+<div class="bg-surface-container rounded-xl overflow-hidden border border-outline-variant h-48 relative group">
+<img alt="Medellín Map View" class="w-full h-full object-cover opacity-40 group-hover:opacity-60 transition-opacity" data-alt="A detailed, modern digital map overlay of Medellín, Colombia, with a focus on the El Poblado district. The map uses a dark-mode cartography style with glowing blue routes and pinpoint markers in primary-fixed colors. The image conveys a sense of high-tech surveillance and geographic intelligence, lit by a soft neon secondary glow from the data layers." data-location="Medellín" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuCFaQUZ_hGxxrWRQriRWp_kBLwh4u1sDjZ0egq35LFl0pJpwola9Kf8OqUvAk1JfakQJrgsfaosVoz1rXWaWiyT3-dMp4amHN7_Z0GnwrqXyibYxZPhnivFWAHvBLLdJC38RX2nclq5r7SGR2DwAHlBWb7sNgeYsxlGi8apylj6USKtwggAfq2iSbUWiZLW2Kf6gfNAN6iqR7n-EV9X3FsGVn4C3cDJsq7heknlkQsylatc0_eHSIage9AzNgwk6te7ppfkUD"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container to-transparent"></div>
+<div class="absolute bottom-md left-md">
+<div class="flex items-center gap-xs text-secondary mb-xs">
+<span class="material-symbols-outlined text-sm" data-icon="location_on">location_on</span>
+<span class="text-label-sm font-label-sm font-bold uppercase tracking-widest">Ubicación Confirmada</span>
+</div>
+<p class="text-body-md font-body-md font-semibold">Sector El Poblado, Medellín</p>
+</div>
+</div>
+<div class="bg-surface-container rounded-xl p-md border border-outline-variant flex items-center justify-between">
+<div>
+<h4 class="text-label-sm font-label-sm text-on-surface-variant uppercase mb-base">Preparación de Análisis</h4>
+<p class="text-body-md font-body-md">Motor de IA cargado con 14 variables extraídas de la narrativa y telemetría.</p>
+</div>
+<div class="w-16 h-16 border-4 border-secondary-container/30 border-t-secondary-container rounded-full animate-spin"></div>
+</div>
+</div>
+</div>
+<!-- AI Assistant Bubble (Design System Component) -->
+<div class="fixed bottom-24 right-md z-40">
+<button class="w-14 h-14 bg-secondary-container text-on-secondary-container rounded-full shadow-lg flex items-center justify-center transition-transform hover:scale-110 active:scale-95">
+<span class="material-symbols-outlined" data-icon="chat_bubble" style="font-variation-settings: 'FILL' 1;">chat_bubble</span>
+</button>
+</div>
+<!-- BottomNavBar (Shell Component) -->
+<footer class="fixed bottom-0 w-full z-50 backdrop-blur-md bg-surface-dim/80 border-t border-outline-variant shadow-lg">
+<div class="flex justify-between items-center px-lg py-md max-w-container-max mx-auto">
+<button class="flex items-center gap-xs text-on-surface-variant px-md py-base hover:brightness-110 transition-all active:scale-95 duration-200">
+<span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+<span class="font-label-sm text-label-sm">Anterior</span>
+</button>
+<div class="flex gap-xs items-center">
+<div class="w-2 h-2 rounded-full bg-on-surface-variant/30"></div>
+<div class="w-8 h-2 rounded-full bg-secondary-container shadow-[0_0_8px_rgba(5,102,217,0.5)]"></div>
+<div class="w-2 h-2 rounded-full bg-on-surface-variant/30"></div>
+</div>
+<button class="flex items-center gap-xs bg-secondary-container text-on-secondary-container px-md py-base rounded-full hover:brightness-110 transition-all active:scale-95 duration-200">
+<span class="font-label-sm text-label-sm">Siguiente</span>
+<span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</footer>
+</main>
+<script>
+        // Micro-interaction for cards
+        document.querySelectorAll('.bg-surface-container').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-2px)';
+                card.style.transition = 'transform 0.3s ease, border-color 0.3s ease';
+                card.style.borderColor = 'rgba(173, 198, 255, 0.4)';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translateY(0)';
+                card.style.borderColor = 'rgba(69, 70, 45, 0.4)';
+            });
+        });
+    </script>
+</body></html>

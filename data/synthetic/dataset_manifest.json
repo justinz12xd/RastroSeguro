@@ -1,0 +1,32 @@
+{
+  "source": "data\\synthetic\\siniestros.csv",
+  "lineage": "synthetic+sercop+ocds+ecu911+inec",
+  "tables": {
+    "siniestros": {
+      "rows": 25000,
+      "path": "data\\synthetic\\siniestros.csv"
+    },
+    "polizas": {
+      "rows": 6137,
+      "path": "data\\synthetic\\polizas.csv"
+    },
+    "asegurados": {
+      "rows": 10823,
+      "path": "data\\synthetic\\asegurados.csv"
+    },
+    "proveedores": {
+      "rows": 109,
+      "path": "data\\synthetic\\proveedores.csv"
+    },
+    "documentos": {
+      "rows": 1303,
+      "path": "data\\synthetic\\documentos.csv"
+    }
+  },
+  "relationships": [
+    "siniestros.id_poliza -> polizas.id_poliza",
+    "siniestros.id_asegurado -> asegurados.id_asegurado",
+    "siniestros.id_proveedor -> proveedores.id_proveedor",
+    "documentos.id_siniestro -> siniestros.id_siniestro"
+  ]
+}
