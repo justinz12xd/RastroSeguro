@@ -1,3 +1,4 @@
+import 'react-native-gesture-handler'
 import { useEffect, useState } from 'react'
 import { ActivityIndicator, StyleSheet, Text, View } from 'react-native'
 import { StatusBar } from 'expo-status-bar'
@@ -15,7 +16,7 @@ import {
 } from '@expo-google-fonts/jetbrains-mono'
 import * as SplashScreen from 'expo-splash-screen'
 import { SafeAreaProvider } from 'react-native-safe-area-context'
-import { DashboardScreen } from './src/screens/DashboardScreen'
+import { RootNavigator } from './src/navigation/RootNavigator'
 import { colors } from './src/theme/tokens'
 
 SplashScreen.preventAutoHideAsync().catch(() => undefined)
@@ -51,7 +52,7 @@ export default function App() {
   return (
     <SafeAreaProvider>
       <StatusBar style="light" />
-      <DashboardScreen />
+      <RootNavigator />
     </SafeAreaProvider>
   )
 }

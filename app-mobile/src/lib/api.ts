@@ -122,3 +122,83 @@ export function getHealth() {
 export function getExecutiveReport(topLimit = 10) {
   return apiRequest<ExecutiveReport>(`/api/report?format=dict&top_limit=${topLimit}`)
 }
+
+export interface ClaimDossier {
+  id_siniestro: string
+  headline: string
+  risk: {
+    score_final?: number | null
+    nivel_riesgo?: string | null
+    accion_sugerida?: string | null
+    decision_automatica?: string | null
+    revision_humana_requerida?: string | null
+  }
+  claim: {
+    ramo?: string | null
+    cobertura?: string | null
+    ciudad?: string | null
+    id_asegurado?: string | null
+    id_proveedor?: string | null
+    beneficiario?: string | null
+    monto_reclamado?: number | null
+    suma_asegurada?: number | null
+    ratio_monto_suma?: number | null
+    fecha_ocurrencia?: string | null
+    fecha_reporte?: string | null
+  }
+  evidence: Array<{
+    codigo?: string | null
+    senal?: string | null
+    puntos?: number | null
+    severidad?: string | null
+    mensaje?: string | null
+  }>
+  score_components: Record<string, number | null | undefined>
+  main_driver?: { componente?: string | null; valor?: number | null }
+  investigation_summary?: string | null
+  executive_takeaway?: string | null
+  recommended_review: string[]
+  ethical_guardrail: string
+  explanation?: string | null
+}
+
+export interface StarCase {
+  tipo: string
+  id_siniestro: string
+  nivel_riesgo?: string | null
+  score_final?: number | null
+  ramo?: string | null
+  ciudad?: string | null
+  id_proveedor?: string | null
+  monto_reclamado?: number | null
+  por_que_destaca: string
+  explicacion_demo?: string | null
+}
+
+export interface StarCasesResponse {
+  count: number
+  cases: StarCase[]
+}
+
+export interface BusinessImpact {
+  total_siniestros: number
+  casos_rojos: number
+  casos_a_revisar_top_percent: number
+  porcentaje_revision: number
+  monto_total_reclamado: number
+  monto_en_casos_rojos: number
+  monto_priorizado_top_percent: number
+  mensaje: string
+}
+
+export function getClaimDossier(idSiniestro: string) {
+  return apiRequest<ClaimDossier>(`/api/claims/${encodeURIComponent(idSiniestro)}/dossier`)
+}
+
+export function getStarCases() {
+  return apiRequest<StarCasesResponse>('/api/reports/star-cases')
+}
+
+export function getBusinessImpact(reviewPercent = 0.1) {
+  return apiRequest<BusinessImpact>(`/api/reports/business-impact?review_percent=${reviewPercent}`)
+}

@@ -53,6 +53,10 @@ Tipografía: IBM Plex Sans + JetBrains Mono (mismas familias del web).
 
 ## Primera vista
 
-**Centro de control** — KPIs, pie de semáforo, barras (ramo / proveedor / ciudad) y top casos vía `GET /api/report`.
+Tabs: **Control** (dashboard) e **Impacto** (business impact + star cases).
+
+- KPIs, pie de semáforo, barras (ramo / proveedor / ciudad) y top casos vía `GET /api/report`
+- Tocar un caso abre el **expediente** (`GET /api/claims/{id}/dossier`)
+- Impacto vía `GET /api/reports/business-impact` y `GET /api/reports/star-cases`
 
 Gráficos con `react-native-gifted-charts` + `react-native-svg`, mismos colores del design system web.
