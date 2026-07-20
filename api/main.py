@@ -63,6 +63,11 @@ def _allowed_origins() -> list[str]:
     return [
         "http://localhost:3000",
         "http://127.0.0.1:3000",
+        # Expo web / Metro (app-mobile)
+        "http://localhost:8081",
+        "http://127.0.0.1:8081",
+        "http://localhost:19006",
+        "http://127.0.0.1:19006",
     ]
 
 

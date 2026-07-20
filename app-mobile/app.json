@@ -1,0 +1,32 @@
+{
+  "expo": {
+    "name": "RastroSeguro",
+    "slug": "rastroseguro-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#13203e"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.rastroseguro.mobile"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#13203e",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "package": "com.rastroseguro.mobile",
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
